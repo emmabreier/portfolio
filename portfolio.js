@@ -31,6 +31,16 @@ const projects = {
         <img src="images/posters/poster-1.jpg" alt="Poster Design">
     `,
 
+    internship: `
+        <h1>INTERNSHIP</h1>
+
+        <p>
+            Your internship experience and work goes here.
+        </p>
+
+        <img src="images/internship/internship-1.jpg" alt="Internship Work">
+    `,
+
     "fine-art": `
         <h1>FINE ART</h1>
 
