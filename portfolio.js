@@ -80,7 +80,7 @@ const projects = {
         <div class="print-design-section">
             <div class="print-design-header">
                 <p class="eyebrow">Print Design</p>
-                <h2>Moon Poster</h2>
+                <h2>Dodd Centennial</h2>
             </div>
 
             <div class="print-design-layout">
@@ -101,15 +101,28 @@ const projects = {
         <div class="print-design-section internship-block">
             <div class="print-design-header">
                 <p class="eyebrow">Print Design</p>
-                <h2>My Internship</h2>
+                <h2>UGA Archway <br>Internship</h2>
+            </div>
+             <div class="print-design-layout">
+                <div class="project-media print-feature">
+                    <img src="Images/moon2.png" alt="Moon poster design">
+                </div>
+
+                <div class="print-design-copy">
+                    <p class="meta">Editorial Poster</p>
+                    <h3>Moon</h3>
+                    <p>
+                        This piece explores mood and atmosphere through a quiet, cinematic palette. The composition emphasizes scale, negative space, and the sense of stillness that makes the message feel contemplative and immersive.
+                    </p>
+                </div>
             </div>
 
             <div class="print-design-layout internship-layout">
                 <div class="print-design-copy">
                     <p class="meta">Community Design</p>
-                    <h3>Archway Partnership</h3>
+                    <h3>UGA Medical Data Packets</h3>
                     <p>
-                        During my internship, I worked on communication materials focused on civic engagement, local storytelling, and accessible design systems. The goal was to help community-centered campaigns feel clear, welcoming, and visually grounded in the people they served.
+                        During my internship, I created a series of data packets for UGA Medical School and their new Med tour. I created 7 packets for each of the counties the students and faculty visited.
                     </p>
                 </div>
 

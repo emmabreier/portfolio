@@ -155,7 +155,7 @@ h1 {
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 18px;
-    padding: 26px 26px 30px;
+    padding: 26px 26px 48px;
 }
 
 
@@ -188,7 +188,10 @@ h1 {
     grid-template-columns: minmax(260px, 0.9fr) minmax(360px, 1.4fr);
     gap: 40px;
     align-items: center;
+    width: min(100%, 1040px);
+    margin: 0 auto;
     min-height: 560px;
+    padding-bottom: 18px;
 }
 
 .bmw-layout {
@@ -354,7 +357,7 @@ h1 {
 
 .print-design-section {
     margin-top: 36px;
-    padding-top: 18px;
+    padding: 18px 0 32px;
     border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
@@ -365,7 +368,8 @@ h1 {
 }
 
 .print-design-header {
-    margin-bottom: 22px;
+    width: min(100%, 1040px);
+    margin: 0 auto 22px;
 }
 
 .eyebrow {
@@ -388,10 +392,30 @@ h1 {
     grid-template-columns: minmax(320px, 1.5fr) minmax(220px, 0.7fr);
     gap: 28px;
     align-items: center;
+    width: min(100%, 1040px);
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
 }
 
 .internship-layout {
     grid-template-columns: minmax(220px, 0.7fr) minmax(320px, 1.5fr);
+    justify-items: center;
+}
+
+.internship-layout .print-design-copy,
+.internship-layout .project-media {
+    width: 100%;
+    max-width: 100%;
+}
+
+.print-design-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: min(100%, 470px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .print-feature {
@@ -436,6 +460,10 @@ h1 {
 
 .internship-block {
     margin-bottom: 30px;
+}
+
+.internship-block .print-design-layout + .print-design-layout {
+    margin-top: 42px;
 }
 
 .fine-art-grid {
