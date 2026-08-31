@@ -35,30 +35,35 @@ h1 {
 
 .top-nav {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
 
     display: flex;
-    gap: 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
 
-    padding: 30px 70px 20px 40px;
-
-    background: white;
+    padding: 0;
+    background: transparent;
+    border: none;
 
     z-index: 1000;
-     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .top-nav a {
     color: #000;
     text-decoration: none;
 
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 .top-nav a:hover {
     text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 
