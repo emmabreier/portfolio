@@ -13,17 +13,27 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'niveau-grotesk';
+    src: url('fonts/niveau-grotesk.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;         
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "niveau-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 h1 {
     font-family: "Gunter", sans-serif;
 }
+
 
 
 .index-page p {
@@ -67,24 +77,34 @@ h1 {
 }
 
 
-.portfolio-page {
-    padding: 100px 5.8vw 60px;
+.portfolio-page,
+.layton-page,
+.strike-page {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 36px;
+    padding: 110px 5.8vw 60px;
+    background: #e7cfc7;
 }
 
 .portfolio-nav,
 .layton-nav,
 .strike-nav {
-    position: fixed;
-    left: 4.9vw;
-    top: 250px;
+    position: relative;
+    left: auto;
+    top: auto;
+    flex: 0 0 180px;
 
     display: flex;
     flex-direction: column;
     gap: 18px;
 
-    width: 170px;
-    padding: 10px 0 10px 18px;
-    border-left: 1px solid #dddddd;
+    width: 180px;
+    padding: 18px 16px 18px 18px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.38);
+    border-radius: 18px;
 }
 
 .portfolio-nav a,
@@ -111,22 +131,23 @@ h1 {
 .portfolio-nav a:first-child,
 .layton-nav a:first-child,
 .strike-nav a:first-child {
-    padding-bottom: 18px;
-    margin-bottom: 6px;
-    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
 }
 
 
 
 .project-content {
-    margin-left: 240px;
-    width: calc(100% - 240px);
-
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 1180px;
     min-height: 665px;
 
-    background: #ffffff;
-
-    padding: 30px 0px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+    padding: 26px 26px 30px;
 }
 
 
@@ -150,9 +171,93 @@ h1 {
 
 
 .project-content img {
-    max-width: 100%;
+    max-width: 465px;
     display: block;
 }
+
+.project-layout {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.9fr) minmax(360px, 1.4fr);
+    gap: 40px;
+    align-items: center;
+    min-height: 560px;
+}
+
+.project-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-copy h1 {
+    margin-bottom: 18px;
+}
+
+.project-copy p {
+    max-width: 480px;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.project-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-media img {
+    width: 100%;
+    max-height: 640px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.media-tall img {
+    height: 640px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    gap: 24px;
+    margin-top: 36px;
+    align-items: stretch;
+}
+
+.photo-card {
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+}
+
+.photo-card.tall img {
+    height: 480px;
+}
+
+.photo-card.wide {
+    grid-column: span 2;
+}
+
+.photo-card.wide img {
+    height: 380px;
+}
+
+.photo-card.square img {
+    height: 380px;
+}
+
 
 
 body.about-page {
@@ -189,12 +294,6 @@ body.about-page .about-page-content h1 {
     text-decoration: underline;
     text-underline-offset: 4px;
 }
-
-.layton-page,
-.strike-page {
-    padding: 100px 5.8vw 60px;
-}
-
 
 .floating-box {
     background-size: cover;

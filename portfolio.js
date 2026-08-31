@@ -2,54 +2,107 @@ const projectContent = document.getElementById("project-content");
 
 const projects = {
     cortona: `
-        <h1>Cortona<br>Branding</h1>
+        <div class="project-layout">
+            <div class="project-copy">
+                <h1>Cortona<br>Branding</h1>
+                <p>
+                    While abroad, we developed a visual identity for the city of Cortona that felt rooted in place, memory, and community.
+                </p>
+            </div>
 
-        <p>
-            While abroad we made city branding.
-        </p>
-
-        <img src="images/cortona/cortona-1.jpg" alt="Cortona Branding">
+            <div class="project-media media-tall">
+                <img src="images/mockbrandingbag.png" alt="Cortona Branding">
+            </div>
+        </div>
     `,
 
     personal: `
-        <h1>Personal<br>Projects</h1>
+        <div class="project-layout">
+            <div class="project-copy">
+                <h1>Personal<br>Projects</h1>
+                <p>
+                    Personal projects outside of school explore experimentation, storytelling, and visual ideas that grow beyond the classroom.
+                </p>
+            </div>
 
-        <p>
-            Personal projects outside of school.
-        </p>
-
-        <img src="images/personal/personal-1.jpg" alt="Personal Project">
+            <div class="project-media media-tall">
+                <img src="images/catangameshot.jpeg" alt="Personal Project">
+            </div>
+        </div>
     `,
 
     posters: `
-        <h1>Posters</h1>
+        <div class="project-layout">
+            <div class="project-copy">
+                <h1>Posters</h1>
+                <p>
+                    My poster designs and work for various events and organizations explore typography, rhythm, and visual storytelling across a range of formats.
+                </p>
+            </div>
 
-        <p>
-            My poster designs and work for various events and organizations.
-        </p>
-
-        <img src="images/posters/poster-1.jpg" alt="Poster Design">
+            <div class="project-media media-tall">
+                <img src="images/mostra final 3.jpg" alt="Poster Design">
+            </div>
+        </div>
     `,
 
     internship: `
-        <h1>Internship</h1>
+        <div class="project-layout">
+            <div class="project-copy">
+                <h1>Internship</h1>
+                <p>
+                    My internship work at Archway Partnership focused on strategic communication, civic design, and creating useful visual systems for community-centered work.
+                </p>
+            </div>
 
-        <p>
-            My internship work at Archway Partnership
-        </p>
-
-        <img src="images/internship/internship-1.jpg" alt="Internship Work">
+            <div class="project-media media-tall">
+                <img src="images/internship/internship-1.jpg" alt="Internship Work">
+            </div>
+        </div>
     `,
 
     "fine-art": `
-        <h1>Fine Art</h1>
+        <div class="project-layout">
+            <div class="project-copy">
+                <h1>Fine Art</h1>
+                <p>
+                    I specialize in watercolor painting, and in photography I focus on capturing nature and the architecture around me.
+                </p>
+            </div>
 
-        <p>
-            Paintings and Photography 
-        </p>
-        <img src="Images/upclosepainting.jpeg" alt="Fine Art">
-       
-    `
+            <div class="project-media media-tall">
+                <img src="Images/closeuppainting.jpeg" alt="Featured fine art painting">
+            </div>
+        </div>
+
+        <div class="photo-grid">
+            <figure class="photo-card tall">
+                <img src="Images/scoutpainting.jpeg" alt="Fine art photo 2">
+            </figure>
+            <figure class="photo-card tall">
+                <img src="Images/watercolorflower.jpeg" alt="Fine art photo 4">
+            </figure>
+            <figure class="photo-card tall">
+                <img src="Images/venicesign.JPG" alt="Fine art photo 3">
+            </figure>
+            <figure class="photo-card wide">
+                <img src="Images/horizontalwomen.JPG" alt="Fine art photo 4">
+            </figure>
+            <figure class="photo-card square">
+                <img src="Images/paw.JPEG" alt="Fine art photo 3">
+            </figure>
+            <figure class="photo-card tall">
+                <img src="Images/vaticanwindow.JPG" alt="Fine art photo 1">
+            </figure>
+            <figure class="photo-card tall">
+                <img src="Images/rubyincortona.JPG" alt="Fine art photo 5">
+            </figure>
+            <figure class="photo-card tall">
+                <img src="Images/oxfordwindow.JPG" alt="Fine art photo 6">
+            </figure>
+        </div>
+    `,
+    
 };
 
 function setActiveProject(projectKey) {

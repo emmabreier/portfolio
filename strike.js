@@ -2,33 +2,48 @@ const projectContent = document.getElementById("project-content");
 
 const projects = {
     "about-strike": `
-        <h1>Strike</h1>
+        <div class="project-layout">
+            <div class="project-copy">
+                <h1>Strike<br>Magazine</h1>
+                <p>
+                    Strike is a student-run magazine published at the University of Georgia. I worked with the team to create a brand identity that felt editorial, expressive, and culturally aware.
+                </p>
+            </div>
 
-        <p>
-            Strike is a student run magazine that is published at the University of Georgia. I worked with the Strike team to create a new brand for the magazine.
-        </p>
-
-        <img src="images/cortona/cortona-1.jpg" alt="Strike About">
+            <div class="project-media media-tall">
+                <img src="images/cortona/cortona-1.jpg" alt="Strike About">
+            </div>
+        </div>
     `,
 
     "issue-11": `
-        <h1>Issue 11</h1>
+        <div class="project-layout">
+            <div class="project-copy">
+                <h1>Issue 11</h1>
+                <p>
+                    Issue 11 — Mirage explores dreamlike visuals, layered typography, and a reflective editorial mood.
+                </p>
+            </div>
 
-        <p>
-             Issue 11- Mirage
-        </p>
-
-        <img src="images/cortona/cortona-1.jpg" alt="Cortona Branding">
+            <div class="project-media media-tall">
+                <img src="images/cortona/cortona-1.jpg" alt="Strike Issue 11">
+            </div>
+        </div>
     `,
 
     "issue-12": `
-        <h1>Issue 12</h1>
+        <div class="project-layout">
+            <div class="project-copy">
+                <h1>Issue 12</h1>
+                <p>
+                    Issue 12 — Cosmopolis explores city texture, movement, and a more cinematic editorial identity.
+                </p>
+            </div>
 
-        <p>
-            Issue 12- Cosmopolis.
-        </p>
-
-        <img src="Images/cortona/cortona-1.jpeg" alt="Cortona Branding">
+            <div class="project-media media-tall">
+                <img src="Images/cortona/cortona-1.jpeg" alt="Strike Issue 12">
+            </div>
+        </div>
     `
 };
 
