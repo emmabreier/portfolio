@@ -5,7 +5,7 @@ const projects = {
         <h1>Layton Design Studio</h1>
 
         <p>
-            This is where your About Layton project description goes.
+            Layton design studio. 
         </p>
 
         <img src="images/cortona/cortona-1.jpg" alt="Layton About">
@@ -15,7 +15,7 @@ const projects = {
         <h1>BMW Mean<br>Machine</h1>
 
         <p>
-            Your BMW project description goes here.
+            UGA collaborated with BMW to create a mean machine.
         </p>
 
         <img src="images/cortona/cortona-1.jpg" alt="Cortona Branding">
@@ -25,7 +25,7 @@ const projects = {
         <h1>UGA Motorsports</h1>
 
         <p>
-            Your UGA Motorsports project description goes here.
+            We worked with UGA college of engineering to create a new brand for UGA Motorsports.
         </p>
 
         <img src="images/personal/personal-1.jpg" alt="Personal Project">

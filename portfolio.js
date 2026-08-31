@@ -5,7 +5,7 @@ const projects = {
         <h1>Cortona<br>Branding</h1>
 
         <p>
-            Your Cortona Branding project description goes here.
+            While abroad we made city branding.
         </p>
 
         <img src="images/cortona/cortona-1.jpg" alt="Cortona Branding">
@@ -15,7 +15,7 @@ const projects = {
         <h1>Personal<br>Projects</h1>
 
         <p>
-            Your personal projects go here.
+            Personal projects outside of school.
         </p>
 
         <img src="images/personal/personal-1.jpg" alt="Personal Project">
@@ -25,7 +25,7 @@ const projects = {
         <h1>Posters</h1>
 
         <p>
-            Your poster work goes here.
+            My poster designs and work for various events and organizations.
         </p>
 
         <img src="images/posters/poster-1.jpg" alt="Poster Design">
@@ -35,7 +35,7 @@ const projects = {
         <h1>Internship</h1>
 
         <p>
-            Your internship experience and work goes here.
+            My internship work at Archway Partnership
         </p>
 
         <img src="images/internship/internship-1.jpg" alt="Internship Work">
@@ -45,10 +45,10 @@ const projects = {
         <h1>Fine Art</h1>
 
         <p>
-            Your fine art work goes here.
+            Paintings and Photography 
         </p>
-
-        <img src="images/fine-art/art-1.jpg" alt="Fine Art">
+        <img src="Images/upclosepainting.jpeg" alt="Fine Art">
+       
     `
 };
 

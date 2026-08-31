@@ -7,6 +7,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Grappa';
+    src: url('fonts/Grappa.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 html,
 body {
     margin: 0;
@@ -14,9 +20,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 h1 {
-    font-family: 'Gunter', Arial, Helvetica, sans-serif;
+    font-family: "Gunter", sans-serif;
 }
+
 
 .index-page p {
     max-width: thin;
@@ -153,18 +161,18 @@ body.about-page .top-nav {
 
 .about-page-content {
     min-height: 100vh;
-    padding: 100px 6vw;
+    padding: 150px 6vw;
     background: #e7cfc7;
 }
 
-.about-page-content h1 {
+body.about-page .about-page-content h1 {
     font-size: 100px;
     letter-spacing: 0px;
-    line-height: 1.1;
+    line-height: .9;
 }
 
 .about-page-content p {
-    max-width: 450px;
+    max-width: 475px;
     font-size: 25px;
     line-height: 1.25;
 }

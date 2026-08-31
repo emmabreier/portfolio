@@ -5,7 +5,7 @@ const projects = {
         <h1>Strike</h1>
 
         <p>
-            This is where your About Strike project description goes.
+            Strike is a student run magazine that is published at the University of Georgia. I worked with the Strike team to create a new brand for the magazine.
         </p>
 
         <img src="images/cortona/cortona-1.jpg" alt="Strike About">
@@ -15,20 +15,20 @@ const projects = {
         <h1>Issue 11</h1>
 
         <p>
-            Your Issue 11 project description goes here.
+             Issue 11- Mirage
         </p>
 
         <img src="images/cortona/cortona-1.jpg" alt="Cortona Branding">
     `,
 
     "issue-12": `
-        <h1>ISSUE 12</h1>
+        <h1>Issue 12</h1>
 
         <p>
-            Your ISSUE 12 project description goes here.
+            Issue 12- Cosmopolis.
         </p>
 
-        <img src="images/cortona/cortona-1.jpg" alt="Cortona Branding">
+        <img src="Images/cortona/cortona-1.jpeg" alt="Cortona Branding">
     `
 };
 
