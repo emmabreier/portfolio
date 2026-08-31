@@ -23,11 +23,12 @@ body {
     display: flex;
     gap: 45px;
 
-    padding: 30px 70px 30px 40px;
+    padding: 30px 70px 20px 40px;
 
     background: white;
 
     z-index: 1000;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .top-nav a {
@@ -131,20 +132,31 @@ body {
 }
 
 
-.about-page {
-    padding: 100px 6vw;
+body.about-page {
+    background: #e7cfc7;
 }
 
-.about-page h1 {
+body.about-page .top-nav {
+    background: #e7cfc7;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.about-page-content {
+    min-height: 100vh;
+    padding: 100px 6vw;
+    background: #e7cfc7;
+}
+
+.about-page-content h1 {
     font-size: 120px;
     letter-spacing: -6px;
     line-height: .8;
 }
 
-.about-page p {
-    max-width: 500px;
+.about-page-content p {
+    max-width: 450px;
     font-size: 25px;
-    line-height: 1.1;
+    line-height: 1.25;
 }
 
 .portfolio-nav a.active,
@@ -233,17 +245,17 @@ body {
 }
 
 @media (max-width: 768px) {
-    .about-page {
+    .about-page-content {
         padding: 90px 24px 40px;
     }
 
-    .about-page h1 {
+    .about-page-content h1 {
         font-size: 72px;
         letter-spacing: -4px;
         line-height: 0.82;
     }
 
-    .about-page p {
+    .about-page-content p {
         max-width: 100%;
         font-size: 20px;
         margin-top: 20px;
@@ -289,7 +301,7 @@ body {
         font-size: 12px;
     }
 
-    .about-page h1 {
+    .about-page-content h1 {
         font-size: 52px;
         letter-spacing: -3px;
     }
