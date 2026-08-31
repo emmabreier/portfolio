@@ -29,7 +29,7 @@ const projects = {
                     <p class="meta">Game Design</p>
                     <h3>Catan</h3>
                     <p>
-                        This personal design exploration reimagines the classic Catan experience through a more tactile, contemporary visual system. The goal was to make the board game feel playful, strategic, and artfully crafted while staying rooted in the playful logic of resource gathering and expansion.
+                        This project was an illustrative card design for the board game Catan. The goal was to create cards with humor but still clear design and readibility. I focused on creating a cohesive visual system that felt playful, but still grounded in the game's original aesthetic.
                     </p>
                 </div>
 

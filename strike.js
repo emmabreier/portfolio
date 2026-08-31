@@ -23,6 +23,7 @@ const projects = {
                 <p>
                     Issue 11 — Mirage explores dreamlike visuals, layered typography, and a reflective editorial mood.
                 </p>
+                <a class="issue-cta" href="https://issuu.com/strike_magazine/docs/strike_magazine_athens_issue_11" target="_blank" rel="noopener noreferrer">read the full issue here</a>
             </div>
 
             <div class="project-media media-tall">
