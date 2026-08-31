@@ -4,6 +4,7 @@ const projects = {
     cortona: `
         <div class="project-layout">
             <div class="project-copy">
+                <p class="project-kicker">Brand Identity</p>
                 <h1>Cortona<br>Branding</h1>
                 <p>
                     While abroad, we developed a visual identity for the city of Cortona that felt rooted in place, memory, and community.
@@ -17,53 +18,127 @@ const projects = {
     `,
 
     personal: `
-        <div class="project-layout">
-            <div class="project-copy">
-                <h1>Personal<br>Projects</h1>
-                <p>
-                    Personal projects outside of school explore experimentation, storytelling, and visual ideas that grow beyond the classroom.
-                </p>
+        <div class="print-design-section internship-block">
+            <div class="print-design-header">
+                <p class="eyebrow">Personal Project</p>
+                <h2>Catan Game Design</h2>
             </div>
 
-            <div class="project-media media-tall">
-                <img src="Images/catangameshot.jpeg" alt="Personal Project">
+            <div class="print-design-layout internship-layout">
+                <div class="print-design-copy">
+                    <p class="meta">Game Design</p>
+                    <h3>Catan</h3>
+                    <p>
+                        This personal design exploration reimagines the classic Catan experience through a more tactile, contemporary visual system. The goal was to make the board game feel playful, strategic, and artfully crafted while staying rooted in the playful logic of resource gathering and expansion.
+                    </p>
+                </div>
+
+                <div class="project-media print-feature">
+                    <img src="Images/catangameshot.jpeg" alt="Catan game design">
+                </div>
+            </div>
+
+            <div class="photo-grid poster-grid">
+                <figure class="photo-card">
+                    <img src="Images/charliecard.PNG" alt="Catan design detail 1">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/emmacard.PNG" alt="Catan design detail 2">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/orecard.PNG" alt="Catan design detail 3">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/lizcard.PNG" alt="Catan design detail 4">
+                </figure>
             </div>
         </div>
     `,
 
     "print-design": `
-        <div class="project-layout">
-            <div class="project-copy">
-                <h1>Print Design</h1>
-                <p>
-                    My poster designs and work for various events and organizations explore typography, rhythm, and visual storytelling across a range of formats.
-                </p>
+        <div class="print-design-section">
+            <div class="print-design-header">
+                <p class="eyebrow">Print Design</p>
+                <h2>Mostra</h2>
             </div>
 
-            <div class="project-media media-tall">
-                <img src="Images/mostra final 3.jpg" alt="Poster Design">
+            <div class="print-design-layout">
+                <div class="project-media print-feature">
+                    <img src="Images/mostra final 3.jpg" alt="Mostra poster design">
+                </div>
+
+                <div class="print-design-copy">
+                    <p class="meta">Event Poster</p>
+                    <h3>Mostra</h3>
+                    <p>
+                        A campus event poster built around rhythm, contrast, and movement. The composition balances bold typography with a softer, atmospheric image to create an invitation that feels both energetic and intimate.
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div class="photo-grid poster-grid">
-            <figure class="photo-card">
-                <img src="Images/charliecard.PNG" alt="Poster design 1">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/emmacard.PNG" alt="Poster design 2">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/orecard.PNG" alt="Poster design 3">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/lizcard.PNG" alt="Poster design 4">
-            </figure>
+        <div class="print-design-section">
+            <div class="print-design-header">
+                <p class="eyebrow">Print Design</p>
+                <h2>Moon Poster</h2>
+            </div>
+
+            <div class="print-design-layout">
+                <div class="project-media print-feature">
+                    <img src="Images/moon2.png" alt="Moon poster design">
+                </div>
+
+                <div class="print-design-copy">
+                    <p class="meta">Editorial Poster</p>
+                    <h3>Moon</h3>
+                    <p>
+                        This piece explores mood and atmosphere through a quiet, cinematic palette. The composition emphasizes scale, negative space, and the sense of stillness that makes the message feel contemplative and immersive.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="print-design-section internship-block">
+            <div class="print-design-header">
+                <p class="eyebrow">Print Design</p>
+                <h2>My Internship</h2>
+            </div>
+
+            <div class="print-design-layout internship-layout">
+                <div class="print-design-copy">
+                    <p class="meta">Community Design</p>
+                    <h3>Archway Partnership</h3>
+                    <p>
+                        During my internship, I worked on communication materials focused on civic engagement, local storytelling, and accessible design systems. The goal was to help community-centered campaigns feel clear, welcoming, and visually grounded in the people they served.
+                    </p>
+                </div>
+
+                <div class="project-media print-feature">
+                    <img src="Images/mostra final 3.jpg" alt="Internship poster design">
+                </div>
+            </div>
+
+            <div class="photo-grid poster-grid">
+                <figure class="photo-card">
+                    <img src="Images/charliecard.PNG" alt="Poster design 1">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/emmacard.PNG" alt="Poster design 2">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/orecard.PNG" alt="Poster design 3">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/lizcard.PNG" alt="Poster design 4">
+                </figure>
+            </div>
         </div>
     `,
 
     "fine-art": `
         <div class="project-layout">
             <div class="project-copy">
+                <p class="project-kicker">Photography + Painting</p>
                 <h1>Fine Art</h1>
                 <p>
                     I specialize in watercolor painting, and in photography I focus on capturing nature and the architecture around me.

@@ -225,6 +225,16 @@ h1 {
     margin-bottom: 18px;
 }
 
+.project-kicker,
+.eyebrow,
+.meta {
+    margin: 0 0 10px;
+    color: rgba(0, 0, 0, 0.62);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
 .project-copy p {
     max-width: 480px;
     margin: 0;
@@ -295,6 +305,7 @@ h1 {
 .poster-grid {
     grid-template-columns: repeat(4, minmax(120px, 1fr));
     gap: 16px;
+    margin-top: 26px;
 }
 
 .poster-grid .photo-card {
@@ -314,6 +325,92 @@ h1 {
 .photo-grid--small .wide,
 .poster-grid .wide {
     grid-column: span 2;
+}
+
+.print-design-section {
+    margin-top: 36px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.print-design-section:first-child {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.print-design-header {
+    margin-bottom: 22px;
+}
+
+.eyebrow {
+    margin: 0 0 8px;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.62);
+}
+
+.print-design-header h2 {
+    margin: 0;
+    font-family: "Gunter", sans-serif;
+    font-size: 52px;
+    line-height: 0.92;
+}
+
+.print-design-layout {
+    display: grid;
+    grid-template-columns: minmax(320px, 1.5fr) minmax(220px, 0.7fr);
+    gap: 28px;
+    align-items: center;
+}
+
+.internship-layout {
+    grid-template-columns: minmax(220px, 0.7fr) minmax(320px, 1.5fr);
+}
+
+.print-feature {
+    width: 100%;
+}
+
+.print-feature img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.print-design-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.print-design-copy .meta {
+    margin: 0 0 10px;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.58);
+}
+
+.print-design-copy h3 {
+    margin: 0 0 12px;
+    font-family: "Gunter", sans-serif;
+    font-size: 42px;
+    line-height: 0.96;
+}
+
+.print-design-copy p {
+    margin: 0;
+    max-width: 410px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.internship-block {
+    margin-bottom: 30px;
 }
 
 .fine-art-grid {
