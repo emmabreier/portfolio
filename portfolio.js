@@ -2,7 +2,7 @@ const projectContent = document.getElementById("project-content");
 
 const projects = {
     cortona: `
-        <h1>CORTONA<br>BRANDING</h1>
+        <h1>Cortona<br>Branding</h1>
 
         <p>
             Your Cortona Branding project description goes here.
@@ -12,7 +12,7 @@ const projects = {
     `,
 
     personal: `
-        <h1>PERSONAL<br>PROJECTS</h1>
+        <h1>Personal<br>Projects</h1>
 
         <p>
             Your personal projects go here.
@@ -22,7 +22,7 @@ const projects = {
     `,
 
     posters: `
-        <h1>POSTERS</h1>
+        <h1>Posters</h1>
 
         <p>
             Your poster work goes here.
@@ -32,7 +32,7 @@ const projects = {
     `,
 
     internship: `
-        <h1>INTERNSHIP</h1>
+        <h1>Internship</h1>
 
         <p>
             Your internship experience and work goes here.
@@ -42,7 +42,7 @@ const projects = {
     `,
 
     "fine-art": `
-        <h1>FINE ART</h1>
+        <h1>Fine Art</h1>
 
         <p>
             Your fine art work goes here.

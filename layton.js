@@ -2,7 +2,7 @@ const projectContent = document.getElementById("project-content");
 
 const projects = {
     "about-layton": `
-        <h1>LAYTON</h1>
+        <h1>Layton Design Studio</h1>
 
         <p>
             This is where your About Layton project description goes.
@@ -12,7 +12,7 @@ const projects = {
     `,
 
     "BMW mean machine": `
-        <h1>BMW MEAN<br>MACHINE</h1>
+        <h1>BMW Mean<br>Machine</h1>
 
         <p>
             Your BMW project description goes here.
@@ -22,7 +22,7 @@ const projects = {
     `,
 
     "UGA Motorsports": `
-        <h1>UGA MOTORSPORTS</h1>
+        <h1>UGA Motorsports</h1>
 
         <p>
             Your UGA Motorsports project description goes here.

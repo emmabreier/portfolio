@@ -1,13 +1,23 @@
 * {
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: 'Gunter';
+    src: url('fonts/Gunter.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 html,
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+    font-family: 'Gunter', Arial, Helvetica, sans-serif;
+}
+
 .index-page p {
     max-width: thin;
     font-size: 25px;
@@ -111,9 +121,9 @@ body {
 
 .project-content h1 {
     margin: 0 0 20px;
-    letter-spacing: -2px;
+    letter-spacing: 0;
     font-size: 50px;
-    line-height: .90;
+    line-height: 1.1;
 }
 
 
@@ -148,9 +158,9 @@ body.about-page .top-nav {
 }
 
 .about-page-content h1 {
-    font-size: 120px;
-    letter-spacing: -6px;
-    line-height: .8;
+    font-size: 100px;
+    letter-spacing: 0px;
+    line-height: 1.1;
 }
 
 .about-page-content p {

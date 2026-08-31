@@ -2,7 +2,7 @@ const projectContent = document.getElementById("project-content");
 
 const projects = {
     "about-strike": `
-        <h1>STRIKE</h1>
+        <h1>Strike</h1>
 
         <p>
             This is where your About Strike project description goes.
@@ -12,10 +12,10 @@ const projects = {
     `,
 
     "issue-11": `
-        <h1>ISSUE 11</h1>
+        <h1>Issue 11</h1>
 
         <p>
-            Your ISSUE 11 project description goes here.
+            Your Issue 11 project description goes here.
         </p>
 
         <img src="images/cortona/cortona-1.jpg" alt="Cortona Branding">
