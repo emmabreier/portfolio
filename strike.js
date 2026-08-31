@@ -26,8 +26,12 @@ const projects = {
             </div>
 
             <div class="project-media media-tall">
-                <img src="images/cortona/cortona-1.jpg" alt="Strike Issue 11">
+                <img src="images/issue11cover.png" alt="Strike Issue 11">
             </div>
+            </div class="photo-grid">
+            <figure class="photo-card wide">
+                <img src="Images/strike11titlepage.png" alt="Strike Issue 11">
+            </figure>
         </div>
     `,
 
