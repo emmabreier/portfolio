@@ -4,12 +4,14 @@ const projects = {
     "about-layton": `
         <div class="project-layout">
             <div class="project-copy">
-                <h1>Layton<br>Design<br>Studio</h1>
+                <h1>Layton Design Studio</h1>
                 <p>
                     Layton design studio is a collaborative branding and identity practice focused on clarity, character, and strategic visual storytelling.
                 </p>
             </div>
-
+            <div class="project-media media-tall">
+                <img src="Images/finallaytonpages-04.png" alt="Layton About">
+            </div>
         </div>
     `,
 
@@ -21,7 +23,13 @@ const projects = {
                     UGA collaborated with BMW to create a mean machine concept rooted in performance, precision, and motorsport energy.
                 </p>
             </div>
-            
+            <div class="project-media media-tall">
+                <img src="Images/finallaytonpages-01.png" alt="BMW Mean Machine">
+            </div>
+        </div>
+
+        <div class="project-media media-wide bmw-banner">
+            <img src="Images/mmbanner10.png" alt="BMW Mean Machine">
         </div>
     `,
 
@@ -35,14 +43,17 @@ const projects = {
             </div>
 
             <div class="project-media media-tall">
-                <img src="Images/unveil.jpg" alt="UGA Motorsports">
+                <img src="Images/finallaytonpages-02.png" alt="UGA Motorsports">
             </div>
         </div>
 
         <div class="photo-grid">
-            <figure class="photo-card square">
-                <img src="Images/motorsportcover.jpeg" alt="UGA Motorsports cover">
-            </figure>
+         <div class="project-media media-tall">
+                <img src="Images/callpolice.jpeg" alt="UGA Motorsports">
+            </div>
+             <div class="project-media media-tall">
+                <img src="Images/unveil.jpg" alt="UGA Motorsports">
+            </div>
         </div>
     `
 };

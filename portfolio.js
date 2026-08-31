@@ -54,8 +54,6 @@ const projects = {
                     My internship work at Archway Partnership focused on strategic communication, civic design, and creating useful visual systems for community-centered work.
                 </p>
             </div>
-
-        
         </div>
     `,
 
@@ -69,11 +67,11 @@ const projects = {
             </div>
 
             <div class="project-media media-tall">
-                <img src="Images/closeuppainting.jpeg" alt="Featured fine art painting">
+                <img src="Images/closeuppaintingme.jpeg" alt="Featured fine art painting">
             </div>
         </div>
 
-        <div class="photo-grid">
+        <div class="photo-grid fine-art-grid">
             <figure class="photo-card tall">
                 <img src="Images/scoutpainting.jpeg" alt="Fine art photo 2">
             </figure>
@@ -83,11 +81,11 @@ const projects = {
             <figure class="photo-card tall">
                 <img src="Images/venicesign.JPG" alt="Fine art photo 3">
             </figure>
-            <figure class="photo-card wide">
-                <img src="Images/romevr.JPG" alt="Fine art photo 4">
-            </figure>
             <figure class="photo-card square">
                 <img src="Images/paw.JPEG" alt="Fine art photo 3">
+            </figure>
+            <figure class="photo-card square">
+                <img src="Images/myselfinpainting.jpeg" alt="Fine art photo 3">
             </figure>
             <figure class="photo-card tall">
                 <img src="Images/vaticanwindow.JPG" alt="Fine art photo 1">
@@ -98,9 +96,17 @@ const projects = {
             <figure class="photo-card tall">
                 <img src="Images/oxfordwindow.JPG" alt="Fine art photo 6">
             </figure>
+            <figure class="photo-card square">
+                <img src="Images/flowerpen.jpeg" alt="Fine art photo 7">
+            </figure>
+            <figure class="photo-card wide">
+                <img src="Images/romevr.JPG" alt="Fine art photo 4">
+            </figure>
+            <figure class="photo-card wide">
+                <img src="Images/horizontalwomen.JPG" alt="Fine art photo 5">
+            </figure>
         </div>
-    `,
-    
+    `
 };
 
 function setActiveProject(projectKey) {

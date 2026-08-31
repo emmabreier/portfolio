@@ -11,7 +11,7 @@ const projects = {
             </div>
 
             <div class="project-media media-tall">
-                <img src="Images/readingstrike.JPG" alt="Strike About">
+                <img src="Images/meatstrike.jpeg" alt="Strike About">
             </div>
         </div>
     `,
@@ -30,9 +30,20 @@ const projects = {
             </div>
         </div>
 
-        <div class="photo-grid">
-            <figure class="photo-card wide">
-                <img src="Images/issue11titlepage.png" alt="Strike Issue 11 spread">
+        <div class="photo-grid issue11-grid">
+            <figure class="photo-card tall issue11-collage">
+                <img src="Images/shortersidecollage.jpg" alt="Strike Issue 11 spread">
+            </figure>
+
+            <figure class="photo-card text-card issue11-copy">
+                <div class="text-card-inner">
+                    <h3>Issue 11</h3>
+                    <p>Mirage explores dreamlike visuals, layered typography, and a reflective editorial mood.</p>
+                </div>
+            </figure>
+
+            <figure class="photo-card issue11-titlepage">
+                <img src="Images/issue11titlepage.png" alt="Strike Issue 11 title page">
             </figure>
         </div>
     `,
