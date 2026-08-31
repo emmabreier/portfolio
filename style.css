@@ -230,21 +230,25 @@ body.about-page .about-page-content h1 {
 .box-1 {
     top: 0;
     left: 0%;
+    z-index: 4;
 }
 
 .box-2 {
     top: 200px;
     left: 25%;
+    z-index: 3;
 }
 
 .box-3 {
     top: -20px;
     left: 47%;
+    z-index: 2;
 }
 
 .box-4 {
     top: 250px;
-    left: 70%;
+    left: 68%;
+    z-index: 1;
 }
 .box-1:hover {
     transform: translate(-8px, -15px) rotate(-4deg);
