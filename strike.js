@@ -11,7 +11,7 @@ const projects = {
             </div>
 
             <div class="project-media media-tall">
-                <img src="Images/meatstrike.jpeg" alt="Strike About">
+                <img src="Images/meatstrike.JPEG" alt="Strike About">
             </div>
         </div>
     `,
