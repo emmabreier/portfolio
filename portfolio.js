@@ -31,10 +31,10 @@ const projects = {
         </div>
     `,
 
-    posters: `
+    "print-design": `
         <div class="project-layout">
             <div class="project-copy">
-                <h1>Posters</h1>
+                <h1>Print Design</h1>
                 <p>
                     My poster designs and work for various events and organizations explore typography, rhythm, and visual storytelling across a range of formats.
                 </p>
@@ -44,16 +44,20 @@ const projects = {
                 <img src="Images/mostra final 3.jpg" alt="Poster Design">
             </div>
         </div>
-    `,
 
-    internship: `
-        <div class="project-layout">
-            <div class="project-copy">
-                <h1>Internship</h1>
-                <p>
-                    My internship work at Archway Partnership focused on strategic communication, civic design, and creating useful visual systems for community-centered work.
-                </p>
-            </div>
+        <div class="photo-grid poster-grid">
+            <figure class="photo-card">
+                <img src="Images/charliecard.PNG" alt="Poster design 1">
+            </figure>
+            <figure class="photo-card">
+                <img src="Images/emmacard.PNG" alt="Poster design 2">
+            </figure>
+            <figure class="photo-card">
+                <img src="Images/orecard.PNG" alt="Poster design 3">
+            </figure>
+            <figure class="photo-card">
+                <img src="Images/lizcard.PNG" alt="Poster design 4">
+            </figure>
         </div>
     `,
 

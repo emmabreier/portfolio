@@ -272,11 +272,48 @@ h1 {
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, max-content));
     gap: 26px;
     margin-top: 36px;
     align-items: start;
     justify-content: start;
+}
+
+.photo-grid--main {
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+}
+
+.photo-grid--medium {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    grid-auto-flow: dense;
+}
+
+.photo-grid--small {
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    gap: 16px;
+}
+
+.poster-grid {
+    grid-template-columns: repeat(4, minmax(120px, 1fr));
+    gap: 16px;
+}
+
+.poster-grid .photo-card {
+    width: 100%;
+    max-width: 100%;
+    opacity: 0.95;
+}
+
+.poster-grid .photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.photo-grid--main .wide,
+.photo-grid--medium .wide,
+.photo-grid--small .wide,
+.poster-grid .wide {
+    grid-column: span 2;
 }
 
 .fine-art-grid {
