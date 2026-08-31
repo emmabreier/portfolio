@@ -11,7 +11,7 @@ const projects = {
             </div>
 
             <div class="project-media media-tall">
-                <img src="images/mockbrandingbag.png" alt="Cortona Branding">
+                <img src="Images/mockbrandingbag.png" alt="Cortona Branding">
             </div>
         </div>
     `,
@@ -26,7 +26,7 @@ const projects = {
             </div>
 
             <div class="project-media media-tall">
-                <img src="images/catangameshot.jpeg" alt="Personal Project">
+                <img src="Images/catangameshot.jpeg" alt="Personal Project">
             </div>
         </div>
     `,
@@ -41,7 +41,7 @@ const projects = {
             </div>
 
             <div class="project-media media-tall">
-                <img src="images/mostra final 3.jpg" alt="Poster Design">
+                <img src="Images/mostra final 3.jpg" alt="Poster Design">
             </div>
         </div>
     `,
@@ -55,9 +55,7 @@ const projects = {
                 </p>
             </div>
 
-            <div class="project-media media-tall">
-                <img src="images/internship/internship-1.jpg" alt="Internship Work">
-            </div>
+        
         </div>
     `,
 

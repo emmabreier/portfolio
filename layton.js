@@ -10,9 +10,6 @@ const projects = {
                 </p>
             </div>
 
-            <div class="project-media media-tall">
-                <img src="images/cortona/cortona-1.jpg" alt="Layton About">
-            </div>
         </div>
     `,
 
@@ -24,10 +21,7 @@ const projects = {
                     UGA collaborated with BMW to create a mean machine concept rooted in performance, precision, and motorsport energy.
                 </p>
             </div>
-
-            <div class="project-media media-tall">
-                <img src="images/cortona/cortona-1.jpg" alt="BMW Mean Machine">
-            </div>
+            
         </div>
     `,
 
@@ -41,13 +35,13 @@ const projects = {
             </div>
 
             <div class="project-media media-tall">
-                <img src="images/unveil.jpg" alt="UGA Motorsports">
+                <img src="Images/unveil.jpg" alt="UGA Motorsports">
             </div>
         </div>
 
         <div class="photo-grid">
             <figure class="photo-card square">
-                <img src="images/motorsportcover.jpeg" alt="UGA Motorsports cover">
+                <img src="Images/motorsportcover.jpeg" alt="UGA Motorsports cover">
             </figure>
         </div>
     `

@@ -11,7 +11,7 @@ const projects = {
             </div>
 
             <div class="project-media media-tall">
-                <img src="images/cortona/cortona-1.jpg" alt="Strike About">
+                <img src="Images/readingstrike.JPG" alt="Strike About">
             </div>
         </div>
     `,
@@ -26,11 +26,13 @@ const projects = {
             </div>
 
             <div class="project-media media-tall">
-                <img src="images/issue11cover.png" alt="Strike Issue 11">
+                <img src="Images/issue11cover.png" alt="Strike Issue 11">
             </div>
-            </div class="photo-grid">
+        </div>
+
+        <div class="photo-grid">
             <figure class="photo-card wide">
-                <img src="Images/strike11titlepage.png" alt="Strike Issue 11">
+                <img src="Images/issue11titlepage.png" alt="Strike Issue 11 spread">
             </figure>
         </div>
     `,
@@ -44,9 +46,6 @@ const projects = {
                 </p>
             </div>
 
-            <div class="project-media media-tall">
-                <img src="Images/cortona/cortona-1.jpeg" alt="Strike Issue 12">
-            </div>
         </div>
     `
 };
