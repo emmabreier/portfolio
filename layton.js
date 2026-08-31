@@ -44,6 +44,12 @@ const projects = {
                 <img src="images/unveil.jpg" alt="UGA Motorsports">
             </div>
         </div>
+
+        <div class="photo-grid">
+            <figure class="photo-card square">
+                <img src="images/motorsportcover.jpeg" alt="UGA Motorsports cover">
+            </figure>
+        </div>
     `
 };
 

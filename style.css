@@ -251,11 +251,12 @@ h1 {
 }
 
 .photo-card.wide img {
-    height: 380px;
+    height: 350px;
+    width: 100%;
 }
 
 .photo-card.square img {
-    height: 380px;
+    height: 350px;
 }
 
 

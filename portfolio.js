@@ -86,7 +86,7 @@ const projects = {
                 <img src="Images/venicesign.JPG" alt="Fine art photo 3">
             </figure>
             <figure class="photo-card wide">
-                <img src="Images/horizontalwomen.JPG" alt="Fine art photo 4">
+                <img src="Images/romevr.JPG" alt="Fine art photo 4">
             </figure>
             <figure class="photo-card square">
                 <img src="Images/paw.JPEG" alt="Fine art photo 3">
