@@ -33,7 +33,7 @@ const projects = {
 
         <div class="photo-grid issue11-grid">
             <figure class="photo-card tall issue11-collage">
-                <img src="Images/shortersidecollage.jpg" alt="Strike Issue 11 spread">
+                <img src="Images/behindscenes11.png" alt="Strike Issue 11 spread">
             </figure>
 
             <figure class="photo-card text-card issue11-copy">

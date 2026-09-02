@@ -185,13 +185,21 @@ h1 {
 
 .project-layout {
     display: grid;
-    grid-template-columns: minmax(260px, 0.9fr) minmax(360px, 1.4fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 40px;
     align-items: center;
     width: min(100%, 1040px);
     margin: 0 auto;
     min-height: 560px;
     padding-bottom: 18px;
+}
+
+.project-layout .project-copy {
+    justify-self: start;
+}
+
+.project-layout .project-media {
+    justify-self: start;
 }
 
 .bmw-layout {
@@ -222,6 +230,13 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: min(100%, 470px);
+    padding: 28px 24px;
+    min-height: 260px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-sizing: border-box;
 }
 
 .project-copy h1 {
@@ -308,12 +323,23 @@ h1 {
     margin-top: 24px;
 }
 
+.bmw-banner + .project-layout {
+    margin-top: 56px;
+}
+
 .photo-grid {
     display: grid;
     gap: 26px;
     margin-top: 36px;
     align-items: start;
     justify-content: start;
+}
+
+.project-layout + .photo-grid,
+.photo-grid + .project-layout,
+.print-design-layout + .photo-grid,
+.photo-grid + .print-design-layout {
+    margin-top: 56px;
 }
 
 .photo-grid--main {
@@ -348,6 +374,61 @@ h1 {
     display: block;
 }
 
+.photo-carousel {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 14px;
+    width: min(100%, 1040px);
+    margin: 26px auto 0;
+}
+
+.carousel-viewport {
+    min-width: 0;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 16px;
+    padding: 2px 0 12px;
+    overflow: visible;
+}
+
+.photo-carousel .photo-card {
+    flex: 0 0 calc((100% - 48px) / 4);
+    width: auto;
+    max-width: none;
+}
+
+.photo-carousel .photo-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    color: #000;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.carousel-button:hover,
+.carousel-button:focus-visible {
+    background: #000;
+    color: #fff;
+}
+
 .photo-grid--main .wide,
 .photo-grid--medium .wide,
 .photo-grid--small .wide,
@@ -369,7 +450,12 @@ h1 {
 
 .print-design-header {
     width: min(100%, 1040px);
-    margin: 0 auto 22px;
+    padding-left: 34px;
+    margin: 0 0 40px;
+}
+
+.project-page-header {
+    margin-bottom: 32px;
 }
 
 .eyebrow {
@@ -389,7 +475,7 @@ h1 {
 
 .print-design-layout {
     display: grid;
-    grid-template-columns: minmax(320px, 1.5fr) minmax(220px, 0.7fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 28px;
     align-items: center;
     width: min(100%, 1040px);
@@ -398,15 +484,61 @@ h1 {
     justify-items: center;
 }
 
+.content-pair {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 28px;
+    align-items: center;
+    width: min(100%, 1040px);
+    margin: 0 auto;
+}
+
+.content-pair > .content-type,
+.content-pair > .content-photo {
+    width: 100%;
+    min-width: 0;
+}
+
+.content-pair > .content-type {
+    min-height: 260px;
+    padding: 28px 24px;
+    box-sizing: border-box;
+}
+
+.content-pair + .content-pair {
+    margin-top: 56px;
+}
+
+.print-design-layout .print-feature {
+    justify-self: end;
+}
+
+.print-design-layout .print-design-copy {
+    justify-self: start;
+}
+
 .internship-layout {
-    grid-template-columns: minmax(220px, 0.7fr) minmax(320px, 1.5fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     justify-items: center;
+}
+
+.internship-layout .print-design-copy {
+    justify-self: end;
+}
+
+.internship-layout .print-feature {
+    justify-self: start;
 }
 
 .internship-layout .print-design-copy,
 .internship-layout .project-media {
     width: 100%;
     max-width: 100%;
+}
+
+.internship-layout .print-design-copy {
+    width: min(100%, 470px);
+    max-width: 470px;
 }
 
 .print-design-copy {
@@ -416,6 +548,12 @@ h1 {
     width: min(100%, 470px);
     margin-left: auto;
     margin-right: auto;
+    padding: 28px 24px;
+    min-height: 260px;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-sizing: border-box;
 }
 
 .print-feature {
@@ -467,35 +605,26 @@ h1 {
 }
 
 .fine-art-grid {
-    grid-template-columns: repeat(2, minmax(240px, 1fr));
-    grid-auto-flow: dense;
-    justify-content: stretch;
-    align-items: start;
+    display: block;
+    column-count: 2;
+    column-gap: 26px;
+    width: min(100%, 900px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fine-art-grid .photo-card {
     width: 100%;
     max-width: 100%;
-    align-self: start;
+    margin: 0 0 26px;
+    break-inside: avoid;
 }
 
-.fine-art-grid .photo-card:not(.wide) img {
+.fine-art-grid .photo-card img {
     width: 100%;
     height: auto;
+    max-width: 100%;
     display: block;
-}
-
-.fine-art-grid .photo-card.tall {
-    grid-row: span 2;
-}
-
-.fine-art-grid .photo-card.square {
-    grid-row: span 1;
-}
-
-.fine-art-grid .photo-card.wide {
-    grid-column: span 2;
-    grid-row: span 1;
 }
 
 .photo-card {
@@ -549,15 +678,18 @@ h1 {
     width: 100%;
     min-height: 240px;
     padding: 28px 24px;
-    background: rgba(255, 255, 255, 0.42);
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: transparent;
+    border: none;
+    border-radius: 0;
     box-sizing: border-box;
 }
 
 .issue11-grid {
     display: grid;
-    grid-template-columns: minmax(260px, 1.35fr) minmax(180px, 0.65fr);
-    gap: 18px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 26px;
+    width: min(100%, 1040px);
+    margin: 56px auto 0;
     align-items: start;
 }
 
@@ -584,7 +716,7 @@ h1 {
 .issue11-titlepage {
     grid-column: 1 / -1;
     width: 100%;
-    margin-top: 4px;
+    margin-top: 0;
 }
 
 .issue11-titlepage img {
@@ -737,14 +869,230 @@ body.about-page .about-page-content h1 {
     transform: translate(8px, -12px) rotate(4deg);
 }
 
+@media (min-width: 769px) and (max-width: 1100px) {
+    .top-nav {
+        gap: 24px;
+    }
+
+    .top-nav a {
+        font-size: 15px;
+    }
+
+    .portfolio-page,
+    .layton-page,
+    .strike-page {
+        flex-direction: column;
+        gap: 24px;
+        padding: 96px 32px 48px;
+    }
+
+    .portfolio-nav,
+    .layton-nav,
+    .strike-nav {
+        order: -1;
+        flex: 0 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 12px 24px;
+        width: 100%;
+        padding: 14px 18px;
+    }
+
+    .portfolio-nav a,
+    .layton-nav a,
+    .strike-nav a {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .project-content {
+        max-width: none;
+        min-height: auto;
+        padding: 28px 30px 44px;
+    }
+
+    .project-layout,
+    .print-design-layout,
+    .content-pair,
+    .issue11-grid {
+        width: 100%;
+        gap: 28px;
+    }
+
+    .project-layout {
+        min-height: 480px;
+    }
+
+    .project-layout .project-copy,
+    .print-design-copy,
+    .content-pair > .content-type {
+        width: 100%;
+        max-width: 390px;
+        padding: 24px 20px;
+    }
+
+    .project-content h1 {
+        font-size: 44px;
+    }
+
+    .print-design-header {
+        width: 100%;
+        padding-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .print-design-header h2 {
+        font-size: 46px;
+    }
+
+    .project-media img,
+    .print-feature img {
+        max-width: 100%;
+        height: auto;
+        max-height: 560px;
+    }
+
+    .media-tall img {
+        height: 560px;
+    }
+
+    .photo-grid {
+        gap: 20px;
+    }
+
+    .poster-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .fine-art-grid {
+        width: 100%;
+        column-gap: 20px;
+    }
+
+    .floating-boxes {
+        position: relative;
+        right: auto;
+        top: auto;
+        width: min(100%, 620px);
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        margin: 36px auto 20px;
+    }
+
+    .floating-box {
+        position: relative;
+        top: auto !important;
+        left: auto !important;
+        width: 100%;
+        height: clamp(190px, 28vw, 260px);
+        border-radius: 18px;
+    }
+
+    .floating-box:nth-child(2),
+    .floating-box:nth-child(4) {
+        transform: translateY(28px);
+    }
+}
+
 @media (max-width: 768px) {
+    .portfolio-page,
+    .layton-page,
+    .strike-page {
+        flex-direction: column;
+        gap: 24px;
+        padding: 96px 20px 40px;
+    }
+
+    .portfolio-nav,
+    .layton-nav,
+    .strike-nav {
+        order: -1;
+        flex: 0 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 12px 20px;
+        width: 100%;
+        padding: 14px 16px;
+    }
+
+    .portfolio-nav a,
+    .layton-nav a,
+    .strike-nav a {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .poster-grid,
+    .photo-grid--small {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .project-layout,
+    .print-design-layout,
+    .content-pair,
+    .issue11-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 28px;
+    }
+
+    .project-layout {
+        min-height: auto;
+        padding-bottom: 0;
+    }
+
+    .project-layout .project-copy,
+    .project-layout .project-media,
+    .print-design-layout .print-design-copy,
+    .print-design-layout .print-feature,
+    .internship-layout .print-design-copy,
+    .internship-layout .print-feature {
+        width: 100%;
+        max-width: none;
+        justify-self: stretch;
+    }
+
+    .project-copy,
+    .print-design-copy,
+    .content-pair > .content-type {
+        min-height: auto;
+        padding: 24px 0;
+    }
+
+    .print-design-header {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 28px;
+    }
+
+    .project-media img,
+    .print-feature img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .media-tall img {
+        height: auto;
+    }
+
+    .issue11-grid {
+        margin-top: 36px;
+    }
+
     .about-page-content {
         padding: 90px 24px 40px;
     }
 
     .about-page-content h1 {
-        font-size: 72px;
-        letter-spacing: -4px;
+        font-size: clamp(40px, 11vw, 58px);
+        letter-spacing: 0;
         line-height: 0.82;
     }
 
@@ -761,7 +1109,7 @@ body.about-page .about-page-content h1 {
         width: 100%;
         height: auto;
         display: grid;
-        grid-template-columns: repeat(2, minmax(140px, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 16px;
         margin: 30px 0 10px;
     }
@@ -771,8 +1119,13 @@ body.about-page .about-page-content h1 {
         left: auto !important;
         top: auto !important;
         width: 100%;
-        height: 220px;
+        height: clamp(150px, 34vw, 210px);
         border-radius: 18px;
+    }
+
+    .floating-box:nth-child(2),
+    .floating-box:nth-child(4) {
+        transform: translateY(24px);
     }
 
     .box-1:hover,
@@ -795,15 +1148,34 @@ body.about-page .about-page-content h1 {
     }
 
     .about-page-content h1 {
-        font-size: 52px;
-        letter-spacing: -3px;
-    }
-
-    .floating-boxes {
-        grid-template-columns: 1fr;
+        font-size: clamp(36px, 12vw, 48px);
+        letter-spacing: 0;
     }
 
     .floating-box {
-        height: 250px;
+        height: clamp(130px, 38vw, 180px);
+    }
+
+    .photo-carousel {
+        gap: 8px;
+    }
+
+    .carousel-track {
+        gap: 12px;
+    }
+
+    .photo-carousel .photo-card {
+        flex-basis: calc((100% - 12px) / 2);
+    }
+
+    .carousel-button {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .fine-art-grid {
+        column-count: 1;
+        width: 100%;
     }
 }

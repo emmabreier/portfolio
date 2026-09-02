@@ -2,9 +2,13 @@ const projectContent = document.getElementById("project-content");
 
 const projects = {
     "about-layton": `
+        <div class="print-design-header project-page-header">
+            <p class="eyebrow">Layton Studio</p>
+            <h2>Layton Design Studio</h2>
+        </div>
+
         <div class="project-layout">
             <div class="project-copy">
-                <h1>Layton Design Studio</h1>
                 <p>
                     Layton design studio is a collaborative branding and identity practice focused on clarity, character, and strategic visual storytelling.
                 </p>
@@ -16,9 +20,16 @@ const projects = {
     `,
 
     "BMW mean machine": `
+        <div class="print-design-header project-page-header">
+            <p class="eyebrow">Layton Studio</p>
+            <h2>BMW x UGA</h2>
+        </div>
+
+        <div class="project-media media-wide bmw-banner">
+            <img src="Images/mmbanner10.png" alt="BMW Mean Machine">
+        </div>
         <div class="project-layout">
             <div class="project-copy">
-                <h1>BMW Mean<br>Machine</h1>
                 <p>
                     UGA collaborated with BMW to create a mean machine concept rooted in performance, precision, and motorsport energy.
                 </p>
@@ -27,16 +38,16 @@ const projects = {
                 <img src="Images/finallaytonpages-01.png" alt="BMW Mean Machine">
             </div>
         </div>
-
-        <div class="project-media media-wide bmw-banner">
-            <img src="Images/mmbanner10.png" alt="BMW Mean Machine">
-        </div>
     `,
 
     "UGA Motorsports": `
+        <div class="print-design-header project-page-header">
+            <p class="eyebrow">Layton Studio</p>
+            <h2>UGA Motorsports</h2>
+        </div>
+
         <div class="project-layout">
             <div class="project-copy">
-                <h1>UGA Motorsports</h1>
                 <p>
                     We worked with UGA College of Engineering to create a new brand system for UGA Motorsports that felt bold, technical, and unmistakably athletic.
                 </p>

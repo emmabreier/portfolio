@@ -7,8 +7,8 @@ const projects = {
                 <p class="project-kicker">Brand Identity</p>
                 <h1>Cortona<br>Branding</h1>
                 <p>
-                    While abroad, we developed a visual identity for the city of Cortona that felt rooted in place, memory, and community.
-                </p>
+                While abroad in Cortona, Italy, I created a brand identity for the town.
+          </p>
             </div>
 
             <div class="project-media media-tall">
@@ -21,7 +21,7 @@ const projects = {
         <div class="print-design-section internship-block">
             <div class="print-design-header">
                 <p class="eyebrow">Personal Project</p>
-                <h2>Catan Game Design</h2>
+                <h2>Catan Game <br>Design</h2>
             </div>
 
             <div class="print-design-layout internship-layout">
@@ -38,19 +38,34 @@ const projects = {
                 </div>
             </div>
 
-            <div class="photo-grid poster-grid">
-                <figure class="photo-card">
-                    <img src="Images/charliecard.PNG" alt="Catan design detail 1">
-                </figure>
-                <figure class="photo-card">
-                    <img src="Images/emmacard.PNG" alt="Catan design detail 2">
-                </figure>
-                <figure class="photo-card">
-                    <img src="Images/orecard.PNG" alt="Catan design detail 3">
-                </figure>
-                <figure class="photo-card">
-                    <img src="Images/lizcard.PNG" alt="Catan design detail 4">
-                </figure>
+            <div class="photo-carousel" aria-label="Catan project images">
+                <button class="carousel-button carousel-button-prev" type="button" aria-label="Previous Catan image">&lt;</button>
+                <div class="carousel-viewport">
+                    <div class="carousel-track">
+                        <figure class="photo-card">
+                            <img src="Images/charliecatan.PNG" alt="Catan design detail 1">
+                        </figure>
+                        <figure class="photo-card">
+                            <img src="Images/dadcatan.PNG" alt="Catan design detail 2">
+                        </figure>
+                        <figure class="photo-card">
+                            <img src="Images/orecard.PNG" alt="Catan design detail 3">
+                        </figure>
+                        <figure class="photo-card">
+                            <img src="Images/charlie2card.PNG" alt="Catan design detail 4">
+                        </figure>
+                        <figure class="photo-card">
+                            <img src="Images/oscarcard.PNG" alt="Catan design detail 5">
+                        </figure>
+                        <figure class="photo-card">
+                            <img src="Images/emmacard.PNG" alt="Catan design detail 6">
+                        </figure>
+                        <figure class="photo-card">
+                            <img src="Images/lizcard.PNG" alt="Catan game design detail 7">
+                        </figure>
+                    </div>
+                </div>
+                <button class="carousel-button carousel-button-next" type="button" aria-label="Next Catan image">&gt;</button>
             </div>
         </div>
     `,
@@ -62,16 +77,18 @@ const projects = {
                 <h2>Mostra</h2>
             </div>
 
-            <div class="print-design-layout">
-                <div class="project-media print-feature">
+            <div class="content-pair print-design-layout">
+                <div class="content-photo project-media print-feature">
                     <img src="Images/mostra final 3.jpg" alt="Mostra poster design">
                 </div>
 
-                <div class="print-design-copy">
+                <div class="content-type print-design-copy">
                     <p class="meta">Event Poster</p>
                     <h3>Mostra</h3>
                     <p>
-                        A campus event poster built around rhythm, contrast, and movement. The composition balances bold typography with a softer, atmospheric image to create an invitation that feels both energetic and intimate.
+                    While abroad in Cortona, Italy, students on the program host an art show for the Cortona locals to see what we created and experienced during our semester there. <br>
+                    <br>
+                    I created a poster advertising the show, or "mostra" in italian, that was inspired by the architechture and landscape that makes Cortona so famous: its hills. The typography is stacked, going with the sharp angles and steepness of the town, and the photo was taken myself while abroad. 
                     </p>
                 </div>
             </div>
@@ -83,16 +100,16 @@ const projects = {
                 <h2>Dodd Centennial</h2>
             </div>
 
-            <div class="print-design-layout">
-                <div class="project-media print-feature">
+            <div class="content-pair print-design-layout">
+                <div class="content-photo project-media print-feature">
                     <img src="Images/moon2.png" alt="Moon poster design">
                 </div>
 
-                <div class="print-design-copy">
+                <div class="content-type print-design-copy">
                     <p class="meta">Editorial Poster</p>
-                    <h3>Moon</h3>
+                    <h3>1237 Lunations</h3>
                     <p>
-                        This piece explores mood and atmosphere through a quiet, cinematic palette. The composition emphasizes scale, negative space, and the sense of stillness that makes the message feel contemplative and immersive.
+                    This poster was apart of a series of posters for the Lamar Dodd, celebrating the 100th anniversary of the Dodd School of Art. Each student was assigned a letter, and when placed together, said "celebrate the centennial." I was assigned the letter "C", and I created a poster inspired by the amount of times the moon has its phase in 100 years. 
                     </p>
                 </div>
             </div>
@@ -103,46 +120,59 @@ const projects = {
                 <p class="eyebrow">Print Design</p>
                 <h2>UGA Archway <br>Internship</h2>
             </div>
-             <div class="print-design-layout">
-                <div class="project-media print-feature">
-                    <img src="Images/moon2.png" alt="Moon poster design">
+                 <div class="content-pair print-design-layout">
+                     <div class="content-photo project-media print-feature">
+                    <img src="Images/internposter4.png" alt="Moon poster design">
                 </div>
 
-                <div class="print-design-copy">
+                <div class="content-type print-design-copy">
                     <p class="meta">Editorial Poster</p>
-                    <h3>Moon</h3>
+                    <h3>My Role</h3>
                     <p>
-                        This piece explores mood and atmosphere through a quiet, cinematic palette. The composition emphasizes scale, negative space, and the sense of stillness that makes the message feel contemplative and immersive.
+                        UGA Archway Partnership is an organizaton that organizes and carries out community events helping neghboring counties around Athens, GA. As an intern at UGA Archway Partnership, I work on a variety of print and digita design that gets distrubuted to the public and to Archway's partners. I work on posters, data sheets, and brochures for county and community events. 
                     </p>
                 </div>
             </div>
 
-            <div class="print-design-layout internship-layout">
-                <div class="print-design-copy">
+                 <div class="photo-grid poster-grid">
+                <figure class="photo-card">
+                    <img src="Images/Internposter1.png" alt="Poster design 1">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/Internposter2.png" alt="Poster design 2">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/Internposter5.png" alt="Poster design 3">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/Internmedicaltour.png" alt="Poster design 4">
+                </figure>
+            </div>
+    <div class="content-pair print-design-layout internship-layout">
+                <div class="content-type print-design-copy">
                     <p class="meta">Community Design</p>
                     <h3>UGA Medical Data Packets</h3>
                     <p>
                         During my internship, I created a series of data packets for UGA Medical School and their new Med tour. I created 7 packets for each of the counties the students and faculty visited.
                     </p>
                 </div>
-
-                <div class="project-media print-feature">
-                    <img src="Images/mostra final 3.jpg" alt="Internship poster design">
+                <div class="content-photo project-media print-feature">
+                    <img src="Images/Interndata1.png" alt="Internship poster design">
                 </div>
             </div>
 
-            <div class="photo-grid poster-grid">
+            <div class="photo-grid poster-grid internship-data-grid">
                 <figure class="photo-card">
-                    <img src="Images/charliecard.PNG" alt="Poster design 1">
+                    <img src="Images/Interndatatable.png" alt="Poster design 2">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/emmacard.PNG" alt="Poster design 2">
+                    <img src="Images/Interndata2.png" alt="Poster design 3">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/orecard.PNG" alt="Poster design 3">
+                    <img src="Images/Interndata4.png" alt="Poster design 4">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/lizcard.PNG" alt="Poster design 4">
+                    <img src="Images/Interndata6.png" alt="Poster design 1">
                 </figure>
             </div>
         </div>
@@ -168,31 +198,34 @@ const projects = {
                 <img src="Images/scoutpainting.jpeg" alt="Fine art photo 2">
             </figure>
             <figure class="photo-card tall">
-                <img src="Images/watercolorflower.jpeg" alt="Fine art photo 4">
+                <img src="Images/emmawatstop.jpg" alt="Fine art photo 3">
+            </figure>
+            <figure class="photo-card tall">
+                <img src="Images/cortonatop.JPG" alt="Fine art photo 5">
+            </figure>
+               <figure class="photo-card square">
+                <img src="Images/paw.JPEG" alt="Fine art photo 3">
+            </figure>
+             <figure class="photo-card wide">
+                <img src="Images/romevr.JPG" alt="Fine art photo 4">
             </figure>
             <figure class="photo-card tall">
                 <img src="Images/venicesign.JPG" alt="Fine art photo 3">
             </figure>
-            <figure class="photo-card square">
-                <img src="Images/paw.JPEG" alt="Fine art photo 3">
+            <figure class="photo-card tall">
+                <img src="Images/watercolorflower.jpeg" alt="Fine art photo 4">
+            </figure>
+             <figure class="photo-card tall">
+                <img src="Images/vaticanwindow.JPG" alt="Fine art photo 1">
             </figure>
             <figure class="photo-card square">
                 <img src="Images/myselfinpainting.jpeg" alt="Fine art photo 3">
-            </figure>
-            <figure class="photo-card tall">
-                <img src="Images/vaticanwindow.JPG" alt="Fine art photo 1">
             </figure>
             <figure class="photo-card tall">
                 <img src="Images/rubyincortona.JPG" alt="Fine art photo 5">
             </figure>
             <figure class="photo-card tall">
                 <img src="Images/oxfordwindow.JPG" alt="Fine art photo 6">
-            </figure>
-            <figure class="photo-card square">
-                <img src="Images/flowerpen.jpeg" alt="Fine art photo 7">
-            </figure>
-            <figure class="photo-card wide">
-                <img src="Images/romevr.JPG" alt="Fine art photo 4">
             </figure>
             <figure class="photo-card wide">
                 <img src="Images/horizontalwomen.JPG" alt="Fine art photo 5">
@@ -206,6 +239,7 @@ function setActiveProject(projectKey) {
 
     if (projectContent && projectHtml) {
         projectContent.innerHTML = projectHtml;
+        setupCarousel();
     }
 
     document.querySelectorAll(".portfolio-nav a")
@@ -217,6 +251,33 @@ function setActiveProject(projectKey) {
     }
 }
 
+function setupCarousel() {
+    const carousel = projectContent.querySelector(".photo-carousel");
+
+    if (!carousel) {
+        return;
+    }
+
+    const viewport = carousel.querySelector(".carousel-viewport");
+    const previousButton = carousel.querySelector(".carousel-button-prev");
+    const nextButton = carousel.querySelector(".carousel-button-next");
+    const firstCard = carousel.querySelector(".photo-card");
+
+    if (!viewport || !previousButton || !nextButton || !firstCard) {
+        return;
+    }
+
+    const getScrollDistance = () => firstCard.getBoundingClientRect().width + 16;
+
+    previousButton.addEventListener("click", () => {
+        viewport.scrollBy({ left: -getScrollDistance(), behavior: "smooth" });
+    });
+
+    nextButton.addEventListener("click", () => {
+        viewport.scrollBy({ left: getScrollDistance(), behavior: "smooth" });
+    });
+}
+
 if (projectContent) {
     document.querySelectorAll(".portfolio-nav a").forEach(link => {
         link.addEventListener("click", function(event) {
@@ -225,5 +286,5 @@ if (projectContent) {
         });
     });
 
-    setActiveProject("cortona");
+    setActiveProject("print-design");
 }
