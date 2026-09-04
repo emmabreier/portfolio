@@ -68,6 +68,48 @@ const projects = {
                 <button class="carousel-button carousel-button-next" type="button" aria-label="Next Catan image">&gt;</button>
             </div>
         </div>
+
+        <div class="print-design-section">
+            <div class="print-design-header">
+                <p class="eyebrow">Personal Project</p>
+                <h2>Cortona Zine</h2>
+            </div>
+
+            <div class="content-pair print-design-layout">
+                <div class="content-type print-design-copy">
+                    <p class="meta">Editorial Design</p>
+                    <h3>Cortona Zine</h3>
+                    <p>
+                        This zine documents the architecture, landscape, and visual details I collected while studying abroad in Cortona, Italy.
+                    </p>
+                </div>
+
+                <div class="content-photo project-media print-feature">
+                    <img src="Images/zine7title.jpeg" alt="Cortona zine title page">
+                </div>
+            </div>
+
+            <div class="photo-grid fine-art-grid cortona-zine-grid">
+                <figure class="photo-card">
+                    <img src="Images/zine5owl.jpeg" alt="Cortona zine street page">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/zine2.jpeg" alt="Cortona zine landscape page">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/zine3bird.png" alt="Cortona zine flower illustration">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/zine4well.jpeg" alt="Cortona zine floral print">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/zine1.jpeg" alt="Cortona zine watercolor page">
+                </figure>
+                <figure class="photo-card">
+                    <img src="Images/zine6fall.jpeg" alt="Cortona zine painted page">
+                </figure>
+            </div>
+        </div>
     `,
 
     "print-design": `
@@ -176,6 +218,7 @@ const projects = {
                 </figure>
             </div>
         </div>
+
     `,
 
     "fine-art": `

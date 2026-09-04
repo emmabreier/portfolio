@@ -1,6 +1,24 @@
 * {
     box-sizing: border-box;
 }
+
+/* =========================================================
+    CONTENTS
+    1. Fonts and global defaults
+    2. Shared navigation
+    3. Project page shell and text
+    4. Project layouts and media
+    5. Photo grids and carousel
+    6. Print design and internship sections
+    7. Fine art and Issue 11 galleries
+    8. About page
+    9. Responsive layouts
+    ========================================================= */
+
+/* =========================================================
+    1. FONTS AND GLOBAL DEFAULTS
+    ========================================================= */
+
 @font-face {
     font-family: 'Gunter';
     src: url('fonts/Gunter.woff2') format('woff2');
@@ -30,8 +48,6 @@ body {
 }
 
 
-/* MY FONT SETTINGS */
-
 h1 {
     font-family: "Gunter", sans-serif;
 }
@@ -45,7 +61,9 @@ h1 {
 
 }
 
-/* MY TOP NAVIGATION INFORMATION */
+/* =========================================================
+    2. SHARED NAVIGATION
+    ========================================================= */
 
 .top-nav {
     position: fixed;
@@ -133,7 +151,7 @@ h1 {
 }
 
 
-/* MY SIDE NAVIGATION */
+/* Project page side navigation */
 
 .portfolio-nav a:first-child,
 .layton-nav a:first-child,
@@ -144,7 +162,9 @@ h1 {
 }
 
 
-/* PROJECT CONTENT BOX AND TYPE SETTINGS */
+/* =========================================================
+    3. PROJECT PAGE SHELL AND TEXT
+    ========================================================= */
 
 .project-content {
     flex: 1 1 auto;
@@ -176,7 +196,9 @@ h1 {
     line-height: 1.4;
 }
 
-/*MY IMAGE GRIDS*/
+/* =========================================================
+    4. PROJECT LAYOUTS AND MEDIA
+    ========================================================= */
 
 .project-content img {
     max-width: 465px;
@@ -260,6 +282,7 @@ h1 {
     line-height: 1.5;
 }
 
+/* Project call-to-action */
 .issue-cta {
     display: inline-flex;
     align-items: center;
@@ -285,6 +308,7 @@ h1 {
     transform: translateY(-1px);
 }
 
+/* Project media */
 .project-media {
     display: flex;
     justify-content: center;
@@ -327,6 +351,11 @@ h1 {
     margin-top: 56px;
 }
 
+/* =========================================================
+   5. PHOTO GRIDS AND CAROUSEL
+   ========================================================= */
+
+/* Responsive grid variants */
 .photo-grid {
     display: grid;
     gap: 26px;
@@ -374,6 +403,7 @@ h1 {
     display: block;
 }
 
+/* Horizontal photo carousel */
 .photo-carousel {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr) auto;
@@ -429,12 +459,17 @@ h1 {
     color: #fff;
 }
 
+/* Wide images inside grids */
 .photo-grid--main .wide,
 .photo-grid--medium .wide,
 .photo-grid--small .wide,
 .poster-grid .wide {
     grid-column: span 2;
 }
+
+/* =========================================================
+    6. PRINT DESIGN AND INTERNSHIP SECTIONS
+    ========================================================= */
 
 .print-design-section {
     margin-top: 36px;
@@ -517,6 +552,7 @@ h1 {
     justify-self: start;
 }
 
+/* Internship layout uses the same print-design components */
 .internship-layout {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     justify-items: center;
@@ -596,6 +632,10 @@ h1 {
     line-height: 1.5;
 }
 
+/* =========================================================
+    7. FINE ART AND ISSUE 11 GALLERIES
+    ========================================================= */
+
 .internship-block {
     margin-bottom: 30px;
 }
@@ -625,6 +665,35 @@ h1 {
     height: auto;
     max-width: 100%;
     display: block;
+}
+
+.cortona-zine-grid {
+    column-count: 1;
+}
+
+.issue11-image-grid .photo-card img {
+    border: 2px solid #3f3f3f;
+}
+
+.issue11-image-grid {
+    column-count: 1;
+}
+
+.issue11-spreads-header {
+    width: min(100%, 1040px);
+    margin: 72px auto 24px;
+    padding-left: 0;
+}
+
+.issue11-spreads-header h2 {
+    font-size: 42px;
+    line-height: 0.96;
+}
+
+.issue11-image-grid {
+    width: min(100%, 1040px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .photo-card {
@@ -669,7 +738,7 @@ h1 {
     max-width: 100%;
     border-radius: 16px;
 }
- /* GRID TEXT BOXES */
+/* Text cards used inside image grids */
 
 .photo-card.text-card {
     display: flex;
@@ -751,7 +820,9 @@ h1 {
     line-height: 1.5;
 }
 
-/* MY ABOUT PAGE INFO */
+/* =========================================================
+    8. ABOUT PAGE
+    ========================================================= */
 
 body.about-page {
     background: #e7cfc7;
@@ -789,7 +860,7 @@ body.about-page .about-page-content h1 {
     text-underline-offset: 4px;
 }
 
-/* MY ABOUT PAGE BOXES */
+/* About page floating image gallery */
 
 .floating-box {
     background-size: cover;
@@ -826,7 +897,7 @@ body.about-page .about-page-content h1 {
     object-position: center;
 }
 
-/* MY ABOUT PAGE BOX LOCATIONS */
+/* Floating image positions */
 
 .box-1 {
     top: 0;
@@ -851,7 +922,7 @@ body.about-page .about-page-content h1 {
     left: 68%;
     z-index: 1;
 }
-/* MY ABOUT PAGE BOXES MOVEMENT */
+/* Floating image hover states */
 
 .box-1:hover {
     transform: translate(-8px, -15px) rotate(-4deg);
@@ -869,6 +940,11 @@ body.about-page .about-page-content h1 {
     transform: translate(8px, -12px) rotate(4deg);
 }
 
+/* =========================================================
+    9. RESPONSIVE LAYOUTS
+    ========================================================= */
+
+/* Large desktop */
 @media (min-width: 1500px) {
     .portfolio-page,
     .layton-page,
@@ -967,9 +1043,11 @@ body.about-page .about-page-content h1 {
     }
 }
 
+/* Extra-wide desktop */
 @media (min-width: 3000px) {
     :root {
-        --wide-content-gap: 72px;
+        --wide-content-gap: 56px;
+        --wide-page-inset: 3vw;
     }
 
     .top-nav {
@@ -985,28 +1063,28 @@ body.about-page .about-page-content h1 {
     .layton-page,
     .strike-page {
         gap: var(--wide-content-gap);
-        padding: 160px 5vw 96px;
+        padding: 120px var(--wide-page-inset) 72px;
     }
 
     .portfolio-nav,
     .layton-nav,
     .strike-nav {
-        flex-basis: 280px;
-        width: 280px;
-        gap: 26px;
-        padding: 28px 24px;
+        flex-basis: 320px;
+        width: 320px;
+        gap: 24px;
+        padding: 28px 26px;
     }
 
     .portfolio-nav a,
     .layton-nav a,
     .strike-nav a {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .project-content {
-        max-width: 2200px;
-        min-height: 1000px;
-        padding: 56px 64px 88px;
+        max-width: 2500px;
+        min-height: 1100px;
+        padding: 64px 72px 96px;
     }
 
     .project-layout,
@@ -1014,38 +1092,38 @@ body.about-page .about-page-content h1 {
     .content-pair,
     .issue11-grid,
     .photo-carousel {
-        width: min(100%, 1900px);
+        width: min(100%, 2200px);
     }
 
     .project-layout {
         gap: var(--wide-content-gap);
-        min-height: 900px;
+        min-height: 1000px;
     }
 
     .project-layout .project-copy,
     .print-design-copy,
     .content-pair > .content-type {
-        width: min(100%, 760px);
-        max-width: 760px;
-        padding: 56px 48px;
+        width: min(100%, 880px);
+        max-width: 880px;
+        padding: 64px 56px;
     }
 
     .project-content h1 {
-        font-size: 84px;
+        font-size: 96px;
     }
 
     .project-copy p {
-        max-width: 680px;
-        font-size: 27px;
+        max-width: 780px;
+        font-size: 30px;
     }
 
     .project-media img,
     .print-feature img {
-        max-height: 1080px;
+        max-height: 1200px;
     }
 
     .media-tall img {
-        height: 1080px;
+        height: 1200px;
     }
 
     .print-design-section {
@@ -1055,13 +1133,13 @@ body.about-page .about-page-content h1 {
     }
 
     .print-design-header {
-        width: min(100%, 1900px);
-        padding-left: 64px;
+        width: min(100%, 2200px);
+        padding-left: 72px;
         margin-bottom: var(--wide-content-gap);
     }
 
     .print-design-header h2 {
-        font-size: 88px;
+        font-size: 100px;
     }
 
     .print-design-layout,
@@ -1075,12 +1153,12 @@ body.about-page .about-page-content h1 {
     }
 
     .print-design-copy h3 {
-        font-size: 64px;
+        font-size: 72px;
     }
 
     .print-design-copy p {
-        max-width: 650px;
-        font-size: 25px;
+        max-width: 760px;
+        font-size: 28px;
     }
 
     .photo-grid,
@@ -1105,24 +1183,25 @@ body.about-page .about-page-content h1 {
     }
 
     .about-page-content {
-        padding: 220px 8vw 100px;
+        padding: 180px 5vw 80px;
     }
 
     body.about-page .about-page-content h1 {
-        font-size: 150px;
+        font-size: 190px;
     }
 
     .about-page-content p {
-        max-width: 720px;
-        font-size: 34px;
+        max-width: 850px;
+        font-size: 40px;
     }
 
     .floating-box {
-        width: 380px;
-        height: 480px;
+        width: 440px;
+        height: 560px;
     }
 }
 
+/* Tablet landscape */
 @media (min-width: 769px) and (max-width: 1100px) {
     .top-nav {
         gap: 24px;
@@ -1252,6 +1331,7 @@ body.about-page .about-page-content h1 {
     }
 }
 
+/* Tablet portrait and mobile */
 @media (max-width: 768px) {
     .portfolio-page,
     .layton-page,
@@ -1371,8 +1451,8 @@ body.about-page .about-page-content h1 {
         padding: 90px 24px 40px;
     }
 
-    .about-page-content h1 {
-        font-size: clamp(40px, 11vw, 58px);
+    body.about-page .about-page-content h1 {
+        font-size: clamp(44px, 13vw, 64px);
         letter-spacing: 0;
         line-height: 0.82;
     }
@@ -1417,6 +1497,7 @@ body.about-page .about-page-content h1 {
     }
 }
 
+/* Small phones */
 @media (max-width: 480px) {
     .top-nav {
         gap: 14px;
@@ -1428,8 +1509,8 @@ body.about-page .about-page-content h1 {
         font-size: 12px;
     }
 
-    .about-page-content h1 {
-        font-size: clamp(36px, 12vw, 48px);
+    body.about-page .about-page-content h1 {
+        font-size: clamp(42px, 13vw, 54px);
         letter-spacing: 0;
     }
 
