@@ -869,6 +869,104 @@ body.about-page .about-page-content h1 {
     transform: translate(8px, -12px) rotate(4deg);
 }
 
+@media (min-width: 1500px) {
+    .portfolio-page,
+    .layton-page,
+    .strike-page {
+        gap: 48px;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    .portfolio-nav,
+    .layton-nav,
+    .strike-nav {
+        flex-basis: 220px;
+        width: 220px;
+        padding: 22px 20px;
+    }
+
+    .portfolio-nav a,
+    .layton-nav a,
+    .strike-nav a {
+        font-size: 20px;
+    }
+
+    .project-content {
+        max-width: 1500px;
+        padding: 34px 38px 64px;
+    }
+
+    .project-layout,
+    .print-design-layout,
+    .content-pair,
+    .issue11-grid,
+    .photo-carousel {
+        width: min(100%, 1320px);
+    }
+
+    .project-layout {
+        gap: 56px;
+        min-height: 680px;
+    }
+
+    .project-layout .project-copy,
+    .print-design-copy,
+    .content-pair > .content-type {
+        width: min(100%, 540px);
+        max-width: 540px;
+        padding: 36px 32px;
+    }
+
+    .project-content h1 {
+        font-size: 60px;
+    }
+
+    .project-copy p {
+        font-size: 19px;
+    }
+
+    .project-media img,
+    .print-feature img {
+        max-height: 760px;
+    }
+
+    .media-tall img {
+        height: 760px;
+    }
+
+    .print-design-header {
+        width: min(100%, 1320px);
+        padding-left: 42px;
+    }
+
+    .print-design-header h2 {
+        font-size: 62px;
+    }
+
+    .print-design-layout,
+    .content-pair {
+        gap: 44px;
+    }
+
+    .print-design-copy h3 {
+        font-size: 48px;
+    }
+
+    .print-design-copy p {
+        font-size: 18px;
+    }
+
+    .fine-art-grid {
+        width: min(100%, 1150px);
+        column-gap: 34px;
+    }
+
+    .issue11-grid {
+        gap: 34px;
+    }
+}
+
 @media (min-width: 769px) and (max-width: 1100px) {
     .top-nav {
         gap: 24px;
@@ -1064,6 +1162,33 @@ body.about-page .about-page-content h1 {
     .content-pair > .content-type {
         min-height: auto;
         padding: 24px 0;
+    }
+
+    .project-content h1,
+    .print-design-header h2,
+    .print-design-copy h3,
+    .photo-card.text-card h3 {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .project-content h1 {
+        font-size: clamp(36px, 9vw, 48px);
+        line-height: 0.98;
+    }
+
+    .print-design-header h2 {
+        font-size: clamp(36px, 9vw, 48px);
+        line-height: 0.96;
+    }
+
+    .print-design-copy h3 {
+        font-size: clamp(28px, 7vw, 36px);
+        line-height: 1;
+    }
+
+    .photo-card.text-card h3 {
+        font-size: clamp(28px, 7vw, 34px);
     }
 
     .print-design-header {
