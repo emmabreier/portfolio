@@ -967,6 +967,162 @@ body.about-page .about-page-content h1 {
     }
 }
 
+@media (min-width: 3000px) {
+    :root {
+        --wide-content-gap: 72px;
+    }
+
+    .top-nav {
+        top: 28px;
+        gap: 64px;
+    }
+
+    .top-nav a {
+        font-size: 26px;
+    }
+
+    .portfolio-page,
+    .layton-page,
+    .strike-page {
+        gap: var(--wide-content-gap);
+        padding: 160px 5vw 96px;
+    }
+
+    .portfolio-nav,
+    .layton-nav,
+    .strike-nav {
+        flex-basis: 280px;
+        width: 280px;
+        gap: 26px;
+        padding: 28px 24px;
+    }
+
+    .portfolio-nav a,
+    .layton-nav a,
+    .strike-nav a {
+        font-size: 25px;
+    }
+
+    .project-content {
+        max-width: 2200px;
+        min-height: 1000px;
+        padding: 56px 64px 88px;
+    }
+
+    .project-layout,
+    .print-design-layout,
+    .content-pair,
+    .issue11-grid,
+    .photo-carousel {
+        width: min(100%, 1900px);
+    }
+
+    .project-layout {
+        gap: var(--wide-content-gap);
+        min-height: 900px;
+    }
+
+    .project-layout .project-copy,
+    .print-design-copy,
+    .content-pair > .content-type {
+        width: min(100%, 760px);
+        max-width: 760px;
+        padding: 56px 48px;
+    }
+
+    .project-content h1 {
+        font-size: 84px;
+    }
+
+    .project-copy p {
+        max-width: 680px;
+        font-size: 27px;
+    }
+
+    .project-media img,
+    .print-feature img {
+        max-height: 1080px;
+    }
+
+    .media-tall img {
+        height: 1080px;
+    }
+
+    .print-design-section {
+        margin-top: var(--wide-content-gap);
+        padding-top: 28px;
+        padding-bottom: var(--wide-content-gap);
+    }
+
+    .print-design-header {
+        width: min(100%, 1900px);
+        padding-left: 64px;
+        margin-bottom: var(--wide-content-gap);
+    }
+
+    .print-design-header h2 {
+        font-size: 88px;
+    }
+
+    .print-design-layout,
+    .content-pair {
+        gap: var(--wide-content-gap);
+    }
+
+    .content-pair + .content-pair,
+    .internship-block .print-design-layout + .print-design-layout {
+        margin-top: var(--wide-content-gap);
+    }
+
+    .print-design-copy h3 {
+        font-size: 64px;
+    }
+
+    .print-design-copy p {
+        max-width: 650px;
+        font-size: 25px;
+    }
+
+    .photo-grid,
+    .poster-grid {
+        gap: var(--wide-content-gap);
+        margin-top: var(--wide-content-gap);
+    }
+
+    .fine-art-grid {
+        width: min(100%, 1700px);
+        column-gap: var(--wide-content-gap);
+    }
+
+    .photo-carousel {
+        gap: 24px;
+        margin-top: var(--wide-content-gap);
+    }
+
+    .issue11-grid {
+        gap: var(--wide-content-gap);
+        margin-top: var(--wide-content-gap);
+    }
+
+    .about-page-content {
+        padding: 220px 8vw 100px;
+    }
+
+    body.about-page .about-page-content h1 {
+        font-size: 150px;
+    }
+
+    .about-page-content p {
+        max-width: 720px;
+        font-size: 34px;
+    }
+
+    .floating-box {
+        width: 380px;
+        height: 480px;
+    }
+}
+
 @media (min-width: 769px) and (max-width: 1100px) {
     .top-nav {
         gap: 24px;
