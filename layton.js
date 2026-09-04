@@ -7,14 +7,17 @@ const projects = {
             <h2>Layton Design Studio</h2>
         </div>
 
-        <div class="project-layout">
-            <div class="project-copy">
+        <div class="content-pair print-design-layout about-layton-pair">
+            <div class="content-type print-design-copy">
+                <p class="meta">Brand Identity</p>
+                <h3>Layton Studio</h3>
                 <p>
                     Layton design studio is a collaborative branding and identity practice focused on clarity, character, and strategic visual storytelling.
                 </p>
             </div>
-            <div class="project-media media-tall">
-                <img src="Images/finallaytonpages-04.png" alt="Layton About">
+
+            <div class="content-photo project-media print-feature">
+                <img src="Images/unveil.jpg" alt="Layton About">
             </div>
         </div>
     `,
@@ -28,13 +31,16 @@ const projects = {
         <div class="project-media media-wide bmw-banner">
             <img src="Images/mmbanner10.png" alt="BMW Mean Machine">
         </div>
-        <div class="project-layout">
-            <div class="project-copy">
+        <div class="content-pair print-design-layout">
+            <div class="content-type print-design-copy">
+                <p class="meta">Brand Collaboration</p>
+                <h3>Mean Machine</h3>
                 <p>
                     UGA collaborated with BMW to create a mean machine concept rooted in performance, precision, and motorsport energy.
                 </p>
             </div>
-            <div class="project-media media-tall">
+
+            <div class="content-photo project-media print-feature">
                 <img src="Images/finallaytonpages-01.png" alt="BMW Mean Machine">
             </div>
         </div>
@@ -46,14 +52,16 @@ const projects = {
             <h2>UGA Motorsports</h2>
         </div>
 
-        <div class="project-layout">
-            <div class="project-copy">
+        <div class="content-pair print-design-layout">
+            <div class="content-type print-design-copy">
+                <p class="meta">Brand Identity</p>
+                <h3>UGA Motorsports</h3>
                 <p>
                     We worked with UGA College of Engineering to create a new brand system for UGA Motorsports that felt bold, technical, and unmistakably athletic.
                 </p>
             </div>
 
-            <div class="project-media media-tall">
+            <div class="content-photo project-media print-feature">
                 <img src="Images/finallaytonpages-02.png" alt="UGA Motorsports">
             </div>
         </div>

@@ -222,17 +222,23 @@ const projects = {
     `,
 
     "fine-art": `
-        <div class="project-layout">
-            <div class="project-copy">
-                <p class="project-kicker">Photography + Painting</p>
-                <h1>Fine Art</h1>
-                <p>
-                    I specialize in watercolor painting, and in photography I focus on capturing nature and the architecture around me.
-                </p>
+        <div class="print-design-header project-page-header">
+            <p class="eyebrow">Photography + Painting</p>
+            <h2>My Style</h2>
+        </div>
+
+        <div class="content-pair print-design-layout">
+            <div class="content-photo project-media print-feature">
+                <img src="Images/closeuppaintingme.jpg" alt="Featured fine art painting">
             </div>
 
-            <div class="project-media media-tall">
-                <img src="Images/closeuppaintingme.jpeg" alt="Featured fine art painting">
+            <div class="content-type print-design-copy">
+                <p class="meta">Photography + Painting</p>
+                <h3>Fine Art</h3>
+                <p>
+                    I specialize in watercolor painting, and I love painting people, and florals. Photography I focus on capturing nature and the architecture around me. <br>
+                    <br>My love for photography follows me into my graphic design work, as I often use my own photography in my designs.
+                </p>
             </div>
         </div>
 

@@ -7,7 +7,7 @@ const projects = {
             <h2>Strike Magazine</h2>
         </div>
 
-        <div class="content-pair print-design-layout">
+        <div class="content-pair print-design-layout about-strike-pair">
             <div class="content-type print-design-copy">
                 <p class="meta">Magazine Identity</p>
                 <h3>Strike</h3>
@@ -21,16 +21,18 @@ const projects = {
             </div>
         </div>
 
-        <div class="photo-grid photo-grid--main">
-            <figure class="photo-card">
-                <img src="Images/readingstrike.JPG" alt="Strike magazine reading spread">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/potentialcover1.jpeg" alt="Strike magazine cover concept">
-            </figure>
-            <figure class="photo-card wide">
+        <div class="content-pair print-design-layout internship-layout">
+            <div class="content-photo project-media print-feature">
                 <img src="Images/shortersidecollage.jpg" alt="Strike magazine collage">
-            </figure>
+            </div>
+
+            <div class="content-type print-design-copy">
+                <p class="meta">Editorial Collage</p>
+                <h3>My Role</h3>
+                <p>
+                    A layered collage exploring the expressive, tactile visual language of Strike Magazine.
+                </p>
+            </div>
         </div>
     `,
 
@@ -51,20 +53,36 @@ const projects = {
             </div>
 
             <div class="content-photo project-media print-feature">
-                <img src="Images/closefacewetpaint.png" alt="Strike Issue 11">
+                <img src="Images/readingreal.jpg" alt="Strike Issue 11">
             </div>
         </div>
 
-        <div class="photo-grid photo-grid--main">
-            <figure class="photo-card">
-                <img src="Images/wetpaintdraft.png" alt="Strike Issue 11 spread">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/readingreal.jpg" alt="Strike Issue 11 title page">
-            </figure>
-            <figure class="photo-card wide">
-                <img src="Images/behindscenes11.png" alt="Strike Issue 11 editorial page">
-            </figure>
+        <div class="content-pair print-design-layout internship-layout">
+            <div class="content-photo project-media print-feature">
+                <img src="Images/behindscenes11.png" alt="Strike Issue 11 painted spread">
+            </div>
+
+            <div class="content-type print-design-copy">
+                <p class="meta">Material Study</p>
+                <h3>Making of Mirage</h3>
+                <p>
+                    Painted surfaces and layered details build the dreamlike visual language of Mirage.
+                </p>
+            </div>
+        </div>
+
+        <div class="content-pair print-design-layout internship-layout">
+            <div class="content-photo project-media print-feature">
+                <img src="Images/wetpaintdraft.png" alt="Strike Issue 11 editorial page in progress">
+            </div>
+
+            <div class="content-type print-design-copy">
+                <p class="meta">Process</p>
+                <h3>Layout and Typography</h3>
+                <p>
+                    An editorial page in progress, showing the physical experimentation behind the finished issue.
+                </p>
+            </div>
         </div>
 
         <div class="print-design-header project-page-header issue11-spreads-header">
@@ -95,43 +113,11 @@ const projects = {
 
     "issue-12": `
         <div class="print-design-header project-page-header">
-            <p class="eyebrow">Strike Magazine</p>
             <h2>Issue 12</h2>
         </div>
 
-        <div class="content-pair print-design-layout">
-            <div class="content-type print-design-copy">
-                <p class="meta">Editorial Design</p>
-                <h3>Cosmopolis</h3>
-                <p>
-                    Issue 12 — Cosmopolis explores city texture, movement, and a more cinematic editorial identity.
-                </p>
-            </div>
-
-            <div class="content-photo project-media print-feature">
-                <img src="Images/zine7title.jpeg" alt="Strike Issue 12">
-            </div>
-        </div>
-
-        <div class="photo-grid fine-art-grid">
-            <figure class="photo-card">
-                <img src="Images/zine1.jpeg" alt="Strike Issue 12 editorial page 1">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/zine2.jpeg" alt="Strike Issue 12 editorial page 2">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/zine3bird.png" alt="Strike Issue 12 editorial page 3">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/zine4well.jpeg" alt="Strike Issue 12 editorial page 4">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/zine5owl.jpeg" alt="Strike Issue 12 editorial page 5">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/zine6fall.jpeg" alt="Strike Issue 12 editorial page 6">
-            </figure>
+        <div class="print-design-copy issue12-coming-soon">
+            <p>Coming soon...</p>
         </div>
     `
 };
