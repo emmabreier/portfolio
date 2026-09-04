@@ -2,17 +2,22 @@ const projectContent = document.getElementById("project-content");
 
 const projects = {
     cortona: `
-        <div class="project-layout">
-            <div class="project-copy">
-                <p class="project-kicker">Brand Identity</p>
-                <h1>Cortona<br>Branding</h1>
-                <p>
-                While abroad in Cortona, Italy, I created a brand identity for the town.
-          </p>
+        <div class="print-design-header project-page-header">
+            <p class="eyebrow">Brand Identity</p>
+            <h2>Cortona Branding</h2>
+        </div>
+
+        <div class="content-pair print-design-layout">
+            <div class="content-photo project-media print-feature">
+                <img src="Images/mockbrandingbag.png" alt="Cortona Branding">
             </div>
 
-            <div class="project-media media-tall">
-                <img src="Images/mockbrandingbag.png" alt="Cortona Branding">
+            <div class="content-type print-design-copy">
+                <p class="meta">Brand Identity</p>
+                <h3>About Cortona</h3>
+                <p>
+                    While abroad in Cortona, Italy, I created a brand identity for the town.
+                </p>
             </div>
         </div>
     `,
@@ -224,7 +229,7 @@ const projects = {
     "fine-art": `
         <div class="print-design-header project-page-header">
             <p class="eyebrow">Photography + Painting</p>
-            <h2>My Style</h2>
+            <h2>Fine Art</h2>
         </div>
 
         <div class="content-pair print-design-layout">
@@ -234,7 +239,7 @@ const projects = {
 
             <div class="content-type print-design-copy">
                 <p class="meta">Photography + Painting</p>
-                <h3>Fine Art</h3>
+                <h3>My Style</h3>
                 <p>
                     I specialize in watercolor painting, and I love painting people, and florals. Photography I focus on capturing nature and the architecture around me. <br>
                     <br>My love for photography follows me into my graphic design work, as I often use my own photography in my designs.
