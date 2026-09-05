@@ -1112,7 +1112,7 @@ body.about-page .about-page-content h1 {
     }
 
     .project-copy p {
-        font-size: 19px;
+        font-size: 1px;
     }
 
     .project-media img,
@@ -1585,7 +1585,7 @@ body.about-page .about-page-content h1 {
 
     .about-page-content p {
         max-width: 100%;
-        font-size: 18px;
+        font-size: 16px;
         margin-top: 20px;
     }
 
