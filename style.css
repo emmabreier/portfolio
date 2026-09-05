@@ -6,13 +6,13 @@
     --paper: #f1eee7;
     --panel: #fbfaf6;
     --sage-wash: #dce2d7;
-    --sage: #74806e;
     --charcoal: #262a24;
-    --olive: #5b684f;
+    --olive: #262a24;
     --ink: #242720;
     --line: rgba(36, 39, 32, 0.18);
     --soft-ink: rgba(36, 39, 32, 0.66);
     --ivory: #f8f6ef;
+    --bright-pink: #d83a6f;
 }
 
 /* =========================================================
@@ -172,6 +172,10 @@ h1 {
     text-underline-offset: 4px;
 }
 
+.top-nav a.active {
+    color: var(--bright-pink);
+}
+
 
 .portfolio-page,
 .layton-page,
@@ -220,7 +224,7 @@ h1 {
 .layton-nav a:hover,
 .strike-nav a:hover,
 .top-nav a:hover {
-    color: var(--sage-wash);
+    color: var(--bright-pink);
     text-decoration: none;
 }
 
@@ -340,16 +344,19 @@ h1 {
     color: var(--olive);
 }
 
-.project-copy p,
-.project-copy .project-kicker {
+.project-copy p {
     color: var(--charcoal);
+}
+
+.project-copy .project-kicker {
+    color: var(--bright-pink);
 }
 
 .project-kicker,
 .eyebrow,
 .meta {
     margin: 0 0 10px;
-    color: var(--soft-ink);
+    color: var(--bright-pink);
     font-size: 11px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -569,8 +576,8 @@ h1 {
 
 .print-design-header {
     width: min(100%, 1040px);
-    padding-left: 34px;
-    margin: 0 0 40px;
+    padding-left: 0;
+    margin: 0 auto 40px;
 }
 
 .project-page-header {
@@ -582,7 +589,7 @@ h1 {
     font-size: 12px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--soft-ink);
+    color: var(--bright-pink);
 }
 
 .print-design-header h2 {
@@ -590,6 +597,7 @@ h1 {
     font-family: "Gunter", sans-serif;
     font-size: 52px;
     line-height: 0.92;
+    transform: translateX(-0.16em);
 }
 
 .print-design-layout {
@@ -705,7 +713,7 @@ h1 {
     font-size: 11px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--soft-ink);
+    color: var(--bright-pink);
 }
 
 .print-design-copy h3 {
@@ -947,6 +955,7 @@ body.about-page .about-page-content h1 {
     font-size: 100px;
     letter-spacing: 0px;
     line-height: .9;
+    color: var(--bright-pink);
 }
 
 .about-page-content p {
@@ -959,7 +968,7 @@ body.about-page .about-page-content h1 {
 .portfolio-nav a.active,
 .layton-nav a.active,
 .strike-nav a.active {
-    color: var(--sage);
+    color: var(--bright-pink);
     text-decoration: underline;
     text-underline-offset: 4px;
 }

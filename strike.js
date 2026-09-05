@@ -3,16 +3,17 @@ const projectContent = document.getElementById("project-content");
 const projects = {
     "about-strike": `
         <div class="print-design-header project-page-header">
-            <p class="eyebrow">Strike Magazine</p>
-            <h2>Strike Magazine</h2>
+            <p class="eyebrow">Editorial Magazine</p>
+            <h2>Strike <br>
+            Magazine</h2>
         </div>
 
         <div class="content-pair print-design-layout about-strike-pair">
             <div class="content-type print-design-copy">
                 <p class="meta">Magazine Identity</p>
-                <h3>Strike</h3>
+                <h3>About <br>Strike</h3>
                 <p>
-                    Strike is a student-run magazine published at the University of Georgia. I worked with the team to create a brand identity that felt editorial, expressive, and culturally aware.
+                Strike is a student-run editorial magazine, with 14 locations in Athens and around the country. The magazine is collaborate with creative and external teams, and gives students the opportunity to explore editorial design, and creative direction experience. 
                 </p>
             </div>
 
@@ -30,7 +31,7 @@ const projects = {
                 <p class="meta">Editorial Collage</p>
                 <h3>My Role</h3>
                 <p>
-                    A layered collage exploring the expressive, tactile visual language of Strike Magazine.
+                    As a student graphic designer, I have had the opportunity to work on multiple roles within the magazine, from layout to most recently creative direction of my own concept in this upcoming issue.  
                 </p>
             </div>
         </div>
@@ -47,7 +48,7 @@ const projects = {
                 <p class="meta">Editorial Design</p>
                 <h3>Mirage</h3>
                 <p>
-                    Issue 11 — Mirage explores dreamlike visuals, layered typography, and a reflective editorial mood.
+                    Issue 11's theme was mirage, 
                 </p>
                 <a class="issue-cta" href="https://issuu.com/strike_magazine/docs/strike_magazine_athens_issue_11" target="_blank" rel="noopener noreferrer">read the full issue here</a>
             </div>
