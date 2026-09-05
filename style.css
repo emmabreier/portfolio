@@ -1578,14 +1578,14 @@ body.about-page .about-page-content h1 {
     }
 
     body.about-page .about-page-content h1 {
-        font-size: clamp(44px, 13vw, 64px);
+        font-size: clamp(48px, 15vw, 70px);
         letter-spacing: 0;
         line-height: 0.82;
     }
 
     .about-page-content p {
         max-width: 100%;
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 20px;
     }
 
@@ -1636,7 +1636,7 @@ body.about-page .about-page-content h1 {
     }
 
     body.about-page .about-page-content h1 {
-        font-size: clamp(42px, 13vw, 54px);
+        font-size: clamp(48px, 15vw, 64px);
         letter-spacing: 0;
     }
 
