@@ -169,7 +169,7 @@ const projects = {
             </div>
                  <div class="content-pair print-design-layout">
                      <div class="content-photo project-media print-feature">
-                    <img src="Images/internposter4.png" alt="Moon poster design">
+                    <img src="Images/Internposter4.png" alt="Internship poster design">
                 </div>
 
                 <div class="content-type print-design-copy">
