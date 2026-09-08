@@ -1692,6 +1692,7 @@ body.about-page .about-page-content h1 {
 /* Small phones */
 @media (max-width: 480px) {
     .top-nav {
+        top: 8px;
         gap: 14px;
         padding: 18px 18px 16px;
         justify-content: flex-end;
