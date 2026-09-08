@@ -176,6 +176,39 @@ h1 {
     color: var(--bright-pink);
 }
 
+.about-contact-links {
+    position: absolute;
+    top: 24px;
+    left: 6vw;
+    z-index: 1001;
+    display: flex;
+    gap: 10px;
+}
+
+.about-contact-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.about-contact-links a:hover,
+.about-contact-links a:focus-visible {
+    color: var(--bright-pink);
+}
+
+.about-contact-links svg {
+    width: 21px;
+    height: 21px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+}
 
 .portfolio-page,
 .layton-page,
@@ -1446,6 +1479,11 @@ body.about-page .about-page-content h1 {
 
 /* Tablet portrait and mobile */
 @media (max-width: 768px) {
+    .about-contact-links {
+        top: 18px;
+        left: 24px;
+    }
+
     .portfolio-page,
     .layton-page,
     .strike-page {
