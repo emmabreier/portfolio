@@ -248,40 +248,40 @@ const projects = {
         </div>
 
         <div class="photo-grid fine-art-grid">
-            <figure class="photo-card tall">
+            <figure class="photo-card portrait-art">
                 <img src="Images/scoutpainting.jpeg" alt="Fine art photo 2">
             </figure>
-            <figure class="photo-card tall">
+            <figure class="photo-card portrait-art">
                 <img src="Images/emmawatstop.jpg" alt="Fine art photo 3">
             </figure>
-            <figure class="photo-card tall">
+            <figure class="photo-card portrait-art">
                 <img src="Images/cortonatop.JPG" alt="Fine art photo 5">
             </figure>
-               <figure class="photo-card square">
+               <figure class="photo-card square-art">
                 <img src="Images/paw.JPEG" alt="Fine art photo 3">
             </figure>
-             <figure class="photo-card wide">
+             <figure class="photo-card landscape-art">
                 <img src="Images/romevr.JPG" alt="Fine art photo 4">
             </figure>
-            <figure class="photo-card tall">
+            <figure class="photo-card portrait-art">
                 <img src="Images/venicesign.JPG" alt="Fine art photo 3">
             </figure>
-            <figure class="photo-card tall">
+            <figure class="photo-card portrait-art">
                 <img src="Images/watercolorflower.jpeg" alt="Fine art photo 4">
             </figure>
-             <figure class="photo-card tall">
+             <figure class="photo-card portrait-art">
                 <img src="Images/vaticanwindow.JPG" alt="Fine art photo 1">
             </figure>
-            <figure class="photo-card square">
+             <figure class="photo-card square-art">
                 <img src="Images/myselfinpainting.jpeg" alt="Fine art photo 3">
             </figure>
-            <figure class="photo-card tall">
+            <figure class="photo-card portrait-art">
                 <img src="Images/rubyincortona.JPG" alt="Fine art photo 5">
             </figure>
-            <figure class="photo-card tall">
+            <figure class="photo-card portrait-art">
                 <img src="Images/oxfordwindow.JPG" alt="Fine art photo 6">
             </figure>
-            <figure class="photo-card wide">
+            <figure class="photo-card landscape-art">
                 <img src="Images/horizontalwomen.JPG" alt="Fine art photo 5">
             </figure>
         </div>

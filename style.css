@@ -410,17 +410,17 @@ h1 {
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
 }
 
-.media-tall img {
+.portrait-media img {
     height: 640px;
 }
 
-.project-media.media-wide {
+.project-media.banner-media {
     width: 100%;
     grid-column: 1 / -1;
     margin-top: 28px;
 }
 
-.project-media.media-wide img {
+.project-media.banner-media img {
     width: 100%;
     max-width: none;
     height: auto;
@@ -551,10 +551,10 @@ h1 {
 }
 
 /* Wide images inside grids */
-.photo-grid--main .wide,
-.photo-grid--medium .wide,
-.photo-grid--small .wide,
-.poster-grid .wide {
+.photo-grid--main .landscape-art,
+.photo-grid--medium .landscape-art,
+.photo-grid--small .landscape-art,
+.poster-grid .landscape-art {
     grid-column: span 2;
 }
 
@@ -832,20 +832,20 @@ h1 {
     transform-origin: center;
 }
 
-.photo-card.tall img,
-.photo-card.wide img,
-.photo-card.square img {
+.photo-card.portrait-art img,
+.photo-card.landscape-art img,
+.photo-card.square-art img {
     width: auto;
     height: auto;
     max-width: 100%;
 }
 
-.photo-card.wide {
+.photo-card.landscape-art {
     grid-column: span 2;
     min-width: 0;
 }
 
-.photo-card.wide img {
+.photo-card.landscape-art img {
     width: auto;
     max-width: 100%;
     border-radius: 16px;
@@ -1012,44 +1012,44 @@ body.about-page .about-page-content h1 {
 
 /* Floating image positions */
 
-.box-1 {
+.floating-box--strike {
     top: 0;
     left: 0%;
     z-index: 4;
 }
 
-.box-2 {
+.floating-box--painting {
     top: 200px;
     left: 25%;
     z-index: 3;
 }
 
-.box-3 {
+.floating-box--poster {
     top: -20px;
     left: 47%;
     z-index: 2;
 }
 
-.box-4 {
+.floating-box--car {
     top: 250px;
     left: 68%;
     z-index: 1;
 }
 /* Floating image hover states */
 
-.box-1:hover {
+.floating-box--strike:hover {
     transform: translate(-8px, -15px) rotate(-4deg);
 }
 
-.box-2:hover {
+.floating-box--painting:hover {
     transform: translate(8px, -12px) rotate(4deg);
 }
 
-.box-3:hover {
+.floating-box--poster:hover {
     transform: translate(-5px, -18px) rotate(-3deg);
 }
 
-.box-4:hover {
+.floating-box--car:hover {
     transform: translate(8px, -12px) rotate(4deg);
 }
 
@@ -1120,7 +1120,7 @@ body.about-page .about-page-content h1 {
         max-height: 760px;
     }
 
-    .media-tall img {
+    .portrait-media img {
         height: 760px;
     }
 
@@ -1235,7 +1235,7 @@ body.about-page .about-page-content h1 {
         max-height: 1200px;
     }
 
-    .media-tall img {
+    .portrait-media img {
         height: 1200px;
     }
 
@@ -1400,7 +1400,7 @@ body.about-page .about-page-content h1 {
         max-height: 560px;
     }
 
-    .media-tall img {
+    .portrait-media img {
         height: 560px;
     }
 
@@ -1565,7 +1565,7 @@ body.about-page .about-page-content h1 {
         height: auto;
     }
 
-    .media-tall img {
+    .portrait-media img {
         height: auto;
     }
 
@@ -1615,10 +1615,10 @@ body.about-page .about-page-content h1 {
         transform: translateY(24px);
     }
 
-    .box-1:hover,
-    .box-2:hover,
-    .box-3:hover,
-    .box-4:hover {
+    .floating-box--strike:hover,
+    .floating-box--painting:hover,
+    .floating-box--poster:hover,
+    .floating-box--car:hover {
         transform: none;
     }
 }

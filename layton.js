@@ -28,7 +28,7 @@ const projects = {
             <h2>BMW x UGA</h2>
         </div>
 
-        <div class="project-media media-wide bmw-banner">
+        <div class="project-media banner-media bmw-banner">
             <img src="Images/mmbanner10.png" alt="BMW Mean Machine">
         </div>
         <div class="content-pair print-design-layout">
@@ -67,10 +67,10 @@ const projects = {
         </div>
 
         <div class="photo-grid">
-         <div class="project-media media-tall">
+         <div class="project-media portrait-media">
                 <img src="Images/callpolice.jpeg" alt="UGA Motorsports">
             </div>
-             <div class="project-media media-tall">
+             <div class="project-media portrait-media">
                 <img src="Images/unveil.jpg" alt="UGA Motorsports">
             </div>
         </div>
