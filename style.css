@@ -141,7 +141,7 @@ h1 {
 
 .top-nav {
     position: fixed;
-    top: 18px;
+    top: 28px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -178,7 +178,7 @@ h1 {
 
 .about-contact-links {
     position: absolute;
-    top: 24px;
+    top: 34px;
     left: 6vw;
     z-index: 1001;
     display: flex;
@@ -1480,8 +1480,21 @@ body.about-page .about-page-content h1 {
 /* Tablet portrait and mobile */
 @media (max-width: 768px) {
     .about-contact-links {
-        top: 108px;
-        left: 24px;
+        position: fixed;
+        top: 82px;
+        right: 24px;
+        left: auto;
+        gap: 6px;
+    }
+
+    .about-contact-links a {
+        width: 26px;
+        height: 26px;
+    }
+
+    .about-contact-links svg {
+        width: 18px;
+        height: 18px;
     }
 
     body:not(.about-page) .about-contact-links {
