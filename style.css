@@ -1481,7 +1481,7 @@ body.about-page .about-page-content h1 {
 @media (max-width: 768px) {
     .about-contact-links {
         position: fixed;
-        top: 82px;
+        top: 94px;
         right: 24px;
         left: auto;
         gap: 6px;
