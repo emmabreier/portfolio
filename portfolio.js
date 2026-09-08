@@ -232,7 +232,6 @@ const projects = {
             </div>
 
             <div class="content-type print-design-copy">
-                <p class="meta">Photography + Painting</p>
                 <h3>My Style</h3>
                 <p>
                     I specialize in watercolor painting, and I love painting people, and florals. Photography I focus on capturing nature and the architecture around me. <br>

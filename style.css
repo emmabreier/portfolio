@@ -1705,6 +1705,10 @@ body.about-page .about-page-content h1 {
         font-size: 12px;
     }
 
+    .print-design-header .eyebrow {
+        font-size: 9px;
+    }
+
     body.about-page .about-page-content h1 {
         font-size: clamp(48px, 15vw, 64px);
         letter-spacing: 0;
