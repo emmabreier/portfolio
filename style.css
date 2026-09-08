@@ -1480,8 +1480,12 @@ body.about-page .about-page-content h1 {
 /* Tablet portrait and mobile */
 @media (max-width: 768px) {
     .about-contact-links {
-        top: 18px;
+        top: 72px;
         left: 24px;
+    }
+
+    body:not(.about-page) .about-contact-links {
+        display: none;
     }
 
     .portfolio-page,
