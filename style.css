@@ -141,7 +141,7 @@ h1 {
 
 .top-nav {
     position: fixed;
-    top: 28px;
+    top: 34px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -152,7 +152,7 @@ h1 {
 
     padding: 0;
     background: transparent;
-    border: none;
+    border-bottom: 1px solid var(--line);
 
     z-index: 1000;
 }
@@ -975,7 +975,6 @@ body.about-page {
 
 body.about-page .top-nav {
     background: var(--paper);
-    border-bottom: 1px solid var(--line);
 }
 
 .about-page-content {
@@ -1197,7 +1196,7 @@ body.about-page .about-page-content h1 {
     }
 
     .top-nav {
-        top: 28px;
+        top: 34px;
         gap: 64px;
     }
 
