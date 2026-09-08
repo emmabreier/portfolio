@@ -1479,6 +1479,10 @@ body.about-page .about-page-content h1 {
 
 /* Tablet portrait and mobile */
 @media (max-width: 768px) {
+    .top-nav {
+        top: 18px;
+    }
+
     .about-contact-links {
         position: fixed;
         top: 94px;
