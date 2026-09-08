@@ -3,7 +3,7 @@ const projectContent = document.getElementById("project-content");
 const projects = {
     cortona: `
         <div class="print-design-header project-page-header">
-            <p class="eyebrow">Brand Identity</p>
+            <p class="eyebrow">City Branding</p>
             <h2>Cortona Branding</h2>
         </div>
 
@@ -13,7 +13,6 @@ const projects = {
             </div>
 
             <div class="content-type print-design-copy">
-                <p class="meta">Brand Identity</p>
                 <h3>About Cortona</h3>
                 <p>
                     While abroad in Cortona, Italy, I created a brand identity for the town.
@@ -117,7 +116,7 @@ const projects = {
     "print-design": `
         <div class="print-design-section">
             <div class="print-design-header">
-                <p class="eyebrow">Print Design</p>
+                <p class="eyebrow">Event Poster</p>
                 <h2>Mostra</h2>
             </div>
 
@@ -127,8 +126,7 @@ const projects = {
                 </div>
 
                 <div class="content-type print-design-copy">
-                    <p class="meta">Event Poster</p>
-                    <h3>Mostra</h3>
+                    <h3>Art Show</h3>
                     <p>
                     While abroad in Cortona, Italy, students on the program host an art show for the Cortona locals to see what we created and experienced during our semester there. <br>
                     <br>

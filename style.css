@@ -618,7 +618,7 @@ h1 {
 }
 
 .eyebrow {
-    margin: 0 0 8px;
+    margin: 0 0 8px -5px;
     font-size: 12px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
