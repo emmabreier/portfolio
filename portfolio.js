@@ -25,14 +25,12 @@ const projects = {
     personal: `
         <div class="print-design-section internship-block">
             <div class="print-design-header">
-                <p class="eyebrow">Personal Project</p>
+                <p class="eyebrow">Game Design</p>
                 <h2>Catan Game <br>Design</h2>
             </div>
 
             <div class="print-design-layout internship-layout">
                 <div class="print-design-copy">
-                    <p class="meta">Game Design</p>
-                    <h3>Catan</h3>
                     <p>
                         This project was an illustrative card design for the board game Catan. The goal was to create cards with humor but still clear design and readibility. I focused on creating a cohesive visual system that felt playful, but still grounded in the game's original aesthetic.
                     </p>
@@ -76,14 +74,13 @@ const projects = {
 
         <div class="print-design-section">
             <div class="print-design-header">
-                <p class="eyebrow">Personal Project</p>
-                <h2>Cortona Zine</h2>
+                <p class="eyebrow">Print Design</p>
+                <h2>Cortona <br>
+                Zine</h2>
             </div>
 
             <div class="content-pair print-design-layout">
                 <div class="content-type print-design-copy">
-                    <p class="meta">Editorial Design</p>
-                    <h3>Cortona Zine</h3>
                     <p>
                         This zine documents the architecture, landscape, and visual details I collected while studying abroad in Cortona, Italy.
                     </p>
@@ -173,7 +170,6 @@ const projects = {
                 </div>
 
                 <div class="content-type print-design-copy">
-                    <p class="meta">Editorial Poster</p>
                     <h3>My Role</h3>
                     <p>
                         UGA Archway Partnership is an organizaton that organizes and carries out community events helping neghboring counties around Athens, GA. As an intern at UGA Archway Partnership, I work on a variety of print and digita design that gets distrubuted to the public and to Archway's partners. I work on posters, data sheets, and brochures for county and community events. 

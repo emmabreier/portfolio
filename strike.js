@@ -45,7 +45,6 @@ const projects = {
 
         <div class="content-pair print-design-layout">
             <div class="content-type print-design-copy">
-                <p class="meta">Editorial Design</p>
                 <h3>Mirage</h3>
                 <p>
                     Issue 11's theme was mirage, 
