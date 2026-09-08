@@ -1480,7 +1480,7 @@ body.about-page .about-page-content h1 {
 /* Tablet portrait and mobile */
 @media (max-width: 768px) {
     .top-nav {
-        top: 18px;
+        top: 20px;
     }
 
     .about-contact-links {
@@ -1692,10 +1692,14 @@ body.about-page .about-page-content h1 {
 /* Small phones */
 @media (max-width: 480px) {
     .top-nav {
-        top: 8px;
+        top: 2px;
         gap: 14px;
         padding: 18px 18px 16px;
         justify-content: flex-end;
+    }
+
+    .about-contact-links {
+        top: 75px;
     }
 
     .top-nav a {
