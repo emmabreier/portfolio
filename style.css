@@ -984,15 +984,15 @@ body.about-page .top-nav {
 }
 
 body.about-page .about-page-content h1 {
-    font-size: 100px;
+    font-size: 96px;
     letter-spacing: 0px;
     line-height: .9;
     color: var(--bright-pink);
 }
 
 .about-page-content p {
-    max-width: 475px;
-    font-size: 25px;
+    max-width: 430px;
+    font-size: 20px;
     line-height: 1.25;
 }
 
@@ -1063,7 +1063,7 @@ body.about-page .about-page-content h1 {
 }
 
 .floating-box--car {
-    top: 250px;
+    top: 230px;
     left: 68%;
     z-index: 1;
 }
@@ -1083,6 +1083,13 @@ body.about-page .about-page-content h1 {
 
 .floating-box--car:hover {
     transform: translate(8px, -12px) rotate(4deg);
+}
+
+@media (min-width: 1101px) {
+    body.about-page .about-page-content > header,
+    body.about-page .floating-boxes {
+        transform: translateX(-1vw);
+    }
 }
 
 /* =========================================================
@@ -1185,6 +1192,35 @@ body.about-page .about-page-content h1 {
 
     .issue11-grid {
         gap: 34px;
+    }
+
+    body.about-page .about-page-content {
+        width: 100%;
+        padding: clamp(150px, 10.4vw, 312px) clamp(86px, 6vw, 180px) 80px;
+    }
+
+    body.about-page .about-page-content h1 {
+        font-size: clamp(100px, 6.95vw, 208px);
+    }
+
+    body.about-page .about-page-content p {
+        max-width: clamp(430px, 30vw, 780px);
+        font-size: clamp(20px, 1.45vw, 42px);
+    }
+
+    body.about-page .floating-boxes {
+        width: 55%;
+        height: 45vw;
+    }
+
+    body.about-page .floating-box {
+        width: 18.1vw;
+        height: 22.9vw;
+    }
+
+    body.about-page .about-page-content > header,
+    body.about-page .floating-boxes {
+        transform: translateX(-1.2vw);
     }
 }
 
@@ -1327,12 +1363,12 @@ body.about-page .about-page-content h1 {
     }
 
     body.about-page .about-page-content h1 {
-        font-size: 10vw;
+        font-size: 9.5vw;
     }
 
     .about-page-content p {
-        max-width: 40vw;
-        font-size: 2.1vw;
+        max-width: 35vw;
+        font-size: clamp(20px, 1.35vw, 34px);
     }
 
     .floating-boxes {
@@ -1343,6 +1379,20 @@ body.about-page .about-page-content h1 {
     .floating-box {
         width: 22vw;
         height: 28vw;
+    }
+
+    body.about-page .about-page-content > header,
+    body.about-page .floating-boxes {
+        transform: translateX(-1.5vw);
+    }
+
+    body.about-page .floating-box--poster {
+        top: -2.6vw;
+    }
+
+    body.about-page .floating-box--car {
+        top: calc(230px + 0.8vw);
+        left: 66.5%;
     }
 }
 
@@ -1643,9 +1693,14 @@ body.about-page .about-page-content h1 {
     }
 
     body.about-page .about-page-content h1 {
-        font-size: clamp(48px, 15vw, 70px);
+        font-size: clamp(48px, 14vw, 66px);
         letter-spacing: 0;
         line-height: 0.9;
+    }
+
+    body.about-page .about-page-content > header,
+    body.about-page .floating-boxes {
+        transform: none;
     }
 
     .about-page-content p {
@@ -1710,7 +1765,7 @@ body.about-page .about-page-content h1 {
     }
 
     body.about-page .about-page-content h1 {
-        font-size: clamp(48px, 15vw, 64px);
+        font-size: clamp(48px, 14vw, 60px);
         letter-spacing: 0;
     }
 
