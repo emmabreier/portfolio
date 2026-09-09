@@ -9,14 +9,14 @@ const projects = {
 
         <div class="content-pair print-design-layout about-layton-pair">
             <div class="content-type print-design-copy">
-                <h3>About <br>Layton</h3>
+                <h3>About Layton</h3>
                 <p>
-                    Layton design studio is a collaborative branding and identity practice focused on clarity, character, and strategic visual storytelling.
-                </p>
+                Layton Design Studio is a collaborative, client-focused professional practice studio where students gain hands-on experience working with real clients. The studio provides an opportunity to develop design skills while learning how to communicate, collaborate, and build professional relationships.            
+                    </p>
             </div>
 
             <div class="content-photo project-media print-feature">
-                <img src="Images/unveil.jpg" alt="Layton About">
+                <img src="Images/carcloseup.JPG" alt="Layton About">
             </div>
         </div>
     `,
