@@ -98,13 +98,13 @@ const projects = {
                     <img src="Images/zine2.jpeg" alt="Cortona zine landscape page">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/zine3bird.png" alt="Cortona zine flower illustration">
+                    <img src="Images/zine1.jpeg" alt="Cortona zine flower illustration">
                 </figure>
                 <figure class="photo-card">
                     <img src="Images/zine4well.jpeg" alt="Cortona zine floral print">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/zine1.jpeg" alt="Cortona zine watercolor page">
+                    <img src="Images/zine3bird.png" alt="Cortona zine watercolor page">
                 </figure>
                 <figure class="photo-card">
                     <img src="Images/zine6fall.jpeg" alt="Cortona zine painted page">
