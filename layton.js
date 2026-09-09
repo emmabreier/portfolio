@@ -3,7 +3,7 @@ const projectContent = document.getElementById("project-content");
 const projects = {
     "about-layton": `
         <div class="print-design-header project-page-header">
-            <p class="eyebrow">Client Work</p>
+            <p class="eyebrow">Client-Based Professional Practice</p>
             <h2>Layton Design <br>Studio</h2>
         </div>
 

@@ -10,8 +10,7 @@ const projects = {
 
         <div class="content-pair print-design-layout about-strike-pair">
             <div class="content-type print-design-copy">
-                <p class="meta">Magazine Identity</p>
-                <h3>About <br>Strike</h3>
+                <h3>About Strike</h3>
                 <p>
                 Strike is a student-run editorial magazine, with 14 locations in Athens and around the country. The magazine is collaborate with creative and external teams, and gives students the opportunity to explore editorial design, and creative direction experience. 
                 </p>
@@ -28,7 +27,6 @@ const projects = {
             </div>
 
             <div class="content-type print-design-copy">
-                <p class="meta">Editorial Collage</p>
                 <h3>My Role</h3>
                 <p>
                     As a student graphic designer, I have had the opportunity to work on multiple roles within the magazine, from layout to most recently creative direction of my own concept in this upcoming issue.  

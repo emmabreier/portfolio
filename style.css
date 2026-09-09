@@ -735,11 +735,6 @@ h1 {
     object-fit: cover;
 }
 
-.about-layton-pair .print-feature img {
-    aspect-ratio: 1 / 1.08;
-    height: auto;
-}
-
 .print-design-copy {
     display: flex;
     flex-direction: column;
