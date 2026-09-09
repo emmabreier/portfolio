@@ -1190,46 +1190,41 @@ body.about-page .about-page-content h1 {
 
 /* Extra-wide desktop */
 @media (min-width: 3000px) {
-    :root {
-        --wide-content-gap: 56px;
-        --wide-page-inset: 3vw;
-    }
-
     .top-nav {
-        top: 34px;
-        gap: 64px;
+        top: 2.36vw;
+        gap: 2.92vw;
     }
 
     .top-nav a {
-        font-size: 26px;
+        font-size: 1.25vw;
     }
 
     .portfolio-page,
     .layton-page,
     .strike-page {
-        gap: var(--wide-content-gap);
-        padding: 120px var(--wide-page-inset) 72px;
+        gap: 2.7vw;
+        padding: 7.6vw 5.8vw 4.2vw;
     }
 
     .portfolio-nav,
     .layton-nav,
     .strike-nav {
-        flex-basis: 320px;
-        width: 320px;
-        gap: 24px;
-        padding: 28px 26px;
+        flex-basis: 14vw;
+        width: 14vw;
+        gap: 1.25vw;
+        padding: 1.25vw 1.1vw;
     }
 
     .portfolio-nav a,
     .layton-nav a,
     .strike-nav a {
-        font-size: 28px;
+        font-size: 1.25vw;
     }
 
     .project-content {
-        max-width: 2500px;
-        min-height: 1100px;
-        padding: 64px 72px 96px;
+        max-width: none;
+        min-height: 46vw;
+        padding: 2.4vw 2.7vw 4vw;
     }
 
     .project-layout,
@@ -1237,112 +1232,117 @@ body.about-page .about-page-content h1 {
     .content-pair,
     .issue11-grid,
     .photo-carousel {
-        width: min(100%, 2200px);
+        width: 100%;
     }
 
     .project-layout {
-        gap: var(--wide-content-gap);
-        min-height: 1000px;
+        gap: 2.7vw;
+        min-height: 39vw;
     }
 
     .project-layout .project-copy,
     .print-design-copy,
     .content-pair > .content-type {
-        width: min(100%, 880px);
-        max-width: 880px;
-        padding: 64px 56px;
+        width: min(100%, 38vw);
+        max-width: 38vw;
+        padding: 2.4vw 2.2vw;
     }
 
     .project-content h1 {
-        font-size: 96px;
+        font-size: 5.4vw;
     }
 
     .project-copy p {
-        max-width: 780px;
-        font-size: 30px;
+        max-width: 35vw;
+        font-size: 1.25vw;
     }
 
     .project-media img,
     .print-feature img {
-        max-height: 1200px;
+        max-height: 48vw;
     }
 
     .portrait-media img {
-        height: 1200px;
+        height: 48vw;
     }
 
     .print-design-section {
-        margin-top: var(--wide-content-gap);
-        padding-top: 28px;
-        padding-bottom: var(--wide-content-gap);
+        margin-top: 2.5vw;
+        padding-top: 1.25vw;
+        padding-bottom: 2.5vw;
     }
 
     .print-design-header {
-        width: min(100%, 2200px);
-        padding-left: 72px;
-        margin-bottom: var(--wide-content-gap);
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 3.06vw;
     }
 
     .print-design-header h2 {
-        font-size: 100px;
+        font-size: 5.4vw;
     }
 
     .print-design-layout,
     .content-pair {
-        gap: var(--wide-content-gap);
+        gap: 2.7vw;
     }
 
     .content-pair + .content-pair,
     .internship-block .print-design-layout + .print-design-layout {
-        margin-top: var(--wide-content-gap);
+        margin-top: 3.9vw;
     }
 
     .print-design-copy h3 {
-        font-size: 56px;
+        font-size: 2.8vw;
     }
 
     .print-design-copy p {
-        max-width: 760px;
-        font-size: 28px;
+        max-width: 35vw;
+        font-size: 1.25vw;
     }
 
     .photo-grid,
     .poster-grid {
-        gap: var(--wide-content-gap);
-        margin-top: var(--wide-content-gap);
+        gap: 2.7vw;
+        margin-top: 2.7vw;
     }
 
     .fine-art-grid {
-        width: min(100%, 1700px);
-        column-gap: var(--wide-content-gap);
+        width: 100%;
+        column-gap: 2.7vw;
     }
 
     .photo-carousel {
-        gap: 24px;
-        margin-top: var(--wide-content-gap);
+        gap: 1.7vw;
+        margin-top: 2.7vw;
     }
 
     .issue11-grid {
-        gap: var(--wide-content-gap);
-        margin-top: var(--wide-content-gap);
+        gap: 2.7vw;
+        margin-top: 2.7vw;
     }
 
     .about-page-content {
-        padding: 180px 5vw 80px;
+        padding: 10.4vw 5.8vw 5.6vw;
     }
 
     body.about-page .about-page-content h1 {
-        font-size: 190px;
+        font-size: 10vw;
     }
 
     .about-page-content p {
-        max-width: 850px;
-        font-size: 40px;
+        max-width: 40vw;
+        font-size: 2.1vw;
+    }
+
+    .floating-boxes {
+        width: 62vw;
+        height: 55vw;
     }
 
     .floating-box {
-        width: 440px;
-        height: 560px;
+        width: 22vw;
+        height: 28vw;
     }
 }
 
