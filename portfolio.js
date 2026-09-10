@@ -92,22 +92,22 @@ const projects = {
 
             <div class="photo-grid fine-art-grid cortona-zine-grid">
                 <figure class="photo-card">
-                    <img src="Images/zine5owl.jpeg" alt="Cortona zine street page">
+                    <img src="Images/zine5owl.jpeg" alt="black and white graphic">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/zine2.jpeg" alt="Cortona zine landscape page">
+                    <img src="Images/zine2.jpeg" alt="black and white graphic">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/zine1.jpeg" alt="Cortona zine flower illustration">
+                    <img src="Images/zine1.jpeg" alt="black and white graphic">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/zine4well.jpeg" alt="Cortona zine floral print">
+                    <img src="Images/zine4well.jpeg" alt="black and white graphic">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/zine3bird.png" alt="Cortona zine watercolor page">
+                    <img src="Images/zine3bird.png" alt="black and white graphic">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/zine6fall.jpeg" alt="Cortona zine painted page">
+                    <img src="Images/zine6fall.jpeg" alt="black and white graphic">
                 </figure>
             </div>
         </div>

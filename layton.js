@@ -16,7 +16,7 @@ const projects = {
             </div>
 
             <div class="content-photo project-media print-feature">
-                <img src="Images/carcloseup.JPG" alt="Layton About">
+                <img src="Images/carcloseup.JPG" alt="close up of a car">
             </div>
         </div>
     `,
@@ -28,7 +28,7 @@ const projects = {
         </div>
 
         <div class="project-media banner-media bmw-banner">
-            <img src="Images/mmbanner10.png" alt="BMW Mean Machine">
+            <img src="Images/mmbanner10.png" alt="BMW Mean Machine graphic">
         </div>
         <div class="content-pair print-design-layout">
             <div class="content-type print-design-copy">
@@ -38,7 +38,7 @@ const projects = {
             </div>
 
             <div class="content-photo project-media print-feature">
-                <img src="Images/finallaytonpages-01.png" alt="BMW Mean Machine">
+                <img src="Images/finallaytonpages-01.png" alt="BMW Mean Machine car">
             </div>
         </div>
     `,
@@ -57,7 +57,7 @@ const projects = {
             </div>
 
             <div class="content-photo project-media print-feature">
-                <img src="Images/finallaytonpages-02.png" alt="UGA Motorsports">
+                <img src="Images/finallaytonpages-02.png" alt="UGA Motorsports car">
             </div>
         </div>
 
@@ -66,7 +66,7 @@ const projects = {
                 <img src="Images/callpolice.jpeg" alt="UGA Motorsports">
             </div>
              <div class="project-media portrait-media">
-                <img src="Images/unveil.jpg" alt="UGA Motorsports">
+                <img src="Images/unveil.jpg" alt="UGA Motorsports unveiling the car">
             </div>
         </div>
     `
