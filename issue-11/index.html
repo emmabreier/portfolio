@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Issue 11 of Strike Magazine, Mirage, by Emma Breier.">
+    <title>Issue 11 | Mirage</title>
+    <style>
+        :root {
+            --paper: #f1eee7;
+            --ink: #262a24;
+            --accent: #d83a6f;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: clamp(28px, 5vw, 72px);
+            background: var(--paper);
+            color: var(--ink);
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            width: min(100%, 1400px);
+            margin: 0 auto;
+        }
+
+        .eyebrow {
+            margin: 0 0 12px;
+            color: var(--accent);
+            font-size: 12px;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0 0 clamp(24px, 4vw, 48px);
+            font-size: clamp(42px, 7vw, 92px);
+            line-height: 0.95;
+        }
+
+        .book-shell {
+            display: grid;
+            place-items: center;
+            min-height: min(88vh, 1200px);
+        }
+
+        #book {
+            width: min(100%, 1400px);
+            min-height: 780px;
+        }
+
+        .status {
+            color: rgba(38, 42, 36, 0.66);
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 24px 14px 36px;
+            }
+
+            .book-shell {
+                min-height: 84vh;
+            }
+
+            #book {
+                min-height: 620px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="book-shell">
+            <div id="book" aria-label="Strike Magazine Issue 11 flipbook"></div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+    <script>
+        const book = document.getElementById('book');
+        const imagePaths = [
+            'images/Strikeissue11-1cover.png',
+            'images/Strikeissue11-2.png',
+            'images/Strikeissue11-3.png',
+            'images/Strikeissue11-4.png',
+            'images/Strikeissue11-5.png',
+            'images/Strikeissue11-6.png',
+            'images/Strikeissue11-7.png',
+            'images/Strikeissue11-8.png',
+            'images/Strikeissue11-9.png',
+            'images/Strikeissue11-10.png',
+            'images/Strikeissue11-12.png',
+            'images/Strikeissue11-13.png',
+            'images/Strikeissue11-14.png',
+            'images/Strikeissue11-15back.png'
+        ];
+
+        const pageFlip = new St.PageFlip(book, {
+            width: 600,
+            height: 850,
+                size: 'stretch',
+                minWidth: 280,
+                maxWidth: 900,
+                minHeight: 400,
+                maxHeight: 1200,
+                showCover: true,
+                mobileScrollSupport: true,
+                maxShadowOpacity: 0.28
+        });
+
+        pageFlip.loadFromImages(imagePaths);
+    </script>
+</body>
+</html>
