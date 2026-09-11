@@ -90,25 +90,14 @@ const projects = {
                 </div>
             </div>
 
-            <div class="photo-grid fine-art-grid cortona-zine-grid">
-                <figure class="photo-card">
-                    <img src="Images/zine5owl.jpeg" alt="black and white graphic">
-                </figure>
-                <figure class="photo-card">
-                    <img src="Images/zine2.jpeg" alt="black and white graphic">
-                </figure>
-                <figure class="photo-card">
-                    <img src="Images/zine1.jpeg" alt="black and white graphic">
-                </figure>
-                <figure class="photo-card">
-                    <img src="Images/zine4well.jpeg" alt="black and white graphic">
-                </figure>
-                <figure class="photo-card">
-                    <img src="Images/zine3bird.png" alt="black and white graphic">
-                </figure>
-                <figure class="photo-card">
-                    <img src="Images/zine6fall.jpeg" alt="black and white graphic">
-                </figure>
+            <div class="issue11-magazine-embed">
+                <iframe
+                    allowfullscreen="allowfullscreen"
+                    allow="autoplay; fullscreen; clipboard-write"
+                    scrolling="no"
+                    src="https://heyzine.com/flip-book/4553b1f875.html"
+                    title="Cortona Zine flipbook">
+                </iframe>
             </div>
         </div>
     `,
@@ -215,6 +204,16 @@ const projects = {
                 <figure class="photo-card">
                     <img src="Images/Interndata6.png" alt="Poster design 1">
                 </figure>
+            </div>
+
+            <div class="issue11-magazine-embed">
+                <iframe
+                    allowfullscreen="allowfullscreen"
+                    allow="autoplay; fullscreen; clipboard-write"
+                    scrolling="no"
+                    src="https://heyzine.com/flip-book/ebf8b9bfc5.html"
+                    title="UGA Medical Data Packets flipbook">
+                </iframe>
             </div>
         </div>
 
