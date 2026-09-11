@@ -4,7 +4,7 @@ const projects = {
     "about-strike": `
         <div class="print-design-header project-page-header">
             <p class="eyebrow">Strike Magazine</p>
-            <h2>Strike Magazine</h2>
+            <h2>Strike <br>Magazine</h2>
         </div>
 
         <div class="content-pair print-design-layout about-strike-pair">
@@ -43,6 +43,10 @@ const projects = {
         </div>
 
         <div class="content-pair print-design-layout">
+            <div class="content-photo project-media print-feature">
+                <img src="Images/readingreal.jpg" alt="Strike Issue 11">
+            </div>
+
             <div class="content-type print-design-copy">
                 <p class="meta">Editorial Design</p>
                 <h3>Mirage</h3>
@@ -51,10 +55,10 @@ const projects = {
                 </p>
                 <a class="issue-cta" href="https://issuu.com/strike_magazine/docs/strike_magazine_athens_issue_11" target="_blank" rel="noopener noreferrer">read the full issue here</a>
             </div>
+        </div>
 
-            <div class="content-photo project-media print-feature">
-                <img src="Images/readingreal.jpg" alt="Strike Issue 11">
-            </div>
+        <div class="print-design-header project-page-header issue11-spreads-header">
+            <h3>My Pages</h3>
         </div>
 
         <div class="issue11-magazine-embed">
@@ -63,14 +67,6 @@ const projects = {
                 allow="autoplay; fullscreen; clipboard-write"
                 scrolling="no"
                 src="https://heyzine.com/flip-book/83fad8df3e.html">
-            </iframe>
-        </div>
-
-        <div class="issue11-pageflip-embed">
-            <iframe
-                src="issue-11/"
-                scrolling="no"
-                title="Issue 11 PageFlip magazine">
             </iframe>
         </div>
 
@@ -89,10 +85,6 @@ const projects = {
         </div>
 
         <div class="content-pair print-design-layout internship-layout">
-            <div class="content-photo project-media print-feature">
-                <img src="Images/wetpaintdraft.png" alt="Strike Issue 11 editorial page in progress">
-            </div>
-
             <div class="content-type print-design-copy">
                 <p class="meta">Process</p>
                 <h3>Layout and Typography</h3>
@@ -100,10 +92,10 @@ const projects = {
                     An editorial page in progress, showing the physical experimentation behind the finished issue.
                 </p>
             </div>
-        </div>
 
-        <div class="print-design-header project-page-header issue11-spreads-header">
-            <h2>My Spreads</h2>
+            <div class="content-photo project-media print-feature">
+                <img src="Images/wetpaintdraft.png" alt="Strike Issue 11 editorial page in progress">
+            </div>
         </div>
 
     `,
