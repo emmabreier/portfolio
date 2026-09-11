@@ -106,26 +106,6 @@ const projects = {
             <h2>My Spreads</h2>
         </div>
 
-        <div class="photo-grid fine-art-grid issue11-image-grid">
-            <figure class="photo-card">
-                <img src="Images/wetpaint.png" alt="Strike Issue 11 editorial page">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/revelare11.png" alt="Strike Issue 11 editorial page">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/retreatingpage11.png" alt="Strike Issue 11 editorial page">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/watching11.png" alt="Strike Issue 11 editorial page">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/warpedupsidedown11.png" alt="Strike Issue 11 magazine spread">
-            </figure>
-            <figure class="photo-card">
-                <img src="Images/anglerevelare11.png" alt="Strike Issue 11 cover concept">
-            </figure>
-        </div>
     `,
 
     "issue-12": `

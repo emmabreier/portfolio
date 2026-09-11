@@ -778,7 +778,7 @@ h1 {
 }
 
 .issue11-magazine-embed {
-    width: min(100%, 1040px);
+    width: min(100%, 1160px);
     margin: 56px auto;
     border: 1px solid rgba(0, 0, 0, 0.16);
     background: #fff;
@@ -787,7 +787,7 @@ h1 {
 .issue11-magazine-embed iframe {
     display: block;
     width: 100%;
-    height: 400px;
+    height: 700px;
     border: 0;
 }
 
@@ -1702,8 +1702,8 @@ body.about-page .about-page-content h1 {
     }
 
     .issue11-magazine-embed iframe {
-        height: 70vh;
-        min-height: 400px;
+        height: 80vh;
+        min-height: 560px;
     }
 
     .issue11-pageflip-embed {
