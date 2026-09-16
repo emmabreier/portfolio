@@ -287,6 +287,19 @@ h1 {
     border: 1px solid var(--line);
     border-radius: 18px;
     padding: 26px 26px 48px;
+
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.project-content.is-fading {
+    opacity: 0;
+}
+
+.project-content.is-entering {
+    opacity: 0;
+    transform: translateY(6px);
 }
 
 

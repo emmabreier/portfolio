@@ -77,8 +77,32 @@ const projects = {
 function setActiveProject(projectKey) {
     const projectHtml = projects[projectKey];
 
-    if (projectContent && projectHtml) {
+    if (!projectContent || !projectHtml) {
+        return;
+    }
+
+    const swapContent = () => {
         projectContent.innerHTML = projectHtml;
+    };
+
+    const isFirstRender = !projectContent.innerHTML.trim();
+    const reduceMotion = window.matchMedia &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (isFirstRender || reduceMotion) {
+        swapContent();
+    } else {
+        // Gentle cross-fade between sections
+        projectContent.classList.add('is-fading');
+        window.setTimeout(() => {
+            swapContent();
+            projectContent.classList.remove('is-fading');
+            projectContent.classList.add('is-entering');
+
+            const cleanup = () => projectContent.classList.remove('is-entering');
+            projectContent.addEventListener('transitionend', cleanup, { once: true });
+            window.setTimeout(cleanup, 250); // fallback if transitionend is dropped
+        }, 150);
     }
 
     document.querySelectorAll(".layton-nav a")
