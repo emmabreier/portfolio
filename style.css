@@ -1877,8 +1877,46 @@ body.intro-lock {
     height: 145vmax;
     border-radius: 50%;
     background: var(--bright-pink);
-    transform: translate(-50%, -50%) scale(0.012);
+    transform: translate(-50%, -50%) scale(0.09);
     will-change: transform;
+}
+
+/* "SCROLL TO ENTER" arc + arrow around the starting dot */
+#intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 32vmax; /* scales with the 145vmax circle, keeping desktop ratios everywhere */
+    height: 32vmax;
+    transform: translate(-50%, -50%);
+    color: var(--ink);
+    user-select: none;
+    will-change: transform, opacity;
+}
+
+#intro-text svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: visible;
+}
+
+#intro-text text {
+    font-family: 'Grappa', 'Gunter', serif;
+    font-size: 21px;
+    letter-spacing: 0.08em;
+    fill: var(--ink);
+}
+
+#intro-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.8vmax;
+    height: auto;
+    color: var(--ink);
+    transform: translate(-50%, 2vmax);
+    will-change: transform, opacity;
 }
 
 #intro-overlay.is-done {

@@ -83,15 +83,21 @@
     }
 
     var circle = document.getElementById('intro-circle');
+    var introText = document.getElementById('intro-text');
+    var introArrow = document.getElementById('intro-arrow');
     var body = document.body;
 
-    var MIN_SCALE = 0.03; // tiny starting dot, relative to the 145vmax circle
+    var MIN_SCALE = 0.09; // starting dot, relative to the 145vmax circle
     var finished = false;
     var ticking = false;
     var prevScrollRestoration = null;
 
     function easeOutQuad(t) {
         return 1 - (1 - t) * (1 - t);
+    }
+
+    function easeInCubic(t) {
+        return t * t * t;
     }
 
     function maxScroll() {
@@ -105,6 +111,20 @@
         var p = Math.min(Math.max(window.scrollY / maxScroll(), 0), 1);
         var scale = MIN_SCALE + (1 - MIN_SCALE) * easeOutQuad(p);
         circle.style.transform = 'translate(-50%, -50%) scale(' + scale + ')';
+
+        // The arc text fades out quickly as the circle grows into it.
+        if (introText) {
+            var textFade = Math.max(0, 1 - p / 0.22);
+            introText.style.opacity = textFade;
+        }
+
+        // The arrow shoots upward and away as scrolling begins.
+        if (introArrow) {
+            var shoot = easeInCubic(Math.min(p / 0.3, 1));
+            introArrow.style.opacity = Math.max(0, 1 - p / 0.3);
+            introArrow.style.transform =
+                'translate(-50%, calc(2vmax - ' + (shoot * 70) + 'vh))';
+        }
 
         if (p >= 1) {
             finish();
