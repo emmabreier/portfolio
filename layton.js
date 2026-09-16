@@ -35,6 +35,7 @@ const projects = {
                 <p>
                     UGA collaborated with BMW to create a mean machine concept rooted in performance, precision, and motorsport energy.
                 </p>
+                <a class="issue-cta" href="https://news.uga.edu/uga-students-take-the-wheel-in-designing-bmw-mean-machine/" target="_blank" rel="noopener noreferrer">read the UGA story</a>
             </div>
 
             <div class="content-photo project-media print-feature">
@@ -54,6 +55,7 @@ const projects = {
                 <p>
                     We worked with UGA College of Engineering to create a new brand system for UGA Motorsports that felt bold, technical, and unmistakably athletic.
                 </p>
+                <a class="issue-cta" href="https://news.uga.edu/uga-students-take-the-wheel-in-designing-bmw-mean-machine/" target="_blank" rel="noopener noreferrer">read the UGA story</a>
             </div>
 
             <div class="content-photo project-media print-feature">
