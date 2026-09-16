@@ -16,7 +16,7 @@ const projects = {
             </div>
 
             <div class="content-photo project-media print-feature">
-                <img src="Images/carcloseup.JPG" alt="close up of a car">
+                <img loading="lazy" decoding="async" src="Images/carcloseup.JPG" alt="close up of a car">
             </div>
         </div>
     `,
@@ -28,7 +28,7 @@ const projects = {
         </div>
 
         <div class="project-media banner-media bmw-banner">
-            <img src="Images/mmbanner10.png" alt="BMW Mean Machine graphic">
+            <img loading="lazy" decoding="async" src="Images/mmbanner10.png" alt="BMW Mean Machine graphic">
         </div>
         <div class="content-pair print-design-layout">
             <div class="content-type print-design-copy">
@@ -38,7 +38,7 @@ const projects = {
             </div>
 
             <div class="content-photo project-media print-feature">
-                <img src="Images/finallaytonpages-01.png" alt="BMW Mean Machine car">
+                <img loading="lazy" decoding="async" src="Images/finallaytonpages-01.jpg" alt="BMW Mean Machine car">
             </div>
         </div>
     `,
@@ -57,16 +57,16 @@ const projects = {
             </div>
 
             <div class="content-photo project-media print-feature">
-                <img src="Images/finallaytonpages-02.png" alt="UGA Motorsports car">
+                <img loading="lazy" decoding="async" src="Images/finallaytonpages-02.jpg" alt="UGA Motorsports car">
             </div>
         </div>
 
         <div class="photo-grid">
          <div class="project-media portrait-media">
-                <img src="Images/callpolice.jpeg" alt="UGA Motorsports">
+                <img loading="lazy" decoding="async" src="Images/callpolice.jpeg" alt="UGA Motorsports">
             </div>
              <div class="project-media portrait-media">
-                <img src="Images/unveil.jpg" alt="UGA Motorsports unveiling the car">
+                <img loading="lazy" decoding="async" src="Images/unveil.jpg" alt="UGA Motorsports unveiling the car">
             </div>
         </div>
     `

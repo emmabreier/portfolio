@@ -1845,3 +1845,47 @@ body.about-page .about-page-content h1 {
         width: 100%;
     }
 }
+
+/* =========================================================
+    10. SCROLL INTRO ANIMATION (About page)
+    ========================================================= */
+
+#intro-overlay {
+    display: none;
+}
+
+/* Scroll runway that drives the animation (~2 screens of scrolling) */
+body.intro-lock {
+    height: 300vh;
+}
+
+#intro-overlay.is-active {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 5000;
+    overflow: hidden;
+    background: var(--paper);
+    pointer-events: none;
+}
+
+#intro-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 145vmax; /* wider than any viewport diagonal, so it covers the corners */
+    height: 145vmax;
+    border-radius: 50%;
+    background: var(--bright-pink);
+    transform: translate(-50%, -50%) scale(0.012);
+    will-change: transform;
+}
+
+#intro-overlay.is-done {
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+#intro-overlay.is-done #intro-circle {
+    transition: transform 0.7s ease;
+}

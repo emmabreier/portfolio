@@ -9,7 +9,7 @@ const projects = {
 
         <div class="content-pair print-design-layout">
             <div class="content-photo project-media print-feature">
-                <img src="Images/mockbrandingbag.png" alt="Cortona Branding">
+                <img loading="lazy" decoding="async" src="Images/mockbrandingbag.png" alt="Cortona Branding">
             </div>
 
             <div class="content-type print-design-copy">
@@ -36,7 +36,7 @@ const projects = {
                 </div>
 
                 <div class="project-media print-feature">
-                    <img src="Images/catangameshot.jpeg" alt="Catan game design">
+                    <img loading="lazy" decoding="async" src="Images/catangameshot.jpeg" alt="Catan game design">
                 </div>
             </div>
 
@@ -45,25 +45,25 @@ const projects = {
                 <div class="carousel-viewport">
                     <div class="carousel-track">
                         <figure class="photo-card">
-                            <img src="Images/charliecatan.PNG" alt="Catan design detail 1">
+                            <img loading="lazy" decoding="async" src="Images/charliecatan.PNG" alt="Catan design detail 1">
                         </figure>
                         <figure class="photo-card">
-                            <img src="Images/dadcatan.PNG" alt="Catan design detail 2">
+                            <img loading="lazy" decoding="async" src="Images/dadcatan.PNG" alt="Catan design detail 2">
                         </figure>
                         <figure class="photo-card">
-                            <img src="Images/orecard.PNG" alt="Catan design detail 3">
+                            <img loading="lazy" decoding="async" src="Images/orecard.PNG" alt="Catan design detail 3">
                         </figure>
                         <figure class="photo-card">
-                            <img src="Images/charlie2card.PNG" alt="Catan design detail 4">
+                            <img loading="lazy" decoding="async" src="Images/charlie2card.PNG" alt="Catan design detail 4">
                         </figure>
                         <figure class="photo-card">
-                            <img src="Images/oscarcard.PNG" alt="Catan design detail 5">
+                            <img loading="lazy" decoding="async" src="Images/oscarcard.PNG" alt="Catan design detail 5">
                         </figure>
                         <figure class="photo-card">
-                            <img src="Images/emmacard.PNG" alt="Catan design detail 6">
+                            <img loading="lazy" decoding="async" src="Images/emmacard.PNG" alt="Catan design detail 6">
                         </figure>
                         <figure class="photo-card">
-                            <img src="Images/lizcard.PNG" alt="Catan game design detail 7">
+                            <img loading="lazy" decoding="async" src="Images/lizcard.PNG" alt="Catan game design detail 7">
                         </figure>
                     </div>
                 </div>
@@ -86,12 +86,13 @@ const projects = {
                 </div>
 
                 <div class="content-photo project-media print-feature">
-                    <img src="Images/zine7title.jpeg" alt="Cortona zine title page">
+                    <img loading="lazy" decoding="async" src="Images/zine7title.jpeg" alt="Cortona zine title page">
                 </div>
             </div>
 
             <div class="issue11-magazine-embed">
                 <iframe
+                    loading="lazy"
                     allowfullscreen="allowfullscreen"
                     allow="autoplay; fullscreen; clipboard-write"
                     scrolling="no"
@@ -111,7 +112,7 @@ const projects = {
 
             <div class="content-pair print-design-layout">
                 <div class="content-photo project-media print-feature">
-                    <img src="Images/mostra final 3.jpg" alt="Mostra poster design">
+                    <img loading="lazy" decoding="async" src="Images/mostra final 3.jpg" alt="Mostra poster design">
                 </div>
 
                 <div class="content-type print-design-copy">
@@ -133,7 +134,7 @@ const projects = {
 
             <div class="content-pair print-design-layout">
                 <div class="content-photo project-media print-feature">
-                    <img src="Images/moon2.png" alt="Moon poster design">
+                    <img loading="lazy" decoding="async" src="Images/moon2.png" alt="Moon poster design">
                 </div>
 
                 <div class="content-type print-design-copy">
@@ -153,7 +154,7 @@ const projects = {
             </div>
                  <div class="content-pair print-design-layout">
                      <div class="content-photo project-media print-feature">
-                    <img src="Images/Internposter4.png" alt="Internship poster design">
+                    <img loading="lazy" decoding="async" src="Images/Internposter4.png" alt="Internship poster design">
                 </div>
 
                 <div class="content-type print-design-copy">
@@ -166,16 +167,16 @@ const projects = {
 
                  <div class="photo-grid poster-grid">
                 <figure class="photo-card">
-                    <img src="Images/Internposter1.png" alt="Poster design 1">
+                    <img loading="lazy" decoding="async" src="Images/Internposter1.png" alt="Poster design 1">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/Internposter2.png" alt="Poster design 2">
+                    <img loading="lazy" decoding="async" src="Images/Internposter2.png" alt="Poster design 2">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/Internposter5.png" alt="Poster design 3">
+                    <img loading="lazy" decoding="async" src="Images/Internposter5.png" alt="Poster design 3">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/Internmedicaltour.png" alt="Poster design 4">
+                    <img loading="lazy" decoding="async" src="Images/Internmedicaltour.png" alt="Poster design 4">
                 </figure>
             </div>
     <div class="content-pair print-design-layout internship-layout">
@@ -187,27 +188,28 @@ const projects = {
                     </p>
                 </div>
                 <div class="content-photo project-media print-feature">
-                    <img src="Images/Interndata1.png" alt="Internship poster design">
+                    <img loading="lazy" decoding="async" src="Images/Interndata1.png" alt="Internship poster design">
                 </div>
             </div>
 
             <div class="photo-grid poster-grid internship-data-grid">
                 <figure class="photo-card">
-                    <img src="Images/Interndatatable.png" alt="Poster design 2">
+                    <img loading="lazy" decoding="async" src="Images/Interndatatable.png" alt="Poster design 2">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/Interndata2.png" alt="Poster design 3">
+                    <img loading="lazy" decoding="async" src="Images/Interndata2.png" alt="Poster design 3">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/Interndata4.png" alt="Poster design 4">
+                    <img loading="lazy" decoding="async" src="Images/Interndata4.png" alt="Poster design 4">
                 </figure>
                 <figure class="photo-card">
-                    <img src="Images/Interndata6.png" alt="Poster design 1">
+                    <img loading="lazy" decoding="async" src="Images/Interndata6.png" alt="Poster design 1">
                 </figure>
             </div>
 
             <div class="issue11-magazine-embed">
                 <iframe
+                    loading="lazy"
                     allowfullscreen="allowfullscreen"
                     allow="autoplay; fullscreen; clipboard-write"
                     scrolling="no"
@@ -227,7 +229,7 @@ const projects = {
 
         <div class="content-pair print-design-layout">
             <div class="content-photo project-media print-feature">
-                <img src="Images/closeuppaintingme.jpg" alt="Featured fine art painting">
+                <img loading="lazy" decoding="async" src="Images/closeuppaintingme.jpg" alt="Featured fine art painting">
             </div>
 
             <div class="content-type print-design-copy">
@@ -241,40 +243,40 @@ const projects = {
 
         <div class="photo-grid fine-art-grid">
             <figure class="photo-card portrait-art">
-                <img src="Images/scoutpainting.jpeg" alt="Fine art photo 2">
+                <img loading="lazy" decoding="async" src="Images/scoutpainting.jpeg" alt="Fine art photo 2">
             </figure>
             <figure class="photo-card portrait-art">
-                <img src="Images/emmawatstop.jpg" alt="Fine art photo 3">
+                <img loading="lazy" decoding="async" src="Images/emmawatstop.jpg" alt="Fine art photo 3">
             </figure>
             <figure class="photo-card portrait-art">
-                <img src="Images/cortonatop.JPG" alt="Fine art photo 5">
+                <img loading="lazy" decoding="async" src="Images/cortonatop.JPG" alt="Fine art photo 5">
             </figure>
                <figure class="photo-card square-art">
-                <img src="Images/paw.JPEG" alt="Fine art photo 3">
+                <img loading="lazy" decoding="async" src="Images/paw.JPEG" alt="Fine art photo 3">
             </figure>
              <figure class="photo-card landscape-art">
-                <img src="Images/romevr.JPG" alt="Fine art photo 4">
+                <img loading="lazy" decoding="async" src="Images/romevr.JPG" alt="Fine art photo 4">
             </figure>
             <figure class="photo-card portrait-art">
-                <img src="Images/venicesign.JPG" alt="Fine art photo 3">
+                <img loading="lazy" decoding="async" src="Images/venicesign.JPG" alt="Fine art photo 3">
             </figure>
             <figure class="photo-card portrait-art">
-                <img src="Images/watercolorflower.jpeg" alt="Fine art photo 4">
+                <img loading="lazy" decoding="async" src="Images/watercolorflower.jpeg" alt="Fine art photo 4">
             </figure>
              <figure class="photo-card portrait-art">
-                <img src="Images/vaticanwindow.JPG" alt="Fine art photo 1">
+                <img loading="lazy" decoding="async" src="Images/vaticanwindow.JPG" alt="Fine art photo 1">
             </figure>
              <figure class="photo-card square-art">
-                <img src="Images/myselfinpainting.jpeg" alt="Fine art photo 3">
+                <img loading="lazy" decoding="async" src="Images/myselfinpainting.jpeg" alt="Fine art photo 3">
             </figure>
             <figure class="photo-card portrait-art">
-                <img src="Images/rubyincortona.JPG" alt="Fine art photo 5">
+                <img loading="lazy" decoding="async" src="Images/rubyincortona.JPG" alt="Fine art photo 5">
             </figure>
             <figure class="photo-card portrait-art">
-                <img src="Images/oxfordwindow.JPG" alt="Fine art photo 6">
+                <img loading="lazy" decoding="async" src="Images/oxfordwindow.JPG" alt="Fine art photo 6">
             </figure>
             <figure class="photo-card landscape-art">
-                <img src="Images/horizontalwomen.JPG" alt="Fine art photo 5">
+                <img loading="lazy" decoding="async" src="Images/horizontalwomen.JPG" alt="Fine art photo 5">
             </figure>
         </div>
     `
