@@ -33,12 +33,6 @@
     ========================================================= */
 
 @font-face {
-    font-family: 'Gunter';
-    src: url('fonts/Gunter.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'Grappa';
     src: url('fonts/Grappa.woff2') format('woff2');
     font-weight: normal;
@@ -123,7 +117,8 @@ body img {
 
 
 h1 {
-    font-family: "Gunter", sans-serif;
+    font-family: "essonnes-display", serif;
+    font-style: italic;
 }
 
 
@@ -650,8 +645,9 @@ h1 {
 
 .print-design-header h2 {
     margin: 0;
-    font-family: "Gunter", sans-serif;
-    font-size: 52px;
+    font-family: "essonnes-display", serif;
+    font-style: normal;
+    font-size: 58px;
     line-height: 0.92;
     transform: translateX(-0.16em);
 }
@@ -774,7 +770,8 @@ h1 {
 
 .print-design-copy h3 {
     margin: 0 0 12px;
-    font-family: "Gunter", sans-serif;
+    font-family: "essonnes-display", serif;
+    font-style: italic;
     font-size: 34px;
     line-height: 0.96;
     color: var(--olive);
@@ -883,7 +880,8 @@ h1 {
 
 .issue11-spreads-header h3 {
     margin: 0 0 12px;
-    font-family: "Gunter", sans-serif;
+    font-family: "essonnes-display", serif;
+    font-style: italic;
     font-size: 25px;
     line-height: 0.96;
     color: var(--olive);
@@ -1011,7 +1009,8 @@ h1 {
     margin-bottom: 12px;
     font-size: 35px;
     line-height: 1;
-    font-family: "Gunter", sans-serif;
+    font-family: "essonnes-display", serif;
+    font-style: italic;
 }
 
 .photo-card.text-card p {
@@ -1233,7 +1232,7 @@ body.about-page .about-page-content h1 {
     }
 
     .print-design-header h2 {
-        font-size: 62px;
+        font-size: 68px;
     }
 
     .print-design-layout,
@@ -1379,7 +1378,7 @@ body.about-page .about-page-content h1 {
     }
 
     .print-design-header h2 {
-        font-size: 5.4vw;
+        font-size: 6vw;
     }
 
     .print-design-layout,
@@ -1536,7 +1535,7 @@ body.about-page .about-page-content h1 {
     }
 
     .print-design-header h2 {
-        font-size: 46px;
+        font-size: 52px;
     }
 
     .project-media img,
@@ -1710,7 +1709,7 @@ body.about-page .about-page-content h1 {
     }
 
     .print-design-header h2 {
-        font-size: clamp(36px, 9vw, 48px);
+        font-size: clamp(40px, 10vw, 54px);
         line-height: 0.96;
     }
 
