@@ -1044,7 +1044,7 @@ body.about-page .about-page-content h1 {
 }
 
 .about-page-content p {
-    max-width: 430px;
+    max-width: 530px;
     font-size: 20px;
     line-height: 1.25;
     transform: translateX(1.8vw);
@@ -1258,7 +1258,7 @@ body.about-page .about-page-content h1 {
     }
 
     body.about-page .about-page-content p {
-        max-width: clamp(430px, 30vw, 650px);
+        max-width: clamp(530px, 35.5vw, 750px);
         font-size: clamp(20px, 1.45vw, 32px);
     }
 
@@ -1421,7 +1421,7 @@ body.about-page .about-page-content h1 {
     }
 
     .about-page-content p {
-        max-width: clamp(430px, 30vw, 650px);
+        max-width: clamp(530px, 35.5vw, 750px);
         font-size: clamp(20px, 1.45vw, 32px);
     }
 
