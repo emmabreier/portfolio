@@ -197,26 +197,16 @@ const projects = {
                     <img loading="lazy" decoding="async" src="Images/Interndatatable.png" alt="Poster design 2">
                 </figure>
                 <figure class="photo-card">
-                    <img loading="lazy" decoding="async" src="Images/Interndata2.png" alt="Poster design 3">
+                    <img loading="lazy" decoding="async" src="Images/newbibb2.png" alt="Poster design 3">
                 </figure>
                 <figure class="photo-card">
-                    <img loading="lazy" decoding="async" src="Images/Interndata4.png" alt="Poster design 4">
+                    <img loading="lazy" decoding="async" src="Images/newbibb1.png" alt="Poster design 4">
                 </figure>
                 <figure class="photo-card">
-                    <img loading="lazy" decoding="async" src="Images/Interndata6.png" alt="Poster design 1">
+                    <img loading="lazy" decoding="async" src="Images/newbibb3.png" alt="Poster design 1">
                 </figure>
             </div>
 
-            <div class="issue11-magazine-embed">
-                <iframe
-                    loading="lazy"
-                    allowfullscreen="allowfullscreen"
-                    allow="autoplay; fullscreen; clipboard-write"
-                    scrolling="no"
-                    src="https://heyzine.com/flip-book/ebf8b9bfc5.html"
-                    title="UGA Medical Data Packets flipbook">
-                </iframe>
-            </div>
         </div>
 
     `,
