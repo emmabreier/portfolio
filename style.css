@@ -1028,16 +1028,26 @@ body.about-page .top-nav {
 }
 
 body.about-page .about-page-content h1 {
+    margin: 0;
     font-size: 96px;
     letter-spacing: 0px;
     line-height: .9;
     color: var(--bright-pink);
 }
 
+.site-title-mark {
+    display: block;
+    width: clamp(370px, 38.5vw, 680px);
+    height: auto;
+    cursor: default;
+    transform: translate(-3.5vw, -1.5vw);
+}
+
 .about-page-content p {
     max-width: 430px;
     font-size: 20px;
     line-height: 1.25;
+    transform: translateX(1.8vw);
 }
 
 

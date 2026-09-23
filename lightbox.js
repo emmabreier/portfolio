@@ -27,7 +27,7 @@ function openLightbox(image) {
 document.addEventListener("click", event => {
     const image = event.target.closest("img");
 
-    if (image && !lightbox.contains(image)) {
+    if (image && !lightbox.contains(image) && !image.classList.contains("no-lightbox")) {
         openLightbox(image);
         return;
     }
