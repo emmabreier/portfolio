@@ -210,6 +210,16 @@ h1 {
     stroke-width: 1.8;
 }
 
+.site-mark-corner {
+    position: absolute;
+    top: 34px;
+    right: 6vw;
+    z-index: 1001;
+    width: 38px;
+    height: 38px;
+    display: block;
+}
+
 .portfolio-page,
 .layton-page,
 .strike-page {
@@ -1605,6 +1615,10 @@ body.about-page .about-page-content h1 {
     }
 
     body:not(.about-page) .about-contact-links {
+        display: none;
+    }
+
+    .site-mark-corner {
         display: none;
     }
 
