@@ -4,7 +4,7 @@ const projects = {
     "about-layton": `
         <div class="print-design-header project-page-header">
             <p class="eyebrow">Client-Based Professional Practice</p>
-            <h2>Layton Design <br>Studio</h2>
+            <h2>Layton <br>Design Studio</h2>
         </div>
 
         <div class="content-pair print-design-layout about-layton-pair">

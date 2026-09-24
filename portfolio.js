@@ -15,7 +15,7 @@ const projects = {
             <div class="content-type print-design-copy">
                 <h3>About Cortona</h3>
                 <p>
-                    While abroad in Cortona, Italy, I created a brand identity for the town.
+                    While studying abroad in Cortona, Italy, I created a mini branding identity package for the town. 
                 </p>
             </div>
         </div>
