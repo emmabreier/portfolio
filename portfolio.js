@@ -9,7 +9,7 @@ const projects = {
 
         <div class="content-pair print-design-layout">
             <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/mockbrandingbag.png" alt="Cortona Branding">
+                <img loading="lazy" decoding="async" src="Images/cortonaposters-01.png" alt="Cortona Branding">
             </div>
 
             <div class="content-type print-design-copy">
