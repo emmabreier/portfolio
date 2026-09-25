@@ -170,7 +170,7 @@ const projects = {
                     <img loading="lazy" decoding="async" src="Images/Internposter1.png" alt="Poster design 1">
                 </figure>
                 <figure class="photo-card">
-                    <img loading="lazy" decoding="async" src="Images/Internposter2.png" alt="Poster design 2">
+                    <img loading="lazy" decoding="async" src="Images/crcposter.png" alt="Poster design 2">
                 </figure>
                 <figure class="photo-card">
                     <img loading="lazy" decoding="async" src="Images/Internposter5.png" alt="Poster design 3">
