@@ -331,6 +331,7 @@ h1 {
     max-width: 260px;
     min-width: 0;
     justify-self: end;
+    margin-right: 60px;
 }
 
 .process-photo-column img {
