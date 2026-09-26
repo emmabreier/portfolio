@@ -1766,6 +1766,19 @@ body.about-page .about-page-content h1 {
         gap: 16px;
     }
 
+    .rotation-row {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .rotation-row img {
+        height: 90px;
+    }
+
+    .rotation-row-item-small {
+        height: 90px;
+    }
+
     .project-layout,
     .print-design-layout,
     .content-pair,
