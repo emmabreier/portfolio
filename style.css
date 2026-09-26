@@ -342,10 +342,46 @@ h1 {
     display: block;
 }
 
+.color-swatches {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    height: 220px;
+}
+
+.color-swatch {
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.color-swatch-1 {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #e8b355;
+}
+
+.color-swatch-2 {
+    top: 100px;
+    left: 90px;
+    z-index: 3;
+    background: #1c1c1c;
+}
+
+.color-swatch-3 {
+    top: 40px;
+    left: 170px;
+    z-index: 2;
+    background: #1f4b96;
+}
+
 .rotation-row-header {
     width: min(100%, 1040px);
     max-width: 100%;
-    margin: 56px auto 0;
+    margin: 96px auto 0;
     padding-left: 48px;
 }
 
@@ -398,7 +434,7 @@ h1 {
 }
 
 .content-pair.final-pattern-pair {
-    margin-top: 160px;
+    margin-top: 120px;
 }
 
 .project-content.is-fading {

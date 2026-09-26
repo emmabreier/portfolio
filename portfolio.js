@@ -30,7 +30,7 @@ const projects = {
                 </div>
 
                 <div class="project-media print-feature">
-                    <img loading="lazy" decoding="async" src="Images/cortonaposters-01.png" alt="Catan game design">
+                    <img loading="lazy" decoding="async" src="Images/vintagemarket.webp" alt="Catan game design">
                 </div>
             </div>
             <div class="content-pair print-design-layout">
@@ -70,6 +70,21 @@ const projects = {
                 <h3>Final Logo</h3>
                 <p>
                     The final wordmark for Cortona, built to feel timeless and rooted in the town's Italian character.
+                </p>
+            </div>
+        </div>
+
+        <div class="content-pair print-design-layout">
+            <div class="content-photo color-swatches" aria-hidden="true">
+                <div class="color-swatch color-swatch-1"></div>
+                <div class="color-swatch color-swatch-2"></div>
+                <div class="color-swatch color-swatch-3"></div>
+            </div>
+
+            <div class="content-type print-design-copy">
+                <h3>Colors</h3>
+                <p>
+                    A warm, sun-baked palette pulled from Cortona's terracotta rooftops, ochre walls, and deep Tuscan skies.
                 </p>
             </div>
         </div>
