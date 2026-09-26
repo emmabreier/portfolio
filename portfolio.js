@@ -4,21 +4,105 @@ const projects = {
     cortona: `
         <div class="print-design-header project-page-header">
             <p class="eyebrow">City Branding</p>
-            <h2>Cortona Branding</h2>
+            <h2>Cortona <br>Branding</h2>
         </div>
 
         <div class="content-pair print-design-layout">
             <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/cortonaposters-01.png" alt="Cortona Branding">
+                <img loading="lazy" decoding="async" src="Images/DSCF3397.jpg" alt="Cortona Branding">
             </div>
 
-            <div class="content-type print-design-copy">
+            <div class="content-type print-design-copy cortona-about-copy">
+                <div class="rotation-corner" aria-hidden="true">
+                    <img class="rotation-frame" src="Images/rotateone.svg" alt="" loading="lazy" decoding="async">
+                </div>
                 <h3>About Cortona</h3>
                 <p>
                     While studying abroad in Cortona, Italy, I created a mini branding identity package for the town. 
                 </p>
             </div>
         </div>
+        <div class="print-design-layout internship-layout">
+                <div class="print-design-copy">
+                    <p>
+                        This project was an illustrative card design for the board game Catan. The goal was to create cards with humor but still clear design and readibility. I focused on creating a cohesive visual system that felt playful, but still grounded in the game's original aesthetic.
+                    </p>
+                </div>
+
+                <div class="project-media print-feature">
+                    <img loading="lazy" decoding="async" src="Images/cortonaposters-01.png" alt="Catan game design">
+                </div>
+            </div>
+            <div class="content-pair print-design-layout">
+            <div class="content-photo project-media print-feature">
+                <img loading="lazy" decoding="async" src="Images/moodboardcort.png" alt="Cortona Branding">
+            </div>
+
+            <div class="content-type print-design-copy">
+                <h3>Inspiration</h3>
+                <p>
+                    While studying abroad in Cortona, Italy, I created a mini branding identity package for the town. 
+                </p>
+            </div>
+        </div>
+
+        <div class="content-pair print-design-layout">
+            <div class="content-type print-design-copy">
+                <h3>Process</h3>
+                <p>
+                    From early logo sketches to pattern studies, here's a look at the process behind the Cortona identity.
+                </p>
+            </div>
+
+            <div class="process-photo-column">
+                <img loading="lazy" decoding="async" src="Images/mainlogocort-01.png" alt="Cortona process detail 1">
+                <img loading="lazy" decoding="async" src="Images/mainlogocort-02.png" alt="Cortona process detail 2">
+                <img loading="lazy" decoding="async" src="Images/patterncortona.png" alt="Cortona process detail 3">
+            </div>
+        </div>
+
+        <div class="content-pair print-design-layout">
+            <div class="content-photo project-media print-feature">
+                <img loading="lazy" decoding="async" src="Images/cortonalogo.svg" alt="Cortona logo">
+            </div>
+
+            <div class="content-type print-design-copy">
+                <h3>Final Logo</h3>
+                <p>
+                    The final wordmark for Cortona, built to feel timeless and rooted in the town's Italian character.
+                </p>
+            </div>
+        </div>
+
+        <div class="rotation-row-header">
+            <h3>Final Icons</h3>
+        </div>
+
+        <div class="rotation-row-copy">
+            <p>
+                A closer look at the finished icon set created for the Cortona identity, each piece designed to feel playful and hand-drawn.
+            </p>
+        </div>
+
+        <div class="rotation-row" aria-hidden="true">
+            <img src="Images/rotatefour.svg" alt="" loading="lazy" decoding="async">
+            <img src="Images/rotateone.svg" alt="" loading="lazy" decoding="async">
+            <img class="rotation-row-item-small" src="Images/rotatetwo.svg" alt="" loading="lazy" decoding="async">
+        </div>
+
+        <div class="content-pair print-design-layout final-pattern-pair">
+            <div class="content-photo project-media print-feature">
+                <img loading="lazy" decoding="async" src="Images/patterncortona.png" alt="Cortona pattern">
+            </div>
+
+            <div class="content-type print-design-copy">
+                <h3>Final Pattern</h3>
+                <p>
+                    A repeating pattern built from the Cortona icon set, used across posters and packaging to tie the identity together.
+                </p>
+            </div>
+        </div>
+
     `,
 
     personal: `
@@ -282,6 +366,7 @@ function setActiveProject(projectKey) {
     const swapContent = () => {
         projectContent.innerHTML = projectHtml;
         setupCarousel();
+        setupRotationCorner();
     };
 
     const isFirstRender = !projectContent.innerHTML.trim();
@@ -311,6 +396,33 @@ function setActiveProject(projectKey) {
     if (activeLink) {
         activeLink.classList.add("active");
     }
+}
+
+let rotationIntervalId = null;
+
+function setupRotationCorner() {
+    if (rotationIntervalId) {
+        window.clearInterval(rotationIntervalId);
+        rotationIntervalId = null;
+    }
+
+    const rotationImg = projectContent.querySelector(".rotation-frame");
+    if (!rotationImg) {
+        return;
+    }
+
+    const frames = [
+        "Images/rotateone.svg",
+        "Images/rotatetwo.svg",
+        "Images/rotatethree.svg",
+        "Images/rotatefour.svg"
+    ];
+    let frameIndex = 0;
+
+    rotationIntervalId = window.setInterval(() => {
+        frameIndex = (frameIndex + 1) % frames.length;
+        rotationImg.src = frames[frameIndex];
+    }, 1000);
 }
 
 function setupCarousel() {
