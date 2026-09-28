@@ -118,6 +118,17 @@ const projects = {
             </div>
         </div>
 
+        <div class="mockup-full">
+            <img loading="lazy" decoding="async" src="Images/mockup3wide.png" alt="Cortona mockup wide">
+        </div>
+
+        <div class="mockup-grid">
+            <img loading="lazy" decoding="async" src="Images/mockup1.png" alt="Cortona mockup 1">
+            <img loading="lazy" decoding="async" src="Images/mockup2.png" alt="Cortona mockup 2">
+            <img loading="lazy" decoding="async" src="Images/mockup4.png" alt="Cortona mockup 4">
+            <img loading="lazy" decoding="async" src="Images/mockup5.png" alt="Cortona mockup 5">
+        </div>
+
     `,
 
     personal: `

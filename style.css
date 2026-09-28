@@ -438,6 +438,35 @@ h1 {
     margin-top: 120px;
 }
 
+.mockup-full {
+    width: 100%;
+    margin: 56px 0 0;
+}
+
+.mockup-full img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.mockup-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    width: min(100%, 1040px);
+    margin: 28px auto 0;
+}
+
+.mockup-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
 .project-content.is-fading {
     opacity: 0;
 }
