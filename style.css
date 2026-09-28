@@ -1878,6 +1878,34 @@ body.about-page .about-page-content h1 {
         height: 90px;
     }
 
+    .color-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-left: 0;
+    }
+
+    .color-section-text {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .color-swatches {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .color-swatch {
+        width: calc(50% - 8px);
+        height: 110px;
+    }
+
+    .color-swatch-half {
+        width: calc(25% - 12px);
+        height: 55px;
+    }
+
     .project-layout,
     .print-design-layout,
     .content-pair,
