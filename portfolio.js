@@ -9,14 +9,11 @@ const projects = {
 
         <div class="content-pair print-design-layout">
             <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/DSCF3397.jpg" alt="Cortona Branding">
+                <img loading="lazy" decoding="async" src="Images/mockup2.png" alt="Cortona Branding">
             </div>
 
-            <div class="content-type print-design-copy cortona-about-copy">
-                <div class="rotation-corner" aria-hidden="true">
-                    <img class="rotation-frame" src="Images/rotateone.svg" alt="" loading="lazy" decoding="async">
-                </div>
-                <h3>About Cortona</h3>
+            <div class="content-type print-design-copy">
+            
                 <p>
                     While studying abroad in Cortona, Italy, I created a mini branding identity package for the town. 
                 </p>
@@ -24,13 +21,17 @@ const projects = {
         </div>
         <div class="print-design-layout internship-layout">
                 <div class="print-design-copy">
+                <div class="rotation-corner" aria-hidden="true">
+                    <img class="rotation-frame" src="Images/rotateone.svg" alt="" loading="lazy" decoding="async">
+                </div>
+                <h3>About Cortona</h3>
                     <p>
                         This project was an illustrative card design for the board game Catan. The goal was to create cards with humor but still clear design and readibility. I focused on creating a cohesive visual system that felt playful, but still grounded in the game's original aesthetic.
                     </p>
                 </div>
 
                 <div class="project-media print-feature">
-                    <img loading="lazy" decoding="async" src="Images/vintagemarket.webp" alt="Catan game design">
+                    <img loading="lazy" decoding="async" src="Images/DSCF3397.jpg" alt="Catan game design">
                 </div>
             </div>
             <div class="content-pair print-design-layout">
@@ -55,54 +56,51 @@ const projects = {
             </div>
 
             <div class="process-photo-column">
-                <img loading="lazy" decoding="async" src="Images/mainlogocort-01.png" alt="Cortona process detail 1">
-                <img loading="lazy" decoding="async" src="Images/mainlogocort-02.png" alt="Cortona process detail 2">
-                <img loading="lazy" decoding="async" src="Images/patterncortona.png" alt="Cortona process detail 3">
+                <img loading="lazy" decoding="async" src="Images/behindscene1.jpg" alt="Cortona process detail 1">
+                <img loading="lazy" decoding="async" src="Images/behindscene2.jpg" alt="Cortona process detail 2">
             </div>
         </div>
 
         <div class="content-pair print-design-layout">
-            <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/cortonalogo.svg" alt="Cortona logo">
-            </div>
-
             <div class="content-type print-design-copy">
-                <h3>Final Logo</h3>
+                <h3>Logotype</h3>
                 <p>
                     The final wordmark for Cortona, built to feel timeless and rooted in the town's Italian character.
                 </p>
             </div>
+
+            <div class="content-photo project-media print-feature">
+                <img loading="lazy" decoding="async" src="Images/cortonalogo.svg" alt="Cortona logo">
+            </div>
         </div>
 
-        <div class="content-pair print-design-layout">
-            <div class="content-photo color-swatches" aria-hidden="true">
-                <div class="color-swatch color-swatch-1"></div>
-                <div class="color-swatch color-swatch-2"></div>
-                <div class="color-swatch color-swatch-3"></div>
-            </div>
-
-            <div class="content-type print-design-copy">
+        <div class="color-section">
+            <div class="color-section-text">
                 <h3>Colors</h3>
                 <p>
                     A warm, sun-baked palette pulled from Cortona's terracotta rooftops, ochre walls, and deep Tuscan skies.
                 </p>
             </div>
+
+            <div class="color-swatches" aria-hidden="true">
+                <div class="color-swatch color-swatch-1"></div>
+                <div class="color-swatch color-swatch-2"></div>
+                <div class="color-swatch color-swatch-3 color-swatch-half"></div>
+                <div class="color-swatch color-swatch-4 color-swatch-half"></div>
+            </div>
         </div>
 
-        <div class="rotation-row-header">
-            <h3>Final Icons</h3>
-        </div>
+        <div class="content-pair print-design-layout">
+            <div class="content-type print-design-copy">
+                <h3>Icons</h3>
+                <p>
+                    A closer look at the finished icon set created for the Cortona identity, each piece designed to feel playful and hand-drawn.
+                </p>
+            </div>
 
-        <div class="rotation-row-copy">
-            <p>
-                A closer look at the finished icon set created for the Cortona identity, each piece designed to feel playful and hand-drawn.
-            </p>
-        </div>
-
-        <div class="rotation-row" aria-hidden="true">
-            <img src="Images/rotatefour.svg" alt="" loading="lazy" decoding="async">
-            <img src="Images/rotateone.svg" alt="" loading="lazy" decoding="async">
-            <img class="rotation-row-item-small" src="Images/rotatetwo.svg" alt="" loading="lazy" decoding="async">
+            <div class="content-photo project-media print-feature">
+                <img loading="lazy" decoding="async" src="Images/colorways.png" alt="Cortona icon colorways">
+            </div>
         </div>
 
         <div class="content-pair print-design-layout final-pattern-pair">
@@ -118,15 +116,13 @@ const projects = {
             </div>
         </div>
 
-        <div class="mockup-full">
-            <img loading="lazy" decoding="async" src="Images/mockup3wide.png" alt="Cortona mockup wide">
-        </div>
-
         <div class="mockup-grid">
+            <img loading="lazy" decoding="async" src="Images/mockup3wide.png" alt="Cortona mockup 3">
             <img loading="lazy" decoding="async" src="Images/mockup1.png" alt="Cortona mockup 1">
             <img loading="lazy" decoding="async" src="Images/mockup2.png" alt="Cortona mockup 2">
             <img loading="lazy" decoding="async" src="Images/mockup4.png" alt="Cortona mockup 4">
             <img loading="lazy" decoding="async" src="Images/mockup5.png" alt="Cortona mockup 5">
+            <img loading="lazy" decoding="async" src="Images/mockup6.png" alt="Cortona mockup 6">
         </div>
 
     `,
@@ -486,5 +482,5 @@ if (projectContent) {
         });
     });
 
-    setActiveProject("print-design");
+    setActiveProject("cortona");
 }

@@ -299,18 +299,13 @@ h1 {
     transition: opacity 0.15s ease, transform 0.15s ease;
 }
 
-.cortona-about-copy {
-    align-self: start;
-    margin-top: 24px;
-}
-
 .rotation-corner {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 36px;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 24px;
     overflow: hidden;
 }
 
@@ -336,54 +331,91 @@ h1 {
 
 .process-photo-column img {
     width: 100%;
-    height: 170px;
+    aspect-ratio: 1 / 1;
+    height: auto;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     display: block;
 }
 
+.color-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    width: min(100%, 1040px);
+    max-width: 100%;
+    margin: 56px auto 96px;
+    padding-left: 24px;
+}
+
+.color-section-text {
+    flex: 0 1 380px;
+    min-width: 0;
+}
+
+.color-section-text h3 {
+    margin: 0;
+    font-family: "essonnes-display", serif;
+    font-style: italic;
+    font-size: 34px;
+    line-height: 0.96;
+    color: var(--olive);
+}
+
+.color-section-text p {
+    margin: 12px 0 0;
+    max-width: none;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--charcoal);
+}
+
 .color-swatches {
-    position: relative;
-    width: 100%;
-    max-width: 340px;
-    height: 220px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex: 0 1 auto;
+    height: auto;
 }
 
 .color-swatch {
-    position: absolute;
-    width: 200px;
+    width: 150px;
     height: 150px;
+    flex: 0 0 auto;
+    min-width: 0;
     border-radius: 18px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
+.color-swatch-half {
+    width: 75px;
+    height: 75px;
+    align-self: center;
+}
+
 .color-swatch-1 {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background: #e8b355;
+    background: #edb851;
 }
 
 .color-swatch-2 {
-    top: 100px;
-    left: 90px;
-    z-index: 3;
-    background: #1c1c1c;
+    background: #204995;
 }
 
 .color-swatch-3 {
-    top: 40px;
-    left: 170px;
-    z-index: 2;
-    background: #1f4b96;
+    background: #a0712a;
+}
+
+.color-swatch-4 {
+    background: #000;
 }
 
 .rotation-row-header {
     width: min(100%, 1040px);
     max-width: 100%;
     margin: 96px auto 0;
-    padding-left: 48px;
+    padding-left: 24px;
 }
 
 .rotation-row-header h3 {
@@ -399,7 +431,7 @@ h1 {
     width: min(100%, 1040px);
     max-width: 100%;
     margin: 12px auto 0;
-    padding-left: 48px;
+    padding-left: 24px;
 }
 
 .rotation-row-copy p {
@@ -438,12 +470,13 @@ h1 {
     margin-top: 120px;
 }
 
-.mockup-full {
-    width: 100%;
-    margin: 56px 0 0;
+.colorways-feature {
+    width: min(100%, 1040px);
+    max-width: 100%;
+    margin: 56px auto 0;
 }
 
-.mockup-full img {
+.colorways-feature img {
     width: 100%;
     height: auto;
     display: block;
@@ -456,7 +489,7 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 28px;
     width: min(100%, 1040px);
-    margin: 28px auto 0;
+    margin: 56px auto 0;
 }
 
 .mockup-grid img {
