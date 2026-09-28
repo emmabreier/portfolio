@@ -50,8 +50,8 @@ const projects = {
             <div class="content-type print-design-copy">
                 <p class="meta">Editorial Design</p>
                 <h3>Mirage</h3>
-                <p>
-                    Issue 11 — Mirage explores dreamlike visuals, layered typography, and a reflective editorial mood.
+                <p>  
+                This semester's concept was Mirage. Mirage investigates the tension between illusion and truth, inviting viewers to question what is real, what is imagined, and how perception influences identity and connection.
                 </p>
                 <a class="issue-cta" href="https://issuu.com/strike_magazine/docs/strike_magazine_athens_issue_11" target="_blank" rel="noopener noreferrer">read the full issue here</a>
             </div>
@@ -80,7 +80,7 @@ const projects = {
                 <p class="meta">Material Study</p>
                 <h3>Making of Mirage</h3>
                 <p>
-                    Painted surfaces and layered details build the dreamlike visual language of Mirage.
+                This concept focused on exploring the interplay between illusion and reality, using visual elements and editorial design to evoke a sense of dreamlike ambiguity, I experimented with analog type warping and layered textures to create a visually engaging and immersive experience.
                 </p>
             </div>
         </div>
@@ -90,7 +90,8 @@ const projects = {
                 <p class="meta">Process</p>
                 <h3>Layout and Typography</h3>
                 <p>
-                    An editorial page in progress, showing the physical experimentation behind the finished issue.
+                This was my first time on Strike, and I worked on the layout team, collaborating with the other creative teams on the concepts. I helped create the visuals for the styling, photography, and mainly the layout and typography.
+
                 </p>
             </div>
 
