@@ -7,16 +7,16 @@ const projects = {
             <h2>Layton <br>Design Studio</h2>
         </div>
 
-        <div class="content-pair print-design-layout about-layton-pair">
+        <div class="content-pair print-design-layout">
+            <div class="content-photo project-media print-feature">
+                <img loading="lazy" decoding="async" src="Images/croppedlogis1.JPEG" alt="close up of a car">
+            </div>
+
             <div class="content-type print-design-copy">
                 <h3>About Layton</h3>
                 <p>
                 Layton Design Studio is a collaborative, client-focused professional practice studio where students gain hands-on experience working with real clients. The studio provides an opportunity to develop design skills while learning how to communicate, collaborate, and build professional relationships.            
                     </p>
-            </div>
-
-            <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/carcloseup.JPG" alt="close up of a car">
             </div>
         </div>
     `,
@@ -27,19 +27,18 @@ const projects = {
             <h2>BMW x UGA</h2>
         </div>
 
-        <div class="project-media banner-media bmw-banner">
-            <img loading="lazy" decoding="async" src="Images/mmbanner10.png" alt="BMW Mean Machine graphic">
-        </div>
+    
         <div class="content-pair print-design-layout">
+            <div class="content-photo project-media print-feature">
+                <img loading="lazy" decoding="async" src="Images/finallaytonpages-01.jpg" alt="BMW Mean Machine car">
+            </div>
+
             <div class="content-type print-design-copy">
                 <p>
                     UGA collaborated with BMW to create a mean machine concept rooted in performance, precision, and motorsport energy.
                 </p>
                 <a class="issue-cta" href="https://news.uga.edu/uga-students-take-the-wheel-in-designing-bmw-mean-machine/" target="_blank" rel="noopener noreferrer">read the UGA story</a>
-            </div>
-
-            <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/finallaytonpages-01.jpg" alt="BMW Mean Machine car">
+                <a class="issue-cta" href="https://youtu.be/5FPfbL2OMug?si=DKulfhqUlrJwxa_j" target="_blank" rel="noopener noreferrer">watch youtube video</a>
             </div>
         </div>
     `,
@@ -56,6 +55,7 @@ const projects = {
                     We worked with UGA College of Engineering to create a new brand system for UGA Motorsports that felt bold, technical, and unmistakably athletic.
                 </p>
                 <a class="issue-cta" href="https://news.uga.edu/uga-students-take-the-wheel-in-designing-bmw-mean-machine/" target="_blank" rel="noopener noreferrer">read the UGA story</a>
+                <a class="issue-cta" href="https://youtu.be/5FPfbL2OMug?si=DKulfhqUlrJwxa_j" target="_blank" rel="noopener noreferrer">watch youtube video</a>
             </div>
 
             <div class="content-photo project-media print-feature">

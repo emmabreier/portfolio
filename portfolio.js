@@ -15,7 +15,7 @@ const projects = {
             <div class="content-type print-design-copy">
             
                 <p>
-                    While studying abroad in Cortona, Italy, I created a mini branding identity package for the town. 
+                   While my time in Cortona, Italy, I created a mini branding identity package for the town, focusing on capturing its unique charm and character that the locals feel are not portrayed correctly by locals.
                 </p>
             </div>
         </div>
@@ -26,7 +26,8 @@ const projects = {
                 </div>
                 <h3>About Cortona</h3>
                     <p>
-                        This project was an illustrative card design for the board game Catan. The goal was to create cards with humor but still clear design and readibility. I focused on creating a cohesive visual system that felt playful, but still grounded in the game's original aesthetic.
+                    After spending three months living in Cortona, I wanted to create a brand identity based on how I experienced the town, not simply how it is portrayed from the outside. The project reflects the history, culture, and everyday details that shaped my experience of Cortona.
+
                     </p>
                 </div>
 
@@ -42,7 +43,8 @@ const projects = {
             <div class="content-type print-design-copy">
                 <h3>Inspiration</h3>
                 <p>
-                    While studying abroad in Cortona, Italy, I created a mini branding identity package for the town. 
+                Vintage markets and repurposing are an important part of Cortona’s culture. I wanted to reflect the city’s appreciation for handmade, hand-painted design, as well as the familiar symbols and visual details found throughout the town.
+
                 </p>
             </div>
         </div>
@@ -51,7 +53,7 @@ const projects = {
             <div class="content-type print-design-copy">
                 <h3>Process</h3>
                 <p>
-                    From early logo sketches to pattern studies, here's a look at the process behind the Cortona identity.
+                   My main goal was to create by own interpretation fo Cortona's symbols, while maintaining a strong connection to the town's visual language and cultural heritage, and not straying away from the visuals you would see around town. I wanted to ensure that my designs felt authentic and rooted in the town's identity.
                 </p>
             </div>
 
@@ -65,7 +67,7 @@ const projects = {
             <div class="content-type print-design-copy">
                 <h3>Logotype</h3>
                 <p>
-                    The final wordmark for Cortona, built to feel timeless and rooted in the town's Italian character.
+                    The final logotype I created I inspired off of a combination of signs I saw in town, I kept a strong hand-made feel.
                 </p>
             </div>
 
@@ -94,7 +96,7 @@ const projects = {
             <div class="content-type print-design-copy">
                 <h3>Icons</h3>
                 <p>
-                    A closer look at the finished icon set created for the Cortona identity, each piece designed to feel playful and hand-drawn.
+                The icons are inspired by the three large symbols I saw throughout Cortona. The sun is for the beautiful sunsets and bright sun that the town gets, the flowers are my version of the quatrefoils that are everywhere. 
                 </p>
             </div>
 
@@ -111,7 +113,7 @@ const projects = {
             <div class="content-type print-design-copy">
                 <h3>Final Pattern</h3>
                 <p>
-                    A repeating pattern built from the Cortona icon set, used across posters and packaging to tie the identity together.
+                A repeating pattern inspired by the iron wraught railings all over the town, and quatrefoils incorporated. 
                 </p>
             </div>
         </div>

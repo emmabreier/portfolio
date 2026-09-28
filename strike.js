@@ -8,6 +8,10 @@ const projects = {
         </div>
 
         <div class="content-pair print-design-layout about-strike-pair">
+            <div class="content-photo project-media print-feature">
+                <img loading="lazy" decoding="async" src="Images/meatstrike.JPEG" alt="Strike About">
+            </div>
+
             <div class="content-type print-design-copy">
                 <p class="meta">Magazine Identity</p>
                 <h3>Strike</h3>
@@ -15,23 +19,19 @@ const projects = {
                     Strike is a student-run magazine published at the University of Georgia. I worked with the team to create a brand identity that felt editorial, expressive, and culturally aware.
                 </p>
             </div>
-
-            <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/meatstrike.JPEG" alt="Strike About">
-            </div>
         </div>
 
         <div class="content-pair print-design-layout internship-layout">
-            <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/shortersidecollage.jpg" alt="Strike magazine collage">
-            </div>
-
             <div class="content-type print-design-copy">
                 <p class="meta">Editorial Collage</p>
                 <h3>My Role</h3>
                 <p>
                     A layered collage exploring the expressive, tactile visual language of Strike Magazine.
                 </p>
+            </div>
+
+            <div class="content-photo project-media print-feature">
+                <img loading="lazy" decoding="async" src="Images/shortersidecollage.jpg" alt="Strike magazine collage">
             </div>
         </div>
     `,
