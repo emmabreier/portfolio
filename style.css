@@ -79,6 +79,10 @@ body.lightbox-open {
     visibility: visible;
 }
 
+.image-lightbox.is-svg {
+    background: #fff;
+}
+
 .image-lightbox-image {
     max-width: 92vw;
     max-height: 92vh;
@@ -108,6 +112,11 @@ body.lightbox-open {
 .image-lightbox-close:hover,
 .image-lightbox-close:focus-visible {
     background: #fff;
+    color: #000;
+}
+
+.image-lightbox.is-svg .image-lightbox-close {
+    border-color: rgba(0, 0, 0, 0.55);
     color: #000;
 }
 
@@ -542,8 +551,8 @@ h1 {
 }
 
 .final-reflection {
-    width: min(100%, 760px);
-    margin: 56px auto 0;
+    width: min(100%, 660px);
+    margin: 88px auto 48px;
     text-align: left;
 }
 
@@ -558,7 +567,7 @@ h1 {
 }
 
 .final-reflection p {
-    width: min(100%, 560px);
+    width: min(100%, 500px);
     max-width: none;
     margin: 0 auto;
     font-size: 16px;
@@ -1306,6 +1315,10 @@ body.about-page {
 }
 
 body.about-page .top-nav {
+    background: var(--paper);
+}
+
+body:not(.about-page) .top-nav {
     background: var(--paper);
 }
 

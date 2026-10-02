@@ -140,7 +140,7 @@ const projects = {
         theme: "bmw-case-study",
         eyebrow: "Livery Design",
         title: "BMW x UGA",
-        overview: "UGA collaborated with BMW to create a Mean Machine concept rooted in performance, precision, and motorsport energy.",
+        overview: "The Layton Design Studio partnered with BMW and UGA Athletics to rebrand the Mean Machine, a fan-favorite promotional vehicle designed through public submissions in past years. BMW and UGA aimed to highlight more student-led work in the final design. A team of 12 student designers developed three distinct wraps, with fans nationwide voting to select the winning design. This BMW X7 will represent UGA during the 2026–2027 football season.​​​​​​​",
         links: [
             { href: "https://news.uga.edu/uga-students-take-the-wheel-in-designing-bmw-mean-machine/", label: "read the UGA story" },
             { href: "https://youtu.be/5FPfbL2OMug?si=DKulfhqUlrJwxa_j", label: "watch youtube video" }
@@ -149,7 +149,7 @@ const projects = {
         about: {
             image: "carcloseup.JPG",
             alt: "Close-up of the BMW Mean Machine livery",
-            copy: "The project brought BMW performance together with UGA identity in a bold, high-impact livery for the Mean Machine concept."
+            copy: "Representatives from BMW and UGA Athletics met with our team to explain past wraps and models, sharing what worked and what didn’t to inform the new design. From there, we collaborated on mood boards and sketches, developing three concepts: Collegiate, Make Noise, and Beware of Dawg."
         },
         inspiration: {
             image: "finallaytonpages-02.jpg",
@@ -192,7 +192,8 @@ const projects = {
             { image: "carreveal.jpg", alt: "BMW Mean Machine car reveal" },
             { image: "finallaytonpages-04.png", alt: "BMW Mean Machine livery detail" }
         ],
-        reflection: "The collaboration brought a high-performance visual concept to life by connecting UGA spirit with BMW's motorsport-focused character."
+        reflection: "This was an incredible opportunity, and I felt my work improve significantly as this semester went on. The biggest challenge was self-perseverance and maintaining confidence throughout the process. As a young student, it’s easy to second-guess yourself and feel unprepared for a challenge, especially with the potential for thousands to see your work. " +
+        "I loved working collaboratively, and I thoroughly enjoyed how well this group of designers worked well together. I felt comfortable enough to try harder tasks, present to the clients more, and experiment. I wasn't afraid to fail or throw out bad ideas, and I think thats what made this such a beneficial and wonderful project. Earlier in the year, I was unable to express fully when I didn't know how to do something, and that inability to be fully transparent slowed my progress down. I learned that even though it's terrifying, you have to dive into the deep end and be yourself. At the end of this project, I am so proud of what I created, and I am proud of what our class created together. "
     }),
 
     "UGA Motorsports": buildLiveryCaseStudy({
@@ -201,8 +202,7 @@ const projects = {
         title: "UGA <br>Motorsports",
         overview: "We worked with UGA College of Engineering to create a new brand system for UGA Motorsports that felt bold, technical, and unmistakably athletic.",
         links: [
-            { href: "https://news.uga.edu/uga-students-take-the-wheel-in-designing-bmw-mean-machine/", label: "read the UGA story" },
-            { href: "https://youtu.be/5FPfbL2OMug?si=DKulfhqUlrJwxa_j", label: "watch youtube video" }
+            { href: "https://www.instagram.com/ugamotorsports/", label: "follow UGA Motorsports on Instagram" }
         ],
         hero: { image: "finallaytonpages-02.jpg", alt: "UGA Motorsports visual identity" },
         about: {
@@ -251,7 +251,9 @@ const projects = {
             { image: "unveil.jpg", alt: "UGA Motorsports car unveiling" },
             { image: "LDS_UGAMotorsports_Spring26.jpg", alt: "UGA Motorsports project presentation" }
         ],
-        reflection: "This project brought the team's competitive spirit and engineering focus into a visual identity designed to work across the car, team, and racing environment."
+        reflection: `This project strengthened my ability to collaborate and grow within a team of designers. I learned that another designer’s success doesn’t diminish my own; instead, it can expand my perspective and push my work in new, more creative directions.
+
+    Working with real clients across multiple projects also improved my time management and communication skills, both with clients and within the team. Additionally, the fast-paced, hands-on nature of the project significantly advanced my technical abilities and efficiency with digital design tools.`
     })
 };
 

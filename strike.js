@@ -3,7 +3,7 @@ const projectContent = document.getElementById("project-content");
 const projects = {
     "about-strike": `
         <div class="print-design-header project-page-header">
-            <p class="eyebrow">Strike Magazine</p>
+            <p class="eyebrow">Editorial, Creative Direction, Layout</p>
             <h2>Strike <br>Magazine</h2>
         </div>
 

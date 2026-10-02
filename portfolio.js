@@ -3,7 +3,7 @@ const projectContent = document.getElementById("project-content");
 const projects = {
     cortona: `
         <div class="print-design-header project-page-header">
-            <p class="eyebrow">City Branding</p>
+            <p class="eyebrow">City Branding, Illustration</p>
             <h2>Cortona <br>Branding</h2>
         </div>
 
@@ -142,7 +142,7 @@ const projects = {
     personal: `
         <div class="print-design-section internship-block">
             <div class="print-design-header">
-                <p class="eyebrow">Game Design</p>
+                <p class="eyebrow">Game Design, Illustration</p>
                 <h2>Catan Game <br>Design</h2>
             </div>
 
@@ -348,7 +348,7 @@ const projects = {
                 </div>
 
                 <div class="content-photo project-media print-feature centennial-detail-image">
-                    <img loading="lazy" decoding="async" src="Images/fieldposter.JPG" alt="Dodd Centennial field poster">
+                    <img loading="lazy" decoding="async" src="Images/moonbehind.JPG" alt="Dodd Centennial field poster">
                 </div>
             </div>
         </div>

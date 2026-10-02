@@ -12,13 +12,16 @@ const closeButton = lightbox.querySelector(".image-lightbox-close");
 
 function closeLightbox() {
     lightbox.classList.remove("is-open");
+    lightbox.classList.remove("is-svg");
     lightbox.setAttribute("aria-hidden", "true");
     document.body.classList.remove("lightbox-open");
 }
 
 function openLightbox(image) {
-    lightboxImage.src = image.currentSrc || image.src;
+    const imageSrc = image.currentSrc || image.src;
+    lightboxImage.src = imageSrc;
     lightboxImage.alt = image.alt || "Enlarged portfolio image";
+    lightbox.classList.toggle("is-svg", new URL(imageSrc, window.location.href).pathname.toLowerCase().endsWith(".svg"));
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.classList.add("lightbox-open");
