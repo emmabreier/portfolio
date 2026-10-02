@@ -429,6 +429,29 @@ h1 {
     background: #000;
 }
 
+.bmw-case-study .color-swatch-1,
+.motorsports-case-study .color-swatch-1 {
+    background: #ba0c2f;
+}
+
+.bmw-case-study .color-swatch-2,
+.motorsports-case-study .color-swatch-2 {
+    background: #111;
+}
+
+.bmw-case-study .color-swatch-3,
+.motorsports-case-study .color-swatch-3 {
+    background: #f5f5f2;
+}
+
+.bmw-case-study .color-swatch-4 {
+    background: #204995;
+}
+
+.motorsports-case-study .color-swatch-4 {
+    background: #a9adb2;
+}
+
 .rotation-row-header {
     width: min(100%, 1040px);
     max-width: 100%;
@@ -516,6 +539,32 @@ h1 {
     display: block;
     border-radius: 18px;
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.final-reflection {
+    width: min(100%, 760px);
+    margin: 56px auto 0;
+    text-align: left;
+}
+
+.final-reflection h3 {
+    margin: 0 0 12px;
+    font-family: "essonnes-display", serif;
+    font-style: italic;
+    font-size: 34px;
+    line-height: 0.96;
+    color: var(--olive);
+    text-align: center;
+}
+
+.final-reflection p {
+    width: min(100%, 560px);
+    max-width: none;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--charcoal);
+    text-align: left;
 }
 
 .project-content.is-fading {

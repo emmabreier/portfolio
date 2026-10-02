@@ -130,6 +130,13 @@ const projects = {
             <img loading="lazy" decoding="async" src="Images/mockup6.png" alt="Cortona mockup 6">
         </div>
 
+        <div class="final-reflection">
+            <h3>Final Reflection</h3>
+            <p>
+                This project gave me the opportunity to translate my experience of Cortona into a visual identity rooted in the town's character, history, and everyday details.
+            </p>
+        </div>
+
     `,
 
     personal: `
