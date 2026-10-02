@@ -319,24 +319,42 @@ h1 {
 }
 
 .process-photo-column {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    position: relative;
     width: 100%;
-    max-width: 260px;
+    max-width: 420px;
+    height: 300px;
     min-width: 0;
     justify-self: end;
     margin-right: 60px;
 }
 
+.content-pair.cortona-process-pair {
+    margin-top: 80px;
+}
+
 .process-photo-column img {
-    width: 100%;
+    position: absolute;
+    width: 54%;
     aspect-ratio: 1 / 1;
     height: auto;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     display: block;
+}
+
+.process-photo-column img:first-child {
+    top: 0;
+    left: 0;
+    transform: rotate(-5deg);
+    z-index: 1;
+}
+
+.process-photo-column img:last-child {
+    right: 0;
+    bottom: 0;
+    transform: rotate(5deg);
+    z-index: 2;
 }
 
 .color-section {
@@ -760,7 +778,15 @@ h1 {
 
 .carousel-viewport {
     min-width: 0;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+}
+
+.carousel-viewport::-webkit-scrollbar {
+    display: none;
 }
 
 .carousel-track {
@@ -774,6 +800,7 @@ h1 {
     flex: 0 0 calc((100% - 48px) / 4);
     width: auto;
     max-width: none;
+    scroll-snap-align: start;
 }
 
 .photo-carousel .photo-card img {
@@ -1905,6 +1932,12 @@ body.about-page .about-page-content h1 {
     .color-swatch-half {
         width: calc(25% - 12px);
         height: 55px;
+    }
+
+    .process-photo-column {
+        justify-self: center;
+        margin-right: 0;
+        height: clamp(220px, 75vw, 260px);
     }
 
     .project-layout,

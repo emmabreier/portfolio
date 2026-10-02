@@ -49,7 +49,12 @@ const projects = {
             </div>
         </div>
 
-        <div class="content-pair print-design-layout">
+        <div class="mockup-grid inspiration-mockup-grid">
+            <img loading="lazy" decoding="async" src="Images/mockup3wide.png" alt="Cortona mockup 3">
+            <img loading="lazy" decoding="async" src="Images/mockup1.png" alt="Cortona mockup 1">
+        </div>
+
+        <div class="content-pair print-design-layout cortona-process-pair">
             <div class="content-type print-design-copy">
                 <h3>Process</h3>
                 <p>
@@ -119,8 +124,6 @@ const projects = {
         </div>
 
         <div class="mockup-grid">
-            <img loading="lazy" decoding="async" src="Images/mockup3wide.png" alt="Cortona mockup 3">
-            <img loading="lazy" decoding="async" src="Images/mockup1.png" alt="Cortona mockup 1">
             <img loading="lazy" decoding="async" src="Images/mockup2.png" alt="Cortona mockup 2">
             <img loading="lazy" decoding="async" src="Images/mockup4.png" alt="Cortona mockup 4">
             <img loading="lazy" decoding="async" src="Images/mockup5.png" alt="Cortona mockup 5">
