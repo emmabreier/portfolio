@@ -44,7 +44,7 @@ const projects = {
 
         <div class="content-pair print-design-layout">
             <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/readingreal.jpg" alt="Strike Issue 11">
+                <img loading="lazy" decoding="async" src="Images/readingstrike.JPG" alt="Strike Issue 11">
             </div>
 
             <div class="content-type print-design-copy">
