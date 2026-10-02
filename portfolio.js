@@ -9,7 +9,7 @@ const projects = {
 
         <div class="content-pair print-design-layout">
             <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/mockup2.png" alt="Cortona Branding">
+                <img loading="lazy" decoding="async" src="Images/mockup2.jpg" alt="Cortona Branding">
             </div>
 
             <div class="content-type print-design-copy">
@@ -37,7 +37,7 @@ const projects = {
             </div>
             <div class="content-pair print-design-layout">
             <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/moodboardcort.png" alt="Cortona Branding">
+                <img loading="lazy" decoding="async" src="Images/moodboardcort.jpg" alt="Cortona Branding">
             </div>
 
             <div class="content-type print-design-copy">
@@ -50,8 +50,8 @@ const projects = {
         </div>
 
         <div class="mockup-grid inspiration-mockup-grid">
-            <img loading="lazy" decoding="async" src="Images/mockup3wide.png" alt="Cortona mockup 3">
-            <img loading="lazy" decoding="async" src="Images/mockup1.png" alt="Cortona mockup 1">
+            <img loading="lazy" decoding="async" src="Images/mockup3wide.jpg" alt="Cortona mockup 3">
+            <img loading="lazy" decoding="async" src="Images/mockup1.jpg" alt="Cortona mockup 1">
         </div>
 
         <div class="content-pair print-design-layout cortona-process-pair">
@@ -124,10 +124,10 @@ const projects = {
         </div>
 
         <div class="mockup-grid">
-            <img loading="lazy" decoding="async" src="Images/mockup2.png" alt="Cortona mockup 2">
-            <img loading="lazy" decoding="async" src="Images/mockup4.png" alt="Cortona mockup 4">
-            <img loading="lazy" decoding="async" src="Images/mockup5.png" alt="Cortona mockup 5">
-            <img loading="lazy" decoding="async" src="Images/mockup6.png" alt="Cortona mockup 6">
+            <img loading="lazy" decoding="async" src="Images/mockup2.jpg" alt="Cortona mockup 2">
+            <img loading="lazy" decoding="async" src="Images/mockup4.jpg" alt="Cortona mockup 4">
+            <img loading="lazy" decoding="async" src="Images/mockup5.jpg" alt="Cortona mockup 5">
+            <img loading="lazy" decoding="async" src="Images/mockup6.jpg" alt="Cortona mockup 6">
         </div>
 
         <div class="final-reflection">
@@ -222,6 +222,68 @@ const projects = {
     `,
 
     "print-design": `
+        <div class="print-design-section internship-block">
+            <div class="print-design-header">
+                <p class="eyebrow">Print Design</p>
+                <h2>UGA Archway <br>Internship</h2>
+            </div>
+            <div class="content-pair print-design-layout">
+                <div class="content-photo project-media print-feature">
+                    <img loading="lazy" decoding="async" src="Images/Internposter4.png" alt="Internship poster design">
+                </div>
+
+                <div class="content-type print-design-copy">
+                    <h3>My Role</h3>
+                    <p>
+                        UGA Archway Partnership is an organizaton that organizes and carries out community events helping neghboring counties around Athens, GA. As an intern at UGA Archway Partnership, I work on a variety of print and digita design that gets distrubuted to the public and to Archway's partners. I work on posters, data sheets, and brochures for county and community events. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="photo-grid poster-grid">
+                <figure class="photo-card">
+                    <img loading="lazy" decoding="async" src="Images/Internposter1.png" alt="Poster design 1">
+                </figure>
+                <figure class="photo-card">
+                    <img loading="lazy" decoding="async" src="Images/crcposter.png" alt="Poster design 2">
+                </figure>
+                <figure class="photo-card">
+                    <img loading="lazy" decoding="async" src="Images/Internposter5.png" alt="Poster design 3">
+                </figure>
+                <figure class="photo-card">
+                    <img loading="lazy" decoding="async" src="Images/Internmedicaltour.png" alt="Poster design 4">
+                </figure>
+            </div>
+
+            <div class="content-pair print-design-layout internship-layout">
+                <div class="content-type print-design-copy">
+                    <p class="meta">Community Design</p>
+                    <h3>UGA Medical Data Packets</h3>
+                    <p>
+                        During my internship, I created a series of data packets for UGA Medical School and their new Med tour. I created 7 packets for each of the counties the students and faculty visited.
+                    </p>
+                </div>
+                <div class="content-photo project-media print-feature">
+                    <img loading="lazy" decoding="async" src="Images/Interndata1.png" alt="UGA Medical School data packet">
+                </div>
+            </div>
+
+            <div class="photo-grid poster-grid internship-data-grid">
+                <figure class="photo-card">
+                    <img loading="lazy" decoding="async" src="Images/Interndatatable.png" alt="Medical data packet table">
+                </figure>
+                <figure class="photo-card">
+                    <img loading="lazy" decoding="async" src="Images/newbibb2.png" alt="Bibb County medical data packet">
+                </figure>
+                <figure class="photo-card">
+                    <img loading="lazy" decoding="async" src="Images/newbibb1.png" alt="Bibb County medical data packet detail">
+                </figure>
+                <figure class="photo-card">
+                    <img loading="lazy" decoding="async" src="Images/newbibb3.png" alt="Bibb County medical data packet detail">
+                </figure>
+            </div>
+        </div>
+
         <div class="print-design-section">
             <div class="print-design-header">
                 <p class="eyebrow">Event Poster</p>
@@ -240,6 +302,19 @@ const projects = {
                     <br>
                     I created a poster advertising the show, or "mostra" in italian, that was inspired by the architechture and landscape that makes Cortona so famous: its hills. The typography is stacked, going with the sharp angles and steepness of the town, and the photo was taken myself while abroad. 
                     </p>
+                </div>
+            </div>
+
+            <div class="content-pair print-design-layout internship-layout">
+                <div class="content-type print-design-copy">
+                    <h3>Landscape Study</h3>
+                    <p>
+                        I used my own photograph of Cortona’s steep streets and layered architecture as the poster imagery, pairing the landscape with stacked typography inspired by the town’s angles.
+                    </p>
+                </div>
+
+                <div class="content-photo project-media print-feature">
+                    <img loading="lazy" decoding="async" src="Images/mostrafield.jpg" alt="Mostra field poster">
                 </div>
             </div>
         </div>
@@ -263,68 +338,19 @@ const projects = {
                     </p>
                 </div>
             </div>
-        </div>
 
-        <div class="print-design-section internship-block">
-            <div class="print-design-header">
-                <p class="eyebrow">Print Design</p>
-                <h2>UGA Archway <br>Internship</h2>
-            </div>
-                 <div class="content-pair print-design-layout">
-                     <div class="content-photo project-media print-feature">
-                    <img loading="lazy" decoding="async" src="Images/Internposter4.png" alt="Internship poster design">
-                </div>
-
+            <div class="content-pair print-design-layout internship-layout">
                 <div class="content-type print-design-copy">
-                    <h3>My Role</h3>
+                    <h3>Series Concept</h3>
                     <p>
-                        UGA Archway Partnership is an organizaton that organizes and carries out community events helping neghboring counties around Athens, GA. As an intern at UGA Archway Partnership, I work on a variety of print and digita design that gets distrubuted to the public and to Archway's partners. I work on posters, data sheets, and brochures for county and community events. 
+                        The assigned letter “C” became a starting point for a visual metaphor: the moon’s repeating phases accumulating across a century. This poster detail carries that concept into the composition and oversized forms.
                     </p>
                 </div>
-            </div>
 
-                 <div class="photo-grid poster-grid">
-                <figure class="photo-card">
-                    <img loading="lazy" decoding="async" src="Images/Internposter1.png" alt="Poster design 1">
-                </figure>
-                <figure class="photo-card">
-                    <img loading="lazy" decoding="async" src="Images/crcposter.png" alt="Poster design 2">
-                </figure>
-                <figure class="photo-card">
-                    <img loading="lazy" decoding="async" src="Images/Internposter5.png" alt="Poster design 3">
-                </figure>
-                <figure class="photo-card">
-                    <img loading="lazy" decoding="async" src="Images/Internmedicaltour.png" alt="Poster design 4">
-                </figure>
-            </div>
-    <div class="content-pair print-design-layout internship-layout">
-                <div class="content-type print-design-copy">
-                    <p class="meta">Community Design</p>
-                    <h3>UGA Medical Data Packets</h3>
-                    <p>
-                        During my internship, I created a series of data packets for UGA Medical School and their new Med tour. I created 7 packets for each of the counties the students and faculty visited.
-                    </p>
-                </div>
-                <div class="content-photo project-media print-feature">
-                    <img loading="lazy" decoding="async" src="Images/Interndata1.png" alt="Internship poster design">
+                <div class="content-photo project-media print-feature centennial-detail-image">
+                    <img loading="lazy" decoding="async" src="Images/fieldposter.JPG" alt="Dodd Centennial field poster">
                 </div>
             </div>
-
-            <div class="photo-grid poster-grid internship-data-grid">
-                <figure class="photo-card">
-                    <img loading="lazy" decoding="async" src="Images/Interndatatable.png" alt="Poster design 2">
-                </figure>
-                <figure class="photo-card">
-                    <img loading="lazy" decoding="async" src="Images/newbibb2.png" alt="Poster design 3">
-                </figure>
-                <figure class="photo-card">
-                    <img loading="lazy" decoding="async" src="Images/newbibb1.png" alt="Poster design 4">
-                </figure>
-                <figure class="photo-card">
-                    <img loading="lazy" decoding="async" src="Images/newbibb3.png" alt="Poster design 1">
-                </figure>
-            </div>
-
         </div>
 
     `,

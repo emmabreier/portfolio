@@ -44,7 +44,7 @@ const projects = {
 
         <div class="content-pair print-design-layout">
             <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/behindscenes11.png" alt="Strike Issue 11">
+                <img loading="lazy" decoding="async" src="Images/readingreal.jpg" alt="Strike Issue 11">
             </div>
 
             <div class="content-type print-design-copy">
@@ -73,7 +73,7 @@ const projects = {
 
         <div class="content-pair print-design-layout internship-layout">
             <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/wetpaintdraft.png" alt="Strike Issue 11 painted spread">
+                <img loading="lazy" decoding="async" src="Images/behindscenes11.png" alt="Strike Issue 11 painted spread">
             </div>
 
             <div class="content-type print-design-copy">
@@ -96,7 +96,7 @@ const projects = {
             </div>
 
             <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/readingreal.jpg" alt="Strike Issue 11 editorial page in progress">
+                <img loading="lazy" decoding="async" src="Images/wetpaintdraft.png" alt="Strike Issue 11 editorial page in progress">
             </div>
         </div>
 
