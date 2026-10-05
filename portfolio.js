@@ -54,7 +54,7 @@ const projects = {
             <img loading="lazy" decoding="async" src="Images/mockup1.jpg" alt="Cortona mockup 1">
         </div>
 
-        <div class="content-pair print-design-layout cortona-process-pair">
+        <div class="content-pair print-design-layout cortona-process-pair portfolio-cortona-process">
             <div class="content-type print-design-copy">
                 <h3>Process</h3>
                 <p>

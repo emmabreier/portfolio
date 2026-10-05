@@ -355,6 +355,17 @@ h1 {
     display: block;
 }
 
+.portfolio-cortona-process .process-photo-column {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.portfolio-cortona-process .process-photo-column img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
 .color-section {
     display: flex;
     align-items: center;
@@ -552,11 +563,11 @@ h1 {
 }
 
 .bmw-case-study .final-pattern-pair > .content-type {
-    order: 0;
+    order: 1;
 }
 
 .bmw-case-study .final-pattern-pair > .content-photo {
-    order: 1;
+    order: 0;
 }
 
 .final-reflection {

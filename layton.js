@@ -159,14 +159,14 @@ const projects = {
         brand: {
             heading: "Livery System",
             copy: "The brand elements and graphic language are carried across the vehicle to create a cohesive, high-performance concept.",
-            image: "finallaytonpages-04.png",
+            image: "bmwscene1.jpeg",
             alt: "BMW Mean Machine livery system artwork"
         },
         colors: { copy: "The palette pairs UGA red and white with deep charcoal and blue accents for a sharp, performance-led look." },
         graphics: {
             heading: "Graphics",
             copy: "Layered shapes and directional marks add motion to the bodywork while giving the project a distinctive visual signature.",
-            image: "finallaytonpages-02.jpg",
+            image: "bmwscene2.jpeg",
             alt: "BMW Mean Machine graphics"
         },
         application: {
