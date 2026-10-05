@@ -539,6 +539,26 @@ h1 {
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
 }
 
+.bmw-gallery {
+    margin-top: 56px;
+}
+
+.bmw-case-study .livery-system-pair > .content-photo {
+    order: 0;
+}
+
+.bmw-case-study .livery-system-pair > .content-type {
+    order: 1;
+}
+
+.bmw-case-study .final-pattern-pair > .content-type {
+    order: 0;
+}
+
+.bmw-case-study .final-pattern-pair > .content-photo {
+    order: 1;
+}
+
 .final-reflection {
     width: min(100%, 660px);
     margin: 88px auto 48px;

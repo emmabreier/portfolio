@@ -4,6 +4,9 @@ function buildLiveryCaseStudy(project) {
     const renderImage = (image, alt) =>
         `<img loading="lazy" decoding="async" src="Images/${image}" alt="${alt}">`;
     const renderGrid = images => images.map(({ image, alt }) => renderImage(image, alt)).join("");
+    const renderGallery = project.galleryLayout === "columns"
+        ? project.gallery.map(({ image, alt }) => `<figure class="photo-card">${renderImage(image, alt)}</figure>`).join("")
+        : renderGrid(project.gallery);
     const links = project.links.map(({ href, label }) =>
         `<a class="issue-cta" href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`
     ).join("");
@@ -62,7 +65,7 @@ function buildLiveryCaseStudy(project) {
                 </div>
             </div>
 
-            <div class="content-pair print-design-layout">
+            <div class="content-pair print-design-layout ${project.theme === "bmw-case-study" ? "livery-system-pair" : ""}">
                 <div class="content-type print-design-copy">
                     <h3>${project.brand.heading}</h3>
                     <p>${project.brand.copy}</p>
@@ -92,8 +95,8 @@ function buildLiveryCaseStudy(project) {
                 </div>
             </div>
 
-            <div class="mockup-grid">
-                ${renderGrid(project.gallery)}
+            <div class="${project.galleryLayout === "columns" ? "fine-art-grid bmw-gallery" : "mockup-grid"}">
+                ${renderGallery}
             </div>
 
             <div class="final-reflection">
