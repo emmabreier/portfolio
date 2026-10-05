@@ -46,9 +46,11 @@ function buildLiveryCaseStudy(project) {
                 </div>
             </div>
 
-            <div class="mockup-grid inspiration-mockup-grid">
-                ${renderGrid(project.inspiration.images)}
-            </div>
+            ${project.inspiration.images && project.inspiration.images.length ? `
+                <div class="mockup-grid inspiration-mockup-grid">
+                    ${renderGrid(project.inspiration.images)}
+                </div>
+            ` : ""}
 
             <div class="content-pair print-design-layout cortona-process-pair">
                 <div class="content-type print-design-copy">
@@ -67,19 +69,6 @@ function buildLiveryCaseStudy(project) {
                 </div>
                 <div class="content-photo project-media print-feature">
                     ${renderImage(project.brand.image, project.brand.alt)}
-                </div>
-            </div>
-
-            <div class="color-section">
-                <div class="color-section-text">
-                    <h3>Colors</h3>
-                    <p>${project.colors.copy}</p>
-                </div>
-                <div class="color-swatches" aria-hidden="true">
-                    <div class="color-swatch color-swatch-1"></div>
-                    <div class="color-swatch color-swatch-2"></div>
-                    <div class="color-swatch color-swatch-3 color-swatch-half"></div>
-                    <div class="color-swatch color-swatch-4 color-swatch-half"></div>
                 </div>
             </div>
 
@@ -145,9 +134,9 @@ const projects = {
             { href: "https://news.uga.edu/uga-students-take-the-wheel-in-designing-bmw-mean-machine/", label: "read the UGA story" },
             { href: "https://youtu.be/5FPfbL2OMug?si=DKulfhqUlrJwxa_j", label: "watch youtube video" }
         ],
-        hero: { image: "finallaytonpages-01.jpg", alt: "BMW Mean Machine concept artwork" },
+        hero: { image: "bmw1.JPEG", alt: "BMW Mean Machine concept artwork" },
         about: {
-            image: "carcloseup.JPG",
+            image: "bmw2.JPEG",
             alt: "Close-up of the BMW Mean Machine livery",
             copy: "Representatives from BMW and UGA Athletics met with our team to explain past wraps and models, sharing what worked and what didn’t to inform the new design. From there, we collaborated on mood boards and sketches, developing three concepts: Collegiate, Make Noise, and Beware of Dawg."
         },
@@ -155,16 +144,13 @@ const projects = {
             image: "finallaytonpages-02.jpg",
             alt: "BMW Mean Machine visual direction",
             copy: "The visual direction draws on the speed and technical precision of motorsport, pairing graphic movement with strong, recognizable team branding.",
-            images: [
-                { image: "finallaytonpages-03.png", alt: "BMW Mean Machine design exploration" },
-                { image: "finallaytonpages-04.png", alt: "BMW Mean Machine livery study" }
-            ]
+            images: []
         },
         process: {
             copy: "The design develops from graphic concept work into a full vehicle application, balancing sponsor visibility, movement, and the identity of both partners.",
             images: [
-                { image: "carreveal.jpg", alt: "BMW Mean Machine livery revealed on the car" },
-                { image: "finallaytonpages-03.png", alt: "BMW Mean Machine design process" }
+                { image: "college inspo.png", alt: "Collegiate inspiration for the BMW Mean Machine design" },
+                { image: "dawginspo.png", alt: "Dawg inspiration for the BMW Mean Machine design" }
             ]
         },
         brand: {
@@ -183,14 +169,17 @@ const projects = {
         application: {
             heading: "Final Livery",
             copy: "The finished concept applies the identity across the car, translating the graphics into a unified on-track presence.",
-            image: "carcloseup.JPG",
+            image: "bmw7.JPEG",
             alt: "Finished BMW Mean Machine livery"
         },
+        galleryLayout: "columns",
         gallery: [
-            { image: "finallaytonpages-01.jpg", alt: "BMW Mean Machine concept artwork" },
-            { image: "finallaytonpages-02.jpg", alt: "BMW Mean Machine visual direction" },
-            { image: "carreveal.jpg", alt: "BMW Mean Machine car reveal" },
-            { image: "finallaytonpages-04.png", alt: "BMW Mean Machine livery detail" }
+            { image: "bmw3.JPEG", alt: "BMW Mean Machine photo 3" },
+            { image: "bmw4.JPEG", alt: "BMW Mean Machine photo 4" },
+            { image: "bmw5.JPEG", alt: "BMW Mean Machine photo 5" },
+            { image: "bmw6.JPEG", alt: "BMW Mean Machine photo 6" },
+            { image: "bmw8.JPEG", alt: "BMW Mean Machine photo 8" },
+            { image: "bmw9.JPEG", alt: "BMW Mean Machine photo 9" }
         ],
         reflection: "This was an incredible opportunity, and I felt my work improve significantly as this semester went on. The biggest challenge was self-perseverance and maintaining confidence throughout the process. As a young student, it’s easy to second-guess yourself and feel unprepared for a challenge, especially with the potential for thousands to see your work. " +
         "I loved working collaboratively, and I thoroughly enjoyed how well this group of designers worked well together. I felt comfortable enough to try harder tasks, present to the clients more, and experiment. I wasn't afraid to fail or throw out bad ideas, and I think thats what made this such a beneficial and wonderful project. Earlier in the year, I was unable to express fully when I didn't know how to do something, and that inability to be fully transparent slowed my progress down. I learned that even though it's terrifying, you have to dive into the deep end and be yourself. At the end of this project, I am so proud of what I created, and I am proud of what our class created together. "

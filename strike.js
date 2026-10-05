@@ -26,7 +26,7 @@ const projects = {
                 <p class="meta">Editorial Collage</p>
                 <h3>My Role</h3>
                 <p>
-                    A layered collage exploring the expressive, tactile visual language of Strike Magazine.
+                    I am involved in creative direction and layout for the magazine. As a concept director I have had the opportunity to create a concept that is apart of the larger concept of that specific issue, and acting as creative director over a group of 15.
                 </p>
             </div>
 
