@@ -15,7 +15,7 @@ const projects = {
             <div class="content-type print-design-copy">
             
                 <p>
-                   While my time in Cortona, Italy, I created a mini branding identity package for the town, focusing on capturing its unique charm and character that the locals feel are not portrayed correctly by locals.
+                   While living in Cortona, Italy, I developed a mini branding identity that captures the town’s distinct character, charm, and local perspective.
                 </p>
             </div>
         </div>
@@ -26,7 +26,7 @@ const projects = {
                 </div>
                 <h3>About Cortona</h3>
                     <p>
-                    After spending three months living in Cortona, I wanted to create a brand identity based on how I experienced the town, not simply how it is portrayed from the outside. The project reflects the history, culture, and everyday details that shaped my experience of Cortona.
+                   Cortona is a town deeply rooted in tradition and local culture, creating a rich and authentic experience for residents and visitors alike. 
 
                     </p>
                 </div>
