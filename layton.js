@@ -44,7 +44,8 @@ const projects = {
             <div class="content-pair print-design-layout">
                 <div class="content-type print-design-copy">
                     <h3>About the Mean Machine</h3>
-                    <p>The BMW Mean Machine is a fan-favorite promotional vehicle known for the past few years to be designed by a fan submission process. This year, BMW wanted to work directly with the students at UGA, and our team of 12 student designers collaborated to create three unique concepts and wraps for the vans to vote on. </p>
+                    <p>The BMW Mean Machine is a fan-favorite promotional vehicle. This year, BMW partnered with UGA students to create three original concepts and wraps for the new BMW X7.
+</p>
                 </div>
                 <div class="content-photo project-media print-feature">
                     <img loading="lazy" decoding="async" src="Images/bmw2.JPEG" alt="Close-up of the BMW Mean Machine livery">
@@ -54,7 +55,7 @@ const projects = {
             <div class="content-pair print-design-layout livery-system-pair">
                 <div class="content-type print-design-copy">
                     <h3>Class Logistics</h3>
-                    <p>The class practiced professional design processes, from initial concept development with a team of designers to client communication and presentations of the final design concepts. <br>This project was very collaborative and designed so that all students worked and gave input on every single part of the design process.</p>
+                    <p>Working in a team of 12 designers, we followed a professional design process from concept development to client presentation. Each student contributed to every stage of the project, creating a highly collaborative design experience.</p>
                 </div>
                 <div class="content-photo project-media print-feature">
                     <img loading="lazy" decoding="async" src="Images/8E6A404E-B740-45D5-AB8C-135381EEED95_1_201_a.jpeg" alt="BMW Mean Machine livery system artwork">
@@ -68,7 +69,7 @@ const projects = {
             <div class="content-pair print-design-layout cortona-process-pair">
                 <div class="content-type print-design-copy">
                     <h3>Development</h3>
-                    <p>The design develops from graphic concept work into a full vehicle application, balancing sponsor visibility, movement, and the identity of both partners.</p>
+                    <p>BMW and UGA Athletics shared insights from past Mean Machine wraps and models, highlighting what worked and what didn’t. We used these insights to develop mood boards, sketches, and three concepts: Collegiate, Make Noise, and Beware of Dawg.</p>
                 </div>
                 <div class="process-photo-column bmw-process-photo-column">
                     <img loading="lazy" decoding="async" src="Images/college inspo.png" alt="Collegiate inspiration for the BMW Mean Machine design">
@@ -82,7 +83,7 @@ const projects = {
                 </div>
                 <div class="content-type print-design-copy">
                     <h3>Collaboration</h3>
-                    <p>Layered shapes and directional marks add motion to the bodywork while giving the project a distinctive visual signature.</p>
+                    <p>Our team split into smaller groups to refine each concept, frequently switching between designs and building on each other’s ideas. As part of a three-person group, I focused on developing the Collegiate concept into a cohesive final design.</p>
                 </div>
             </div>
 
@@ -90,7 +91,7 @@ const projects = {
                 <div class="content-pair print-design-layout bmw-concept-intro">
                     <div class="content-type print-design-copy">
                         <h3>Final Concept: Collegiate</h3>
-                        <p>The Collegiate concept pairs UGA’s recognizable colors and athletic identity with a bold, performance-inspired vehicle design.</p>
+                        <p>The collegiate car is inspired by UGA Athletics social media, using bold typography, strong hierarchy, and dynamic color to create an engaging, recognizable design. Familiar elements were incorporated to resonate with fans and encourage interaction.​​​​​​​</p>
                     </div>
                     <div aria-hidden="true"></div>
                 </div>
@@ -107,7 +108,7 @@ const projects = {
                 <div class="content-pair print-design-layout bmw-concept-intro">
                     <div class="content-type print-design-copy">
                         <h3>Final Concept: Beware of Dawg</h3>
-                        <p>The Beware of Dawg concept brings an energetic Bulldog-inspired graphic treatment across the vehicle’s sides, rear, and roof.</p>
+                        <p>The Beware of Dawg concept brings an energetic personification to the "Savage" gear that players wear during the game, and captures the energy that fans bring to the games.</p>
                     </div>
                     <div aria-hidden="true"></div>
                 </div>
@@ -124,7 +125,7 @@ const projects = {
             <div class="content-pair print-design-layout">
                 <div class="content-type print-design-copy">
                     <h3>Fan Interaction</h3>
-                    <p>Fans explored three student-designed concepts and helped choose the design that would represent the Mean Machine.</p>
+                    <p>The three designs were submitted to BMW and shared publicly for fans to vote on their favorite.</p>
                 </div>
                 <div class="content-photo project-media print-feature">
                     <img loading="lazy" decoding="async" src="Images/fanvote2.png" alt="BMW Mean Machine fan vote campaign page">
@@ -134,7 +135,7 @@ const projects = {
             <div class="content-pair print-design-layout">
                 <div class="content-type print-design-copy">
                     <h3>Voting</h3>
-                    <p>A dedicated campaign page invited fans to vote for their favorite Mean Machine design.</p>
+                    <p>After a close vote, “Beware of Dawg” was selected as the winning design, with “Collegiate” finishing a close second.</p>
                 </div>
                 <div class="content-photo project-media print-feature">
                     <img loading="lazy" decoding="async" src="Images/fanvote.png" alt="Fan vote page presenting the three BMW Mean Machine concepts">
@@ -147,7 +148,7 @@ const projects = {
                 </div>
                 <div class="content-type print-design-copy">
                     <h3>Final Chosen Livery</h3>
-                    <p>The finished concept applies the identity across the car, translating the graphics into a unified on-track presence.</p>
+                    <p>The chosen livery was wrapped onto BMW's x7 car, and is displayed to the public at every home game and more.</p>
                 </div>
             </div>
 
