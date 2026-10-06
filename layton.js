@@ -25,7 +25,7 @@ function buildLiveryCaseStudy(project) {
                 <div class="content-type print-design-copy">
                     <h3>Overview</h3>
                     <p>${project.overview}</p>
-                    ${links}
+                    <div class="project-cta-row">${links}</div>
                 </div>
             </div>
 
@@ -174,8 +174,8 @@ function buildMotorsportsCaseStudy() {
             `}
         </div>
     `;
-    const photoGrid = files => `
-        <div class="fine-art-grid motorsports-photo-grid">
+    const photoGrid = (files, extraClass = "") => `
+        <div class="fine-art-grid motorsports-photo-grid ${extraClass}">
             ${files.map(({ file, alt }) => `<figure class="photo-card">${image(file, alt)}</figure>`).join("")}
         </div>
     `;
@@ -200,7 +200,7 @@ function buildMotorsportsCaseStudy() {
             ${photoGrid([
                 { file: "mslogobefore.png", alt: "Original UGA Motorsports logo" },
                 { file: "ugafinalms.png", alt: "Final UGA Motorsports logo" }
-            ])}
+            ], "motorsports-intro-grid")}
 
             <section class="motorsports-section">
                 ${photoPair("Exploring the Mark", "Initial logo studies explored racing cues, UGA recognition, and ways to create a flexible mark that could work across team and vehicle applications.", "metalkingwmm.png", "UGA Motorsports team exploring logo concepts", true)}
@@ -217,7 +217,7 @@ function buildMotorsportsCaseStudy() {
                     { file: "logomarkvariations.png", alt: "UGA Motorsports logo mark variations" },
                     { file: "mockupms.png", alt: "UGA Motorsports apparel mockup" },
                     { file: "instamockupms.png", alt: "UGA Motorsports Instagram mockup" }
-                ])}
+                ], "motorsports-final-logo-grid")}
             </section>
 
             <section class="motorsports-section">
@@ -240,11 +240,11 @@ function buildMotorsportsCaseStudy() {
                     </div>
                 </div>
                 <div class="content-pair print-design-layout">
-                    <div class="content-type print-design-copy">
-                        <h3>Final FSAE Car</h3>
-                    </div>
                     <div class="content-photo project-media print-feature">
                         ${image("unveil.jpg", "UGA Motorsports car unveiling")}
+                    </div>
+                    <div class="content-type print-design-copy">
+                        <h3>Final FSAE Car</h3>
                     </div>
                 </div>
                 ${photoGrid([
