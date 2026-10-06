@@ -361,6 +361,10 @@ h1 {
     margin: 28px 0 0;
 }
 
+.bmw-case-study > .process-wide-photo {
+    margin: 56px 0;
+}
+
 .project-content .process-wide-photo img {
     display: block;
     width: 100%;
@@ -632,6 +636,10 @@ h1 {
     margin: 0 auto 24px;
 }
 
+.bmw-concept-intro {
+    margin: 0 auto 24px;
+}
+
 .motorsports-section-intro h3 {
     margin: 0 0 12px;
     font-family: "essonnes-display", serif;
@@ -685,6 +693,36 @@ h1 {
     width: 100%;
     max-width: 100%;
     height: auto;
+}
+
+.bmw-beware-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    width: min(100%, 1040px);
+    margin: 28px auto 0;
+}
+
+.bmw-beware-section {
+    margin-bottom: 80px;
+}
+
+.bmw-beware-grid .photo-card {
+    width: 100%;
+    max-width: 100%;
+}
+
+.bmw-beware-top {
+    position: relative;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+}
+
+.bmw-beware-top img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: none;
 }
 
 .motorsports-photo-header {

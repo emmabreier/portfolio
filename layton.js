@@ -75,6 +75,45 @@ function buildLiveryCaseStudy(project) {
                 </div>
             </div>
 
+            ${project.conceptOne ? `
+                <section class="motorsports-section">
+                    <div class="content-pair print-design-layout bmw-concept-intro">
+                        <div class="content-type print-design-copy">
+                            <h3>${project.conceptOne.heading}</h3>
+                            <p>${project.conceptOne.copy}</p>
+                        </div>
+                        <div aria-hidden="true"></div>
+                    </div>
+                    <div class="motorsports-comparison-grid">
+                        <figure class="photo-card">${renderImage(project.conceptOne.driver.image, project.conceptOne.driver.alt)}</figure>
+                        <figure class="photo-card">${renderImage(project.conceptOne.passenger.image, project.conceptOne.passenger.alt)}</figure>
+                    </div>
+                    <div class="process-wide-photo">
+                        ${renderImage(project.conceptOne.closeup.image, project.conceptOne.closeup.alt)}
+                    </div>
+                </section>
+            ` : ""}
+
+            ${project.bewareOfDawg ? `
+                <section class="motorsports-section bmw-beware-section">
+                    <div class="content-pair print-design-layout bmw-concept-intro">
+                        <div class="content-type print-design-copy">
+                            <h3>${project.bewareOfDawg.heading}</h3>
+                            <p>${project.bewareOfDawg.copy}</p>
+                        </div>
+                        <div aria-hidden="true"></div>
+                    </div>
+                    <div class="bmw-beware-grid">
+                        <figure class="photo-card">${renderImage(project.bewareOfDawg.passenger.image, project.bewareOfDawg.passenger.alt)}</figure>
+                        <figure class="photo-card">${renderImage(project.bewareOfDawg.driver.image, project.bewareOfDawg.driver.alt)}</figure>
+                    </div>
+                    <div class="bmw-beware-grid">
+                        <figure class="photo-card">${renderImage(project.bewareOfDawg.back.image, project.bewareOfDawg.back.alt)}</figure>
+                        <figure class="photo-card bmw-beware-top">${renderImage(project.bewareOfDawg.top.image, project.bewareOfDawg.top.alt)}</figure>
+                    </div>
+                </section>
+            ` : ""}
+
             ${project.fanInteraction ? `
                 <div class="content-pair print-design-layout">
                     <div class="content-type print-design-copy">
@@ -165,9 +204,10 @@ function buildMotorsportsCaseStudy() {
 
             <section class="motorsports-section">
                 ${photoPair("Exploring the Mark", "Initial logo studies explored racing cues, UGA recognition, and ways to create a flexible mark that could work across team and vehicle applications.", "metalkingwmm.png", "UGA Motorsports team exploring logo concepts", true)}
-                <div class="motorsports-wide-photo">
-                    ${image("behindscenems.png", "Wide view of UGA Motorsports hand-drawn logo explorations")}
-                </div>
+                ${photoGrid([
+                    { file: "behindscenems.png", alt: "UGA Motorsports hand-drawn logo explorations" },
+                    { file: "msprocessphoto2.png", alt: "UGA Motorsports process photo" }
+                ])}
             </section>
 
             <section class="motorsports-section">
@@ -263,24 +303,60 @@ const projects = {
             copy: "The design develops from graphic concept work into a full vehicle application, balancing sponsor visibility, movement, and the identity of both partners.",
             images: [
                 { image: "college inspo.png", alt: "Collegiate inspiration for the BMW Mean Machine design" },
-                { image: "dawginspo.png", alt: "Dawg inspiration for the BMW Mean Machine design" }
+                { image: "bmwsketch.JPG", alt: "BMW Mean Machine design sketch" }
             ],
             wideImage: {
                 image: "longprocessphoto.png",
                 alt: "Wide BMW Mean Machine design process overview"
             }
         },
+        conceptOne: {
+            heading: "Collegiate",
+            copy: "The Collegiate concept pairs UGA’s recognizable colors and athletic identity with a bold, performance-inspired vehicle design.",
+            driver: {
+                image: "mmdriverside.png",
+                alt: "BMW Mean Machine Concept One driver side"
+            },
+            passenger: {
+                image: "mmpassenger.png",
+                alt: "BMW Mean Machine Concept One passenger side"
+            },
+            closeup: {
+                image: "mmcloseup.png",
+                alt: "Close-up of the BMW Mean Machine Concept One design"
+            }
+        },
+        bewareOfDawg: {
+            heading: "Beware of Dawg",
+            copy: "The Beware of Dawg concept brings an energetic Bulldog-inspired graphic treatment across the vehicle’s sides, rear, and roof.",
+            passenger: {
+                image: "beware-dawg-passenger-side.jpg",
+                alt: "Beware of Dawg BMW Mean Machine passenger side"
+            },
+            driver: {
+                image: "beware-dawg-driver-side.jpg",
+                alt: "Beware of Dawg BMW Mean Machine driver side"
+            },
+            back: {
+                image: "beware-dawg-back.jpg",
+                alt: "Beware of Dawg BMW Mean Machine rear view"
+            },
+            top: {
+                image: "beware-dawg-top.jpg",
+                alt: "Rotated overhead view of the Beware of Dawg BMW Mean Machine design"
+            }
+        },
         brand: {
             heading: "Livery System",
             copy: "The brand elements and graphic language are carried across the vehicle to create a cohesive, high-performance concept.",
-            image: "bmwscene1.jpeg",
+            image: "8E6A404E-B740-45D5-AB8C-135381EEED95_1_201_a.jpeg",
             alt: "BMW Mean Machine livery system artwork"
         },
         colors: { copy: "The palette pairs UGA red and white with deep charcoal and blue accents for a sharp, performance-led look." },
         graphics: {
             heading: "Graphics",
             copy: "Layered shapes and directional marks add motion to the bodywork while giving the project a distinctive visual signature.",
-            image: "bmwscene2.jpeg",
+            image: "bmwscene1.jpeg",
             alt: "BMW Mean Machine graphics"
         },
         fanInteraction: {
