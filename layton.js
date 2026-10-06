@@ -39,32 +39,6 @@ function buildLiveryCaseStudy(project) {
                 </div>
             </div>
 
-            <div class="content-pair print-design-layout">
-                <div class="content-photo project-media print-feature">
-                    ${renderImage(project.inspiration.image, project.inspiration.alt)}
-                </div>
-                <div class="content-type print-design-copy">
-                    <h3>Inspiration</h3>
-                    <p>${project.inspiration.copy}</p>
-                </div>
-            </div>
-
-            ${project.inspiration.images && project.inspiration.images.length ? `
-                <div class="mockup-grid inspiration-mockup-grid">
-                    ${renderGrid(project.inspiration.images)}
-                </div>
-            ` : ""}
-
-            <div class="content-pair print-design-layout cortona-process-pair">
-                <div class="content-type print-design-copy">
-                    <h3>Process</h3>
-                    <p>${project.process.copy}</p>
-                </div>
-                <div class="process-photo-column">
-                    ${renderGrid(project.process.images)}
-                </div>
-            </div>
-
             <div class="content-pair print-design-layout ${project.theme === "bmw-case-study" ? "livery-system-pair" : ""}">
                 <div class="content-type print-design-copy">
                     <h3>${project.brand.heading}</h3>
@@ -75,15 +49,55 @@ function buildLiveryCaseStudy(project) {
                 </div>
             </div>
 
+            ${project.process.wideImage ? `
+                <div class="process-wide-photo">
+                    ${renderImage(project.process.wideImage.image, project.process.wideImage.alt)}
+                </div>
+            ` : ""}
+
+            <div class="content-pair print-design-layout cortona-process-pair">
+                <div class="content-type print-design-copy">
+                    <h3>Process</h3>
+                    <p>${project.process.copy}</p>
+                </div>
+                <div class="process-photo-column ${project.theme === "bmw-case-study" ? "bmw-process-photo-column" : ""}">
+                    ${renderGrid(project.process.images)}
+                </div>
+            </div>
+
             <div class="content-pair print-design-layout">
+                <div class="content-photo project-media print-feature">
+                    ${renderImage(project.graphics.image, project.graphics.alt)}
+                </div>
                 <div class="content-type print-design-copy">
                     <h3>${project.graphics.heading}</h3>
                     <p>${project.graphics.copy}</p>
                 </div>
-                <div class="content-photo project-media print-feature">
-                    ${renderImage(project.graphics.image, project.graphics.alt)}
-                </div>
             </div>
+
+            ${project.fanInteraction ? `
+                <div class="content-pair print-design-layout">
+                    <div class="content-type print-design-copy">
+                        <h3>${project.fanInteraction.heading}</h3>
+                        <p>${project.fanInteraction.copy}</p>
+                    </div>
+                    <div class="content-photo project-media print-feature">
+                        ${renderImage(project.fanInteraction.image, project.fanInteraction.alt)}
+                    </div>
+                </div>
+            ` : ""}
+
+            ${project.voting ? `
+                <div class="content-pair print-design-layout">
+                    <div class="content-type print-design-copy">
+                        <h3>${project.voting.heading}</h3>
+                        <p>${project.voting.copy}</p>
+                    </div>
+                    <div class="content-photo project-media print-feature">
+                        ${renderImage(project.voting.image, project.voting.alt)}
+                    </div>
+                </div>
+            ` : ""}
 
             <div class="content-pair print-design-layout final-pattern-pair">
                 <div class="content-photo project-media print-feature">
@@ -103,6 +117,107 @@ function buildLiveryCaseStudy(project) {
                 <h3>Final Reflection</h3>
                 <p>${project.reflection}</p>
             </div>
+        </div>
+    `;
+}
+
+function buildMotorsportsCaseStudy() {
+    const image = (file, alt) =>
+        `<img loading="lazy" decoding="async" src="Images/${file}" alt="${alt}">`;
+    const photoPair = (heading, copy, file, alt, textFirst = false) => `
+        <div class="content-pair print-design-layout">
+            ${textFirst ? `
+                <div class="content-type print-design-copy"><h3>${heading}</h3><p>${copy}</p></div>
+                <div class="content-photo project-media print-feature">${image(file, alt)}</div>
+            ` : `
+                <div class="content-photo project-media print-feature">${image(file, alt)}</div>
+                <div class="content-type print-design-copy"><h3>${heading}</h3><p>${copy}</p></div>
+            `}
+        </div>
+    `;
+    const photoGrid = files => `
+        <div class="fine-art-grid motorsports-photo-grid">
+            ${files.map(({ file, alt }) => `<figure class="photo-card">${image(file, alt)}</figure>`).join("")}
+        </div>
+    `;
+
+    return `
+        <div class="livery-case-study motorsports-case-study">
+            <div class="print-design-header project-page-header">
+                <p class="eyebrow">Branding and Livery</p>
+                <h2>UGA <br>Motorsports</h2>
+            </div>
+
+            <div class="content-pair print-design-layout">
+                <div class="content-photo project-media print-feature">
+                    ${image("unveil.jpg", "UGA Motorsports car unveiling")}
+                </div>
+                <div class="content-type print-design-copy">
+                    <h3>About UGA Motorsports</h3>
+                    <p>We worked with UGA College of Engineering to create a bold, technical brand system for UGA Motorsports. The identity connects the team's engineering work, cars, and public presence.</p>
+                    <a class="issue-cta" href="https://www.instagram.com/ugamotorsports/" target="_blank" rel="noopener noreferrer">follow UGA Motorsports on Instagram</a>
+                </div>
+            </div>
+            ${photoGrid([
+                { file: "mslogobefore.png", alt: "Original UGA Motorsports logo" },
+                { file: "ugafinalms.png", alt: "Final UGA Motorsports logo" }
+            ])}
+
+            <section class="motorsports-section">
+                ${photoPair("Exploring the Mark", "Initial logo studies explored racing cues, UGA recognition, and ways to create a flexible mark that could work across team and vehicle applications.", "logomarkvariations.png", "UGA Motorsports logo mark explorations", true)}
+                ${photoGrid([
+                    { file: "ugalogomark.png", alt: "UGA Motorsports logomark guidance" },
+                    { file: "behindscenems.png", alt: "UGA Motorsports early hand-drawn logo research" }
+                ])}
+            </section>
+
+            <section class="motorsports-section">
+                ${photoPair("Built for Racing", "The existing Motorsports inspiration image stays here. Its racing atmosphere and strong contrast continue to inform the team's identity.", "motorsportcover.jpeg", "UGA Motorsports inspiration photo")}
+            </section>
+
+            <section class="motorsports-section">
+                <div class="content-type print-design-copy motorsports-section-intro">
+                    <p>The identity is supported by a consistent palette, typography, logo guidance, and mockups for team apparel and social media.</p>
+                </div>
+                ${photoGrid([
+                    { file: "brandcolorsms.png", alt: "UGA Motorsports brand colors" },
+                    { file: "typerules.png", alt: "UGA Motorsports typography rules" }
+                ])}
+                <div class="motorsports-comparison-grid">
+                    <figure class="photo-card">${image("msdoanddont1.png", "UGA Motorsports logo application guidance")}</figure>
+                    <figure class="photo-card">${image("msdoanddont2.png", "UGA Motorsports logo usage examples")}</figure>
+                </div>
+                ${photoGrid([
+                    { file: "mockupms.png", alt: "UGA Motorsports apparel mockup" },
+                    { file: "instamockupms.png", alt: "UGA Motorsports Instagram mockup" }
+                ])}
+            </section>
+
+            <section class="motorsports-section">
+                ${photoPair("Process", "The FSAE identity was developed from early car concepts into a clear, high-impact race design that carries UGA branding across the vehicle.", "fsaems.png", "UGA Motorsports FSAE car concept")}
+                <div class="content-pair print-design-layout">
+                    <div class="content-type print-design-copy">
+                        <h3>About FSAE</h3>
+                        <p>The student team applies its engineering and design work to a competition-ready vehicle, bringing the identity from concept into the shop and onto the track.</p>
+                    </div>
+                    <div class="content-photo project-media print-feature">
+                        ${image("mscarshop.jpeg", "UGA FSAE car in the shop")}
+                    </div>
+                </div>
+                ${photoGrid([
+                    { file: "msshop.jpeg", alt: "UGA FSAE team with the car in the shop" },
+                    { file: "inalmshorizonral.jpeg", alt: "UGA FSAE car in profile" }
+                ])}
+            </section>
+
+            <section class="motorsports-section">
+                ${photoPair("Process", "The endurance program brings the team's engineering, preparation, and visual identity together through hands-on work in the shop and on race day.", "msshop.jpeg", "UGA Motorsports endurance team working in the shop")}
+                ${photoPair("Inspiration", "The car, team environment, and racing culture continue to shape how the Motorsports identity is used across the endurance program.", "motorsportcover.jpeg", "UGA Motorsports endurance inspiration", true)}
+                ${photoGrid([
+                    { file: "mscarshop.jpeg", alt: "UGA Motorsports endurance car in the shop" },
+                    { file: "inalmshorizonral.jpeg", alt: "UGA Motorsports endurance car in profile" }
+                ])}
+            </section>
         </div>
     `;
 }
@@ -143,18 +258,16 @@ const projects = {
             alt: "Close-up of the BMW Mean Machine livery",
             copy: "Representatives from BMW and UGA Athletics met with our team to explain past wraps and models, sharing what worked and what didn’t to inform the new design. From there, we collaborated on mood boards and sketches, developing three concepts: Collegiate, Make Noise, and Beware of Dawg."
         },
-        inspiration: {
-            image: "finallaytonpages-02.jpg",
-            alt: "BMW Mean Machine visual direction",
-            copy: "The visual direction draws on the speed and technical precision of motorsport, pairing graphic movement with strong, recognizable team branding.",
-            images: []
-        },
         process: {
             copy: "The design develops from graphic concept work into a full vehicle application, balancing sponsor visibility, movement, and the identity of both partners.",
             images: [
                 { image: "college inspo.png", alt: "Collegiate inspiration for the BMW Mean Machine design" },
                 { image: "dawginspo.png", alt: "Dawg inspiration for the BMW Mean Machine design" }
-            ]
+            ],
+            wideImage: {
+                image: "longprocessphoto.png",
+                alt: "Wide BMW Mean Machine design process overview"
+            }
         },
         brand: {
             heading: "Livery System",
@@ -168,6 +281,18 @@ const projects = {
             copy: "Layered shapes and directional marks add motion to the bodywork while giving the project a distinctive visual signature.",
             image: "bmwscene2.jpeg",
             alt: "BMW Mean Machine graphics"
+        },
+        fanInteraction: {
+            heading: "Fan Interaction",
+            copy: "Fans explored three student-designed concepts and helped choose the design that would represent the Mean Machine.",
+            image: "fanvote2.png",
+            alt: "BMW Mean Machine fan vote campaign page"
+        },
+        voting: {
+            heading: "Voting",
+            copy: "A dedicated campaign page invited fans to vote for their favorite Mean Machine design.",
+            image: "fanvote.png",
+            alt: "Fan vote page presenting the three BMW Mean Machine concepts"
         },
         application: {
             heading: "Final Livery",
@@ -188,65 +313,7 @@ const projects = {
         "I loved working collaboratively, and I thoroughly enjoyed how well this group of designers worked well together. I felt comfortable enough to try harder tasks, present to the clients more, and experiment. I wasn't afraid to fail or throw out bad ideas, and I think thats what made this such a beneficial and wonderful project. Earlier in the year, I was unable to express fully when I didn't know how to do something, and that inability to be fully transparent slowed my progress down. I learned that even though it's terrifying, you have to dive into the deep end and be yourself. At the end of this project, I am so proud of what I created, and I am proud of what our class created together. "
     }),
 
-    "UGA Motorsports": buildLiveryCaseStudy({
-        theme: "motorsports-case-study",
-        eyebrow: "Branding and Livery",
-        title: "UGA <br>Motorsports",
-        overview: "We worked with UGA College of Engineering to create a new brand system for UGA Motorsports that felt bold, technical, and unmistakably athletic.",
-        links: [
-            { href: "https://www.instagram.com/ugamotorsports/", label: "follow UGA Motorsports on Instagram" }
-        ],
-        hero: { image: "finallaytonpages-02.jpg", alt: "UGA Motorsports visual identity" },
-        about: {
-            image: "LDS_UGAMotorsports_Spring26.jpg",
-            alt: "Presenting the UGA Motorsports project",
-            copy: "The project builds a recognizable identity for the UGA Motorsports team, connecting its engineering work and race-day presence through a bold visual system."
-        },
-        inspiration: {
-            image: "motorsportcover.jpeg",
-            alt: "UGA Motorsports graphics and team environment",
-            copy: "The direction takes cues from racing culture: high contrast, strong movement, technical details, and the energy of the team and its community.",
-            images: [
-                { image: "callpolice.jpeg", alt: "UGA Motorsports car in use" },
-                { image: "unveil.jpg", alt: "UGA Motorsports car unveiling" }
-            ]
-        },
-        process: {
-            copy: "The identity was developed alongside the team, moving from collaborative exploration and presentation into real-world applications on the car and at events.",
-            images: [
-                { image: "LDS_UGAMotorsports_Spring26.jpg", alt: "UGA Motorsports concept presentation" },
-                { image: "unveil.jpg", alt: "UGA Motorsports design revealed" }
-            ]
-        },
-        brand: {
-            heading: "Team Identity",
-            copy: "A consistent visual system helps UGA Motorsports communicate its personality across team materials, the car, and public appearances.",
-            image: "finallaytonpages-03.png",
-            alt: "UGA Motorsports identity artwork"
-        },
-        colors: { copy: "A race-ready palette centers on Georgia red, black, and white, with restrained metallic tones supporting the technical feel." },
-        graphics: {
-            heading: "Race Graphics",
-            copy: "The graphic system is built to read clearly at speed, using strong contrast and confident shapes across the vehicle and supporting materials.",
-            image: "finallaytonpages-04.png",
-            alt: "UGA Motorsports graphic system"
-        },
-        application: {
-            heading: "Final Application",
-            copy: "The identity comes together on the race car and in team settings, creating a unified presence from the workshop to the track.",
-            image: "callpolice.jpeg",
-            alt: "UGA Motorsports identity applied to the car"
-        },
-        gallery: [
-            { image: "finallaytonpages-03.png", alt: "UGA Motorsports identity design" },
-            { image: "finallaytonpages-04.png", alt: "UGA Motorsports race graphics" },
-            { image: "unveil.jpg", alt: "UGA Motorsports car unveiling" },
-            { image: "LDS_UGAMotorsports_Spring26.jpg", alt: "UGA Motorsports project presentation" }
-        ],
-        reflection: `This project strengthened my ability to collaborate and grow within a team of designers. I learned that another designer’s success doesn’t diminish my own; instead, it can expand my perspective and push my work in new, more creative directions.
-
-    Working with real clients across multiple projects also improved my time management and communication skills, both with clients and within the team. Additionally, the fast-paced, hands-on nature of the project significantly advanced my technical abilities and efficiency with digital design tools.`
-    })
+    "UGA Motorsports": buildMotorsportsCaseStudy()
 };
 
 function setActiveProject(projectKey) {

@@ -355,13 +355,44 @@ h1 {
     display: block;
 }
 
-.portfolio-cortona-process .process-photo-column {
+.process-wide-photo {
+    width: 100%;
+    max-width: none;
+    margin: 28px 0 0;
+}
+
+.project-content .process-wide-photo img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-cortona-process .process-photo-column,
+.bmw-process-photo-column {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
 }
 
-.portfolio-cortona-process .process-photo-column img {
+.bmw-process-photo-column {
+    width: 100%;
+    max-width: none;
+    margin: 28px 0 0;
+}
+
+.bmw-case-study .cortona-process-pair {
+    margin-top: 28px;
+}
+
+.bmw-case-study .cortona-process-pair .bmw-process-photo-column {
+    margin: 0;
+}
+
+.portfolio-cortona-process .process-photo-column img,
+.bmw-process-photo-column img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
@@ -562,14 +593,6 @@ h1 {
     order: 1;
 }
 
-.bmw-case-study .final-pattern-pair > .content-type {
-    order: 1;
-}
-
-.bmw-case-study .final-pattern-pair > .content-photo {
-    order: 0;
-}
-
 .final-reflection {
     width: min(100%, 660px);
     margin: 88px auto 48px;
@@ -594,6 +617,78 @@ h1 {
     line-height: 1.5;
     color: var(--charcoal);
     text-align: left;
+}
+
+.motorsports-section {
+    margin-top: 56px;
+}
+
+.motorsports-section .print-design-header {
+    margin-bottom: 40px;
+}
+
+.motorsports-section-intro {
+    width: min(100%, 900px);
+    margin: 0 auto 24px;
+}
+
+.motorsports-section-intro h3 {
+    margin: 0 0 12px;
+    font-family: "essonnes-display", serif;
+    font-style: italic;
+    font-size: 34px;
+    line-height: 0.96;
+    color: var(--olive);
+}
+
+.motorsports-section-intro p {
+    margin: 0;
+    max-width: 760px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--charcoal);
+}
+
+.motorsports-wide-photo {
+    width: 100%;
+    margin: 28px 0 0;
+}
+
+.project-content .motorsports-wide-photo img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.motorsports-photo-grid {
+    margin-top: 28px;
+}
+
+.motorsports-comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px;
+    width: min(100%, 900px);
+    margin: 28px auto 0;
+}
+
+.motorsports-comparison-grid .photo-card {
+    width: 100%;
+    max-width: 100%;
+}
+
+.motorsports-comparison-grid img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.motorsports-photo-header {
+    margin-top: 56px;
 }
 
 .project-content.is-fading {

@@ -108,7 +108,7 @@ const projects = {
         </div>
 
         <div class="print-design-copy issue12-coming-soon">
-            <p>Coming soon...</p>
+            <p>I have the opportunity to work as a creative director and layout assistant for this issue, check in November to see the final result!t</p>
         </div>
     `
 };
