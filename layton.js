@@ -164,59 +164,60 @@ function buildMotorsportsCaseStudy() {
             ])}
 
             <section class="motorsports-section">
-                ${photoPair("Exploring the Mark", "Initial logo studies explored racing cues, UGA recognition, and ways to create a flexible mark that could work across team and vehicle applications.", "logomarkvariations.png", "UGA Motorsports logo mark explorations", true)}
-                ${photoGrid([
-                    { file: "ugalogomark.png", alt: "UGA Motorsports logomark guidance" },
-                    { file: "behindscenems.png", alt: "UGA Motorsports early hand-drawn logo research" }
-                ])}
+                ${photoPair("Exploring the Mark", "Initial logo studies explored racing cues, UGA recognition, and ways to create a flexible mark that could work across team and vehicle applications.", "metalkingwmm.png", "UGA Motorsports team exploring logo concepts", true)}
+                <div class="motorsports-wide-photo">
+                    ${image("behindscenems.png", "Wide view of UGA Motorsports hand-drawn logo explorations")}
+                </div>
             </section>
 
             <section class="motorsports-section">
                 ${photoPair("Built for Racing", "The existing Motorsports inspiration image stays here. Its racing atmosphere and strong contrast continue to inform the team's identity.", "motorsportcover.jpeg", "UGA Motorsports inspiration photo")}
-            </section>
-
-            <section class="motorsports-section">
-                <div class="content-type print-design-copy motorsports-section-intro">
-                    <p>The identity is supported by a consistent palette, typography, logo guidance, and mockups for team apparel and social media.</p>
-                </div>
+                ${photoPair("Final Logo", "The finalized UGA Motorsports mark brings the team's racing identity together.", "ugafinalms.png", "Final UGA Motorsports logo", true)}
                 ${photoGrid([
-                    { file: "brandcolorsms.png", alt: "UGA Motorsports brand colors" },
-                    { file: "typerules.png", alt: "UGA Motorsports typography rules" }
-                ])}
-                <div class="motorsports-comparison-grid">
-                    <figure class="photo-card">${image("msdoanddont1.png", "UGA Motorsports logo application guidance")}</figure>
-                    <figure class="photo-card">${image("msdoanddont2.png", "UGA Motorsports logo usage examples")}</figure>
-                </div>
-                ${photoGrid([
+                    { file: "logomarkvariations.png", alt: "UGA Motorsports logo mark variations" },
                     { file: "mockupms.png", alt: "UGA Motorsports apparel mockup" },
                     { file: "instamockupms.png", alt: "UGA Motorsports Instagram mockup" }
                 ])}
             </section>
 
             <section class="motorsports-section">
-                ${photoPair("Process", "The FSAE identity was developed from early car concepts into a clear, high-impact race design that carries UGA branding across the vehicle.", "fsaems.png", "UGA Motorsports FSAE car concept")}
+                ${photoPair("Brand Guidelines", "Typography and logo guidance keep the UGA Motorsports identity consistent across applications.", "mslogomark.png", "UGA Motorsports logo mark guidelines", true)}
+                <div class="motorsports-comparison-grid">
+                    <figure class="photo-card">${image("msdoanddont1.png", "UGA Motorsports typography do and don't guidelines")}</figure>
+                    <figure class="photo-card">${image("msdoanddont2.png", "UGA Motorsports logo application do and don't guidelines")}</figure>
+                </div>
+            </section>
+
+            <section class="motorsports-section">
+                ${photoPair("FSAE Car", "The FSAE identity was developed from early car concepts into a clear, high-impact race design that carries UGA branding across the vehicle.", "msshop.jpeg", "UGA Motorsports FSAE car concept")}
                 <div class="content-pair print-design-layout">
                     <div class="content-type print-design-copy">
                         <h3>About FSAE</h3>
                         <p>The student team applies its engineering and design work to a competition-ready vehicle, bringing the identity from concept into the shop and onto the track.</p>
                     </div>
                     <div class="content-photo project-media print-feature">
-                        ${image("mscarshop.jpeg", "UGA FSAE car in the shop")}
+                        ${image("msfsaesketch.png", "UGA FSAE car in the shop")}
+                    </div>
+                </div>
+                <div class="content-pair print-design-layout">
+                    <div class="content-type print-design-copy">
+                        <h3>Final FSAE Car</h3>
+                    </div>
+                    <div class="content-photo project-media print-feature">
+                        ${image("unveil.jpg", "UGA Motorsports car unveiling")}
                     </div>
                 </div>
                 ${photoGrid([
-                    { file: "msshop.jpeg", alt: "UGA FSAE team with the car in the shop" },
-                    { file: "inalmshorizonral.jpeg", alt: "UGA FSAE car in profile" }
+                    { file: "finalfsae.jpg", alt: "Final UGA Motorsports FSAE car" },
+                    { file: "IMG_4958.jpg", alt: "UGA Motorsports FSAE car photo" }
                 ])}
-            </section>
-
-            <section class="motorsports-section">
-                ${photoPair("Process", "The endurance program brings the team's engineering, preparation, and visual identity together through hands-on work in the shop and on race day.", "msshop.jpeg", "UGA Motorsports endurance team working in the shop")}
-                ${photoPair("Inspiration", "The car, team environment, and racing culture continue to shape how the Motorsports identity is used across the endurance program.", "motorsportcover.jpeg", "UGA Motorsports endurance inspiration", true)}
-                ${photoGrid([
-                    { file: "mscarshop.jpeg", alt: "UGA Motorsports endurance car in the shop" },
-                    { file: "inalmshorizonral.jpeg", alt: "UGA Motorsports endurance car in profile" }
-                ])}
+                <div class="motorsports-wide-photo">
+                    ${image("inalmshorizonral.jpeg", "UGA Motorsports FSAE car in a wide horizontal view")}
+                </div>
+                <div class="final-reflection">
+                    <h3>Final Reflection</h3>
+                    <p>This project showed me how a strong identity can connect the team's engineering work with its presence on and off the track. From early logo exploration through the final mark and its applications, the system needed to stay clear, flexible, and recognizable. I’m proud of how the final identity brings the team's technical focus and racing energy together.</p>
+                </div>
             </section>
         </div>
     `;
