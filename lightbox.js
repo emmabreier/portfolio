@@ -18,7 +18,7 @@ function closeLightbox() {
 }
 
 function openLightbox(image) {
-    const imageSrc = image.currentSrc || image.src;
+    const imageSrc = image.dataset.full || image.currentSrc || image.src;
     lightboxImage.src = imageSrc;
     lightboxImage.alt = image.alt || "Enlarged portfolio image";
     lightbox.classList.toggle("is-svg", new URL(imageSrc, window.location.href).pathname.toLowerCase().endsWith(".svg"));

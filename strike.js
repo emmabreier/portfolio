@@ -121,7 +121,10 @@ function setActiveProject(projectKey) {
     }
 
     const swapContent = () => {
-        projectContent.innerHTML = projectHtml;
+        projectContent.innerHTML = projectHtml.replace(
+            /src="Images\/([^\"]+\.(?:jpe?g|png))"/gi,
+            'data-full="Images/$1" src="Images/optimized/$1"'
+        );
     };
 
     const isFirstRender = !projectContent.innerHTML.trim();

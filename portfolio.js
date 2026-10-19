@@ -133,7 +133,7 @@ const projects = {
         <div class="final-reflection">
             <h3>Final Reflection</h3>
             <p>
-                This project gave me the opportunity to translate my experience of Cortona into a visual identity rooted in the town's character, history, and everyday details.
+                This project was my first experience creating a cohesive visual identity, and it felt especially special to be able to translate my experience of such a beautiful City I lived in. 
             </p>
         </div>
 
@@ -424,7 +424,10 @@ function setActiveProject(projectKey) {
     }
 
     const swapContent = () => {
-        projectContent.innerHTML = projectHtml;
+        projectContent.innerHTML = projectHtml.replace(
+            /src="Images\/([^\"]+\.(?:jpe?g|png))"/gi,
+            'data-full="Images/$1" src="Images/optimized/$1"'
+        );
         setupCarousel();
         setupRotationCorner();
     };
