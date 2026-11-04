@@ -125,9 +125,20 @@ body img {
 }
 
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "essonnes-display", serif;
     font-style: italic;
+    font-weight: 400;
+}
+
+h1,
+h2 {
+    font-style: normal;
 }
 
 
@@ -245,7 +256,7 @@ h1 {
 
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 20px;
 
     width: 180px;
     padding: 18px 16px 18px 18px;
@@ -2112,9 +2123,9 @@ body.about-page .about-page-content h1 {
 
     .portfolio-nav {
         display: grid;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 10px;
-        padding: 14px 10px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px 18px;
+        padding: 16px;
     }
 
     .portfolio-nav a,
@@ -2414,4 +2425,131 @@ body.is-page-leaving > *:not(.top-nav) {
     opacity: 0;
     transform: translateY(6px);
     transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+/* =========================================================
+    11. GALLERY PAGE
+    ========================================================= */
+
+.gallery-page-body {
+    min-height: 100vh;
+    background: var(--paper);
+}
+
+.gallery-page {
+    padding: 126px 6vw 64px;
+}
+
+.gallery-header {
+    margin-bottom: 30px;
+}
+
+.gallery-header .eyebrow {
+    margin: 0 0 8px;
+    color: var(--bright-pink);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.gallery-header h1 {
+    margin: 0;
+    color: var(--ink);
+    font-family: "essonnes-display", serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.gallery-grid {
+    column-count: 4;
+    column-gap: 18px;
+}
+
+.gallery-item {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 18px;
+    break-inside: avoid;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    background: var(--panel);
+    cursor: zoom-in;
+}
+
+.gallery-item figcaption {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 7px;
+    color: var(--ink);
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.gallery-item-category {
+    color: var(--bright-pink);
+    font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+    .gallery-grid {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 700px) {
+    .gallery-page {
+        padding: 112px 20px 40px;
+    }
+
+    .gallery-grid {
+        column-count: 2;
+        column-gap: 12px;
+    }
+
+    .gallery-item {
+        margin-bottom: 14px;
+    }
+
+    .gallery-item figcaption {
+        flex-direction: column;
+        gap: 2px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 380px) {
+    .gallery-grid {
+        column-count: 1;
+    }
+}
+
+@media (min-width: 1101px) {
+    .portfolio-nav {
+        gap: 8px;
+    }
+
+    .portfolio-nav a {
+        display: block;
+        width: 100%;
+        padding-bottom: 11px;
+        border-bottom: 1px solid rgba(248, 246, 239, 0.38);
+    }
+
+    .portfolio-nav a:first-child {
+        padding-bottom: 11px;
+        border-bottom: 1px solid rgba(248, 246, 239, 0.38);
+    }
+
+    .portfolio-nav a:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
 }

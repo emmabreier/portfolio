@@ -416,6 +416,24 @@ const projects = {
     `
 };
 
+const laytonProjects = window.portfolioSourceProjects && window.portfolioSourceProjects.layton;
+const strikeProjects = window.portfolioSourceProjects && window.portfolioSourceProjects.strike;
+
+if (laytonProjects && strikeProjects) {
+    projects["BMW x UGA"] = laytonProjects["BMW mean machine"];
+    projects["Motorsport Branding"] = laytonProjects["UGA Motorsports"];
+    projects["strike-magazine"] = `
+        ${strikeProjects["about-strike"]}
+        ${strikeProjects["issue-11"]}
+        ${strikeProjects["issue-12"]}
+    `;
+}
+
+projects["print-design"] += projects.personal;
+delete projects.personal;
+
+window.portfolioProjectData = projects;
+
 function setActiveProject(projectKey) {
     const projectHtml = projects[projectKey];
 

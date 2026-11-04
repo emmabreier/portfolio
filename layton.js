@@ -1,3 +1,4 @@
+(() => {
 const projectContent = document.getElementById("project-content");
 
 const projects = {
@@ -302,7 +303,7 @@ function setActiveProject(projectKey) {
     }
 }
 
-if (projectContent) {
+if (projectContent && document.querySelector(".layton-nav")) {
     document.querySelectorAll(".layton-nav a").forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault();
@@ -312,3 +313,7 @@ if (projectContent) {
 
     setActiveProject("about-layton");
 }
+
+window.portfolioSourceProjects = window.portfolioSourceProjects || {};
+window.portfolioSourceProjects.layton = projects;
+})();

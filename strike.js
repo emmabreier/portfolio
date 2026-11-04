@@ -1,10 +1,11 @@
+(() => {
 const projectContent = document.getElementById("project-content");
 
 const projects = {
     "about-strike": `
         <div class="print-design-header project-page-header">
             <p class="eyebrow">Editorial, Creative Direction, Layout</p>
-            <h2>Strike <br>Magazine</h2>
+            <h2>About Strike</h2>
         </div>
 
         <div class="content-pair print-design-layout about-strike-pair">
@@ -14,7 +15,7 @@ const projects = {
 
             <div class="content-type print-design-copy">
                 <p class="meta">Magazine Identity</p>
-                <h3>Strike</h3>
+                <h3>Strike Magazine</h3>
                 <p>
                     Strike is a student-run magazine published at the University of Georgia. I worked with the team to create a brand identity that felt editorial, expressive, and culturally aware.
                 </p>
@@ -38,8 +39,8 @@ const projects = {
 
     "issue-11": `
         <div class="print-design-header project-page-header">
-            <p class="eyebrow">Strike Magazine</p>
-            <h2>Issue 11</h2>
+            <p class="eyebrow">Issue 11 · Editorial Design</p>
+            <h2>Strike Magazine</h2>
         </div>
 
         <div class="content-pair print-design-layout">
@@ -104,11 +105,11 @@ const projects = {
 
     "issue-12": `
         <div class="print-design-header project-page-header">
-            <h2>Issue 12</h2>
+            <h3>Issue 12</h3>
         </div>
 
         <div class="print-design-copy issue12-coming-soon">
-            <p>I have the opportunity to work as a creative director and layout assistant for this issue, check in November to see the final result!t</p>
+            <p>I have the opportunity to work as a creative director and layout assistant for this issue, check in November to see the final result!</p>
         </div>
     `
 };
@@ -156,7 +157,7 @@ function setActiveProject(projectKey) {
     }
 }
 
-if (projectContent) {
+if (projectContent && document.querySelector(".strike-nav")) {
     document.querySelectorAll(".strike-nav a").forEach(link => {
         link.addEventListener("click", function(event) {
             event.preventDefault();
@@ -166,3 +167,7 @@ if (projectContent) {
 
     setActiveProject("about-strike");
 }
+
+window.portfolioSourceProjects = window.portfolioSourceProjects || {};
+window.portfolioSourceProjects.strike = projects;
+})();
