@@ -1,35 +1,36 @@
 const galleryGrid = document.getElementById("gallery-grid");
 
 const screenshotImages = [
-    { src: "Images/mockup4.jpg", alt: "Cortona zine cover mockup", category: "Cortona Branding" },
-    { src: "Images/mockup2.jpg", alt: "Cortona circular sign", category: "Cortona Branding" },
-    { src: "Images/mockup1.jpg", alt: "Cortona patterned tote bag", category: "Cortona Branding" },
-    { src: "Images/colorways.png", alt: "Cortona logo colorways", category: "Cortona Branding" },
-    { src: "Images/patterncortona.png", alt: "Cortona repeating pattern", category: "Cortona Branding" },
-    { src: "Images/Interndatatable.png", alt: "Bibb County health packet table of contents", category: "Print Design" },
-    { src: "Images/mostra final 3.jpg", alt: "Mostra event poster", category: "Print Design" },
-    { src: "Images/moon2.png", alt: "1237 Lunations poster", category: "Print Design" },
-    { src: "Images/catangameshot.jpeg", alt: "Catan game design", category: "Print Design" },
-    { src: "Images/charliecatan.PNG", alt: "Catan card design", category: "Print Design" },
-    { src: "Images/dadcatan.PNG", alt: "Catan card design", category: "Print Design" },
-    { src: "Images/orecard.PNG", alt: "Catan card design", category: "Print Design" },
-    { src: "Images/charlie2card.PNG", alt: "Catan card design", category: "Print Design" },
-    { src: "Images/oscarcard.PNG", alt: "Catan card design", category: "Print Design" },
-    { src: "Images/emmacard.PNG", alt: "Catan card design", category: "Print Design" },
-    { src: "Images/zine1.jpeg", alt: "Cortona zine pattern spread", category: "Cortona Zine" },
-    { src: "Images/zine2.jpeg", alt: "Cortona zine spread", category: "Cortona Zine" },
-    { src: "Images/zine3bird.png", alt: "Cortona zine illustration spread", category: "Cortona Zine" },
-    { src: "Images/zine4well.jpeg", alt: "Cortona zine spread", category: "Cortona Zine" },
-    { src: "Images/zine5owl.jpeg", alt: "Cortona zine owl illustration", category: "Cortona Zine" },
-    { src: "Images/zine6fall.jpeg", alt: "Cortona zine fall spread", category: "Cortona Zine" },
-    { src: "Images/zine7title.jpeg", alt: "Cortona zine cover", category: "Cortona Zine" }
+    { src: "Images/mockup4.jpg", alt: "Cortona zine cover mockup", category: "Cortona Branding", project: "cortona" },
+    { src: "Images/mockup2.jpg", alt: "Cortona circular sign", category: "Cortona Branding", project: "cortona" },
+    { src: "Images/mockup1.jpg", alt: "Cortona patterned tote bag", category: "Cortona Branding", project: "cortona" },
+    { src: "Images/colorways.png", alt: "Cortona logo colorways", category: "Cortona Branding", project: "cortona" },
+    { src: "Images/patterncortona.png", alt: "Cortona repeating pattern", category: "Cortona Branding", project: "cortona" },
+    { src: "Images/Interndatatable.png", alt: "Bibb County health packet table of contents", category: "Print Design", project: "print-design" },
+    { src: "Images/mostra final 3.jpg", alt: "Mostra event poster", category: "Print Design", project: "print-design" },
+    { src: "Images/moon2.png", alt: "1237 Lunations poster", category: "Print Design", project: "print-design" },
+    { src: "Images/catangameshot.jpeg", alt: "Catan game design", category: "Print Design", project: "print-design" },
+    { src: "Images/charliecatan.PNG", alt: "Catan card design", category: "Print Design", project: "print-design" },
+    { src: "Images/dadcatan.PNG", alt: "Catan card design", category: "Print Design", project: "print-design" },
+    { src: "Images/orecard.PNG", alt: "Catan card design", category: "Print Design", project: "print-design" },
+    { src: "Images/charlie2card.PNG", alt: "Catan card design", category: "Print Design", project: "print-design" },
+    { src: "Images/oscarcard.PNG", alt: "Catan card design", category: "Print Design", project: "print-design" },
+    { src: "Images/emmacard.PNG", alt: "Catan card design", category: "Print Design", project: "print-design" },
+    { src: "Images/zine1.jpeg", alt: "Cortona zine pattern spread", category: "Cortona Zine", project: "print-design" },
+    { src: "Images/zine2.jpeg", alt: "Cortona zine spread", category: "Cortona Zine", project: "print-design" },
+    { src: "Images/zine3bird.png", alt: "Cortona zine illustration spread", category: "Cortona Zine", project: "print-design" },
+    { src: "Images/zine4well.jpeg", alt: "Cortona zine spread", category: "Cortona Zine", project: "print-design" },
+    { src: "Images/zine5owl.jpeg", alt: "Cortona zine owl illustration", category: "Cortona Zine", project: "print-design" },
+    { src: "Images/zine6fall.jpeg", alt: "Cortona zine fall spread", category: "Cortona Zine", project: "print-design" },
+    { src: "Images/zine7title.jpeg", alt: "Cortona zine cover", category: "Cortona Zine", project: "print-design" }
 ];
 
 const finalLiveryImages = ["bmw3.JPEG", "bmw4.JPEG", "bmw6.JPEG", "bmw8.JPEG", "bmw9.JPEG"]
     .map((filename, index) => ({
         src: `Images/${filename}`,
         alt: index === 0 ? "Final chosen BMW Mean Machine livery" : `Final chosen BMW Mean Machine photo ${index + 2}`,
-        category: "Final Chosen Livery"
+        category: "Final Chosen Livery",
+        project: "BMW x UGA"
     }));
 
 const fineArtMarkup = window.portfolioProjectData?.["fine-art"] || "";
@@ -39,14 +40,39 @@ const fineArtImages = [...fineArtDocument.querySelectorAll("img[src^='Images/']"
     .map((image) => ({
         src: image.getAttribute("src"),
         alt: image.alt || "Fine art by Emma Breier",
-        category: "Fine Art"
+        category: "Fine Art",
+        project: "fine-art"
     }));
+
+const sectionByCategory = {
+    "Cortona Branding": "cortona-branding",
+    "Cortona Zine": "cortona-zine",
+    "Final Chosen Livery": "final-chosen-livery",
+    "Fine Art": "fine-art"
+};
+
+const sectionByImage = {
+    "Images/Interndatatable.png": "uga-medical-data-packets",
+    "Images/mostra final 3.jpg": "mostra",
+    "Images/moon2.png": "dodd-centennial"
+};
+
+const sectionTitles = {
+    "cortona-branding": "Cortona Branding",
+    "uga-medical-data-packets": "UGA Medical Data Packets",
+    mostra: "Mostra",
+    "dodd-centennial": "Dodd Centennial",
+    "catan-game-design": "Catan Game Design",
+    "cortona-zine": "Cortona Zine",
+    "final-chosen-livery": "Final Chosen Livery",
+    "fine-art": "Fine Art"
+};
 
 if (galleryGrid) {
     const seenImages = new Set();
     const galleryImages = [...screenshotImages, ...fineArtImages, ...finalLiveryImages];
 
-    galleryImages.forEach(({ src, alt, category }) => {
+    galleryImages.forEach(({ src, alt, category, project }) => {
         if (seenImages.has(src)) {
             return;
         }
@@ -59,6 +85,11 @@ if (galleryGrid) {
         const image = document.createElement("img");
         image.src = src.replace(/^Images\//, "Images/optimized/");
         image.dataset.full = src;
+        image.dataset.category = category;
+        image.dataset.project = project;
+        image.dataset.section = sectionByImage[src] || sectionByCategory[category] ||
+            (/Catan/i.test(alt) ? "catan-game-design" : "print-design");
+        image.dataset.sectionTitle = sectionTitles[image.dataset.section] || category;
         image.alt = alt;
         image.loading = "lazy";
         image.decoding = "async";
@@ -70,16 +101,7 @@ if (galleryGrid) {
             image.src = src;
         }, { once: true });
 
-        const caption = document.createElement("figcaption");
-        const project = document.createElement("span");
-        project.className = "gallery-item-category";
-        project.textContent = category;
-
-        const description = document.createElement("span");
-        description.textContent = alt;
-
-        caption.append(project, description);
-        figure.append(image, caption);
+        figure.append(image);
         galleryGrid.append(figure);
     });
 }

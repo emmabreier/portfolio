@@ -148,7 +148,7 @@ const projects = {
                     <img loading="lazy" decoding="async" src="Images/bmw7.JPEG" alt="Finished BMW Mean Machine livery">
                 </div>
                 <div class="content-type print-design-copy">
-                    <h3>Final Chosen Livery</h3>
+                    <h3 id="final-chosen-livery">Final Chosen Livery</h3>
                     <p>The chosen livery was wrapped onto BMW's x7 car, and is displayed to the public at every home game and more.</p>
                 </div>
             </div>

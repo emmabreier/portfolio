@@ -4,7 +4,7 @@ const projects = {
     cortona: `
         <div class="print-design-header project-page-header">
             <p class="eyebrow">City Branding, Illustration</p>
-            <h2>Cortona <br>Branding</h2>
+            <h2 id="cortona-branding">Cortona <br>Branding</h2>
         </div>
 
         <div class="content-pair print-design-layout">
@@ -143,7 +143,7 @@ const projects = {
         <div class="print-design-section internship-block">
             <div class="print-design-header">
                 <p class="eyebrow">Game Design, Illustration</p>
-                <h2>Catan Game <br>Design</h2>
+                <h2 id="catan-game-design">Catan Game <br>Design</h2>
             </div>
 
             <div class="print-design-layout internship-layout">
@@ -192,7 +192,7 @@ const projects = {
         <div class="print-design-section">
             <div class="print-design-header">
                 <p class="eyebrow">Print Design</p>
-                <h2>Cortona <br>
+                <h2 id="cortona-zine">Cortona <br>
                 Zine</h2>
             </div>
 
@@ -258,7 +258,7 @@ const projects = {
             <div class="content-pair print-design-layout internship-layout">
                 <div class="content-type print-design-copy">
                     <p class="meta">Community Design</p>
-                    <h3>UGA Medical Data Packets</h3>
+                    <h3 id="uga-medical-data-packets">UGA Medical Data Packets</h3>
                     <p>
                         During my internship, I created a series of data packets for UGA Medical School and their new Med tour. I created 7 packets for each of the counties the students and faculty visited.
                     </p>
@@ -287,7 +287,7 @@ const projects = {
         <div class="print-design-section">
             <div class="print-design-header">
                 <p class="eyebrow">Event Poster</p>
-                <h2>Mostra</h2>
+                <h2 id="mostra">Mostra</h2>
             </div>
 
             <div class="content-pair print-design-layout">
@@ -322,7 +322,7 @@ const projects = {
         <div class="print-design-section">
             <div class="print-design-header">
                 <p class="eyebrow">Print Design</p>
-                <h2>Dodd Centennial</h2>
+                <h2 id="dodd-centennial">Dodd Centennial</h2>
             </div>
 
             <div class="content-pair print-design-layout">
@@ -358,7 +358,7 @@ const projects = {
     "fine-art": `
         <div class="print-design-header project-page-header">
             <p class="eyebrow">Photography + Painting</p>
-            <h2>Fine Art</h2>
+            <h2 id="fine-art">Fine Art</h2>
         </div>
 
         <div class="content-pair print-design-layout">
@@ -541,5 +541,15 @@ if (projectContent) {
         });
     });
 
-    setActiveProject("cortona");
+    const requestedProject = new URLSearchParams(window.location.search).get("project");
+    const requestedSection = new URLSearchParams(window.location.search).get("section");
+    setActiveProject(projects[requestedProject] ? requestedProject : "cortona");
+
+    const targetSection = requestedSection && document.getElementById(requestedSection);
+    if (projects[requestedProject] && targetSection && projectContent.contains(targetSection)) {
+        targetSection.scrollIntoView({
+            behavior: "auto",
+            block: "start"
+        });
+    }
 }
