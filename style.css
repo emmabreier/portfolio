@@ -1616,6 +1616,7 @@ body.about-page .about-page-content h1 {
     width: 140px;
     height: 140px;
     margin: 0 auto 72px;
+    transform: translateY(20px);
 }
 
 .about-rotation img {

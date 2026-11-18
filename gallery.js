@@ -69,6 +69,14 @@ const sectionTitles = {
     "fine-art": "Fine Art"
 };
 
+const galleryThumbnails = new Map([
+    ["Images/wetpaint.png", "Images/optimized/gallery-wetpaint.png"],
+    ["Images/retreatingpage11.png", "Images/optimized/gallery-retreatingpage11.png"],
+    ["Images/moon2.png", "Images/optimized/gallery-moon2.png"],
+    ["OfficialJustTrish.png", "Images/optimized/gallery-justtrish.jpg"],
+    ["longwaytrish.png", "Images/optimized/gallery-longwaytrish.jpg"]
+]);
+
 const excludedGallerySources = new Set([
     "Images/zine1.jpeg",
     "Images/zine3bird.png"
@@ -123,7 +131,7 @@ if (galleryGrid) {
         figure.className = "gallery-item";
 
         const image = document.createElement("img");
-        image.src = src.replace(/^Images\//, "Images/optimized/");
+        image.src = galleryThumbnails.get(src) || src.replace(/^Images\//, "Images/optimized/");
         image.dataset.full = src;
         image.dataset.category = category;
         image.dataset.project = project;
@@ -131,7 +139,7 @@ if (galleryGrid) {
             (/Catan/i.test(alt) ? "catan-game-design" : "print-design");
         image.dataset.sectionTitle = sectionTitles[image.dataset.section] || category;
         image.alt = alt;
-        image.loading = seenImages.size < 9 ? "eager" : "lazy";
+        image.loading = seenImages.size < 5 ? "eager" : "lazy";
         image.decoding = "async";
         image.classList.add("is-loading");
         image.addEventListener("load", () => {
