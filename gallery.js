@@ -2,6 +2,7 @@ const galleryGrid = document.getElementById("gallery-grid");
 
 const screenshotImages = [
     { src: "Images/wetpaint.png", alt: "Strike Magazine wet paint spread", category: "Strike Magazine", project: "strike-magazine" },
+    { src: "OfficialJustTrish.png", alt: "Official Just Trish", category: "Just Trish", project: "fine-art" },
     { src: "Images/retreatingpage11.png", alt: "Strike Magazine retreating spread", category: "Strike Magazine", project: "strike-magazine" },
     { src: "Images/mockup4.jpg", alt: "Cortona zine cover mockup", category: "Cortona Branding", project: "cortona" },
     { src: "Images/mockup2.jpg", alt: "Cortona circular sign", category: "Cortona Branding", project: "cortona" },
@@ -9,6 +10,7 @@ const screenshotImages = [
     { src: "Images/Internposter4.png", alt: "Welcome Aboard student guide", category: "Print Design", project: "print-design" },
     { src: "Images/mostra final 3.jpg", alt: "Mostra event poster", category: "Print Design", project: "print-design" },
     { src: "Images/moon2.png", alt: "1237 Lunations poster", category: "Print Design", project: "print-design" },
+    { src: "longwaytrish.png", alt: "Long Way Trish", category: "Long Way Trish", project: "fine-art" },
     { src: "Images/charliecatan.PNG", alt: "Catan card design", category: "Print Design", project: "print-design" },
     { src: "Images/orecard.PNG", alt: "Catan card design", category: "Print Design", project: "print-design" },
     { src: "Images/charlie2card.PNG", alt: "Catan card design", category: "Print Design", project: "print-design" },
