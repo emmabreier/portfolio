@@ -13,8 +13,6 @@ const screenshotImages = [
     { src: "Images/orecard.PNG", alt: "Catan card design", category: "Print Design", project: "print-design" },
     { src: "Images/charlie2card.PNG", alt: "Catan card design", category: "Print Design", project: "print-design" },
     { src: "Images/oscarcard.PNG", alt: "Catan card design", category: "Print Design", project: "print-design" },
-    { src: "Images/zine1.jpeg", alt: "Cortona zine pattern spread", category: "Cortona Zine", project: "print-design" },
-    { src: "Images/zine3bird.png", alt: "Cortona zine illustration spread", category: "Cortona Zine", project: "print-design" },
     { src: "Images/zine4well.jpeg", alt: "Cortona zine spread", category: "Cortona Zine", project: "print-design" },
     { src: "Images/zine5owl.jpeg", alt: "Cortona zine owl illustration", category: "Cortona Zine", project: "print-design" },
     { src: "Images/zine6fall.jpeg", alt: "Cortona zine fall spread", category: "Cortona Zine", project: "print-design" },
@@ -69,6 +67,11 @@ const sectionTitles = {
     "fine-art": "Fine Art"
 };
 
+const excludedGallerySources = new Set([
+    "Images/zine1.jpeg",
+    "Images/zine3bird.png"
+]);
+
 if (galleryGrid) {
     const seenImages = new Set();
     const galleryImages = [...screenshotImages, ...fineArtImages, ...finalLiveryImages];
@@ -108,7 +111,7 @@ if (galleryGrid) {
     );
 
     [...topImages, ...remainingImages].forEach(({ src, alt, category, project }) => {
-        if (seenImages.has(src)) {
+        if (seenImages.has(src) || excludedGallerySources.has(src)) {
             return;
         }
 

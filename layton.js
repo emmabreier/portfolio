@@ -84,40 +84,39 @@ const projects = {
                 </div>
                 <div class="content-type print-design-copy">
                     <h3>Collaboration</h3>
-                    <p>Our team split into smaller groups to refine each concept, frequently switching between designs and building on each other’s ideas. As part of a three-person group, I focused on developing the Collegiate concept into a cohesive final design.</p>
+                    <p>Our team split into smaller groups to refine each concept, frequently switching between designs and building on each other’s ideas.</p>
                 </div>
             </div>
 
             <section class="motorsports-section">
-                <div class="content-pair print-design-layout bmw-concept-intro">
+                <div class="bmw-concept-intro">
                     <div class="content-type print-design-copy">
                         <h3>Final Concept: Collegiate</h3>
-                        <p>The collegiate car is inspired by UGA Athletics social media, using bold typography, strong hierarchy, and dynamic color to create an engaging, recognizable design. Familiar elements were incorporated to resonate with fans and encourage interaction.​​​​​​​</p>
+                        <p>I worked with two designers to develop and finalize the design for the colleigate car. The collegiate car is inspired by UGA Athletics social media, using bold typography, strong hierarchy, and dynamic color to create an engaging, recognizable design.</p>
                     </div>
-                    <div aria-hidden="true"></div>
                 </div>
-                <div class="motorsports-comparison-grid">
+                <div class="motorsports-comparison-grid bmw-collegiate-grid">
                     <figure class="photo-card"><img loading="lazy" decoding="async" src="Images/mmdriverside.png" alt="BMW Mean Machine Concept One driver side"></figure>
                     <figure class="photo-card"><img loading="lazy" decoding="async" src="Images/mmpassenger.png" alt="BMW Mean Machine Concept One passenger side"></figure>
-                </div>
-                <div class="process-wide-photo">
-                    <img loading="lazy" decoding="async" src="Images/mmcloseup.png" alt="Close-up of the BMW Mean Machine Concept One design">
+                    <figure class="photo-card bmw-collegiate-closeup bmw-collegiate-closeup-left">
+                        <img loading="lazy" decoding="async" src="Images/mmcloseup.png" alt="Left close-up of the Collegiate BMW Mean Machine design">
+                    </figure>
+                    <figure class="photo-card bmw-collegiate-closeup bmw-collegiate-closeup-right">
+                        <img loading="lazy" decoding="async" src="Images/mmcloseup.png" alt="Right close-up of the Collegiate BMW Mean Machine design">
+                    </figure>
                 </div>
             </section>
 
             <section class="motorsports-section bmw-beware-section">
-                <div class="content-pair print-design-layout bmw-concept-intro">
+                <div class="bmw-concept-intro">
                     <div class="content-type print-design-copy">
                         <h3>Final Concept: Beware of Dawg</h3>
-                        <p>The Beware of Dawg concept brings an energetic personification to the "Savage" gear that players wear during the game, and captures the energy that fans bring to the games.</p>
+                        <p>The Beware of Dawg concept brings an energetic personification to the "Savage" gear that players wear during the game, and captures the energy that fans bring to the games. I developed the concept and finalized the design for the rear of the car.</p>
                     </div>
-                    <div aria-hidden="true"></div>
                 </div>
                 <div class="bmw-beware-grid">
                     <figure class="photo-card"><img loading="lazy" decoding="async" src="Images/beware-dawg-passenger-side.jpg" alt="Beware of Dawg BMW Mean Machine passenger side"></figure>
                     <figure class="photo-card"><img loading="lazy" decoding="async" src="Images/beware-dawg-driver-side.jpg" alt="Beware of Dawg BMW Mean Machine driver side"></figure>
-                </div>
-                <div class="bmw-beware-grid">
                     <figure class="photo-card"><img loading="lazy" decoding="async" src="Images/beware-dawg-back.jpg" alt="Beware of Dawg BMW Mean Machine rear view"></figure>
                     <figure class="photo-card bmw-beware-top"><img loading="lazy" decoding="async" src="Images/beware-dawg-top.jpg" alt="Overhead view of the Beware of Dawg BMW Mean Machine design"></figure>
                 </div>

@@ -69,8 +69,38 @@
 
     </main>
 
+    <section class="about-afterword" aria-label="Skills and contact">
+        <div class="about-rotation" aria-hidden="true">
+            <img id="about-rotation-frame" src="Images/rotateone.svg" alt="" loading="lazy" decoding="async">
+        </div>
+
+        <nav class="about-contact-grid" aria-label="Contact links">
+            <p><a href="mailto:emmabreier@gmail.com">Email</a></p>
+            <p><a href="https://www.instagram.com/emmabreierart/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+            <p><a href="https://www.linkedin.com/in/emmabreier/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+            <p><a href="EmmaBreierResume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></p>
+        </nav>
+    </section>
+
     <script src="page-fade.js"></script>
     <script src="lightbox.js"></script>
+    <script>
+        const aboutRotationFrame = document.getElementById("about-rotation-frame");
+        if (aboutRotationFrame) {
+            const aboutFrames = [
+                "Images/rotateone.svg",
+                "Images/rotatetwo.svg",
+                "Images/rotatethree.svg",
+                "Images/rotatefour.svg"
+            ];
+            let aboutFrameIndex = 0;
+
+            window.setInterval(() => {
+                aboutFrameIndex = (aboutFrameIndex + 1) % aboutFrames.length;
+                aboutRotationFrame.src = aboutFrames[aboutFrameIndex];
+            }, 1000);
+        }
+    </script>
 
     <script type="application/ld+json">
     {

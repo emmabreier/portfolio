@@ -85,7 +85,7 @@ const projects = {
             <div class="color-section-text">
                 <h3>Colors</h3>
                 <p>
-                    A warm, sun-baked palette pulled from Cortona's terracotta rooftops, ochre walls, and deep Tuscan skies.
+                     The colors I chose were inspired by Cortona's yellow terracotta and sunsets, and the deep blue that is in majority of the hand painted signs and tiling throught the city, as well as the city's vibrant skies.
                 </p>
             </div>
 
@@ -118,7 +118,7 @@ const projects = {
             <div class="content-type print-design-copy">
                 <h3>Final Pattern</h3>
                 <p>
-                A repeating pattern inspired by the iron wraught railings all over the town, and quatrefoils incorporated. 
+                A repeating pattern inspired by the iron wraught railings all over the town, with quatrefoils incorporated. 
                 </p>
             </div>
         </div>
@@ -133,7 +133,7 @@ const projects = {
         <div class="final-reflection">
             <h3>Final Reflection</h3>
             <p>
-                This project was my first experience creating a cohesive visual identity, and it felt especially special to be able to translate my experience of such a beautiful City I lived in. 
+                This project was my first experience creating a cohesive visual identity, and it felt especially special to be able to translate my experience of such a beautiful City I lived in. I learned a lot about interaction within the community you are going to be working with, my communication with the locals and previous artists in town shaped my thought process and intentions going into this project. I discovered my interest in branding on a larger scale. 
             </p>
         </div>
 

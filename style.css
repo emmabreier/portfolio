@@ -710,7 +710,16 @@ h2 {
 }
 
 .bmw-concept-intro {
-    margin: 0 auto 24px;
+    width: min(100%, 1040px);
+}
+
+.bmw-concept-intro .content-type {
+    width: 100%;
+    max-width: 760px;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
 }
 
 .motorsports-section-intro h3 {
@@ -2167,13 +2176,6 @@ body.about-page .about-page-content h1 {
         padding: 14px 16px;
     }
 
-    .portfolio-nav {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 14px 18px;
-        padding: 16px;
-    }
-
     .portfolio-nav a,
     .layton-nav a,
     .strike-nav a {
@@ -2391,12 +2393,45 @@ body.about-page .about-page-content h1 {
         transform: translateY(24px);
     }
 
-    .floating-box--strike:hover,
-    .floating-box--painting:hover,
-    .floating-box--poster:hover,
-    .floating-box--car:hover {
-        transform: none;
-    }
+    .about-rotation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    margin: -20px auto 90px;
+    transform: translateY(-10px);
+}
+
+.about-contact-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    width: min(100%, 1040px);
+    margin: -20px auto 0;
+}
+
+.about-contact-grid p {
+    margin: 0;
+    max-width: none;
+    transform: none;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.about-contact-grid a {
+    color: var(--charcoal);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.about-contact-grid a:hover,
+.about-contact-grid a:focus-visible {
+    color: var(--bright-pink);
+}
 }
 
 /* Small phones */
@@ -2635,4 +2670,73 @@ body.is-page-leaving > *:not(.top-nav) {
 
 .issue12-header {
     margin-bottom: 44px;
+}
+
+.bmw-collegiate-grid {
+    row-gap: 28px;
+}
+
+.bmw-collegiate-grid .photo-card {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 1962 / 932;
+    overflow: hidden;
+}
+
+.bmw-collegiate-grid .photo-card img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-afterword {
+    min-height: 70vh;
+    padding: 0 6vw 120px;
+    background: var(--paper);
+}
+
+.about-afterword {
+    min-height: auto;
+    padding: 48px 6vw 80px;
+}
+
+.about-rotation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    margin: -20px auto 90px;
+    transform: translateY(-10px);
+}
+
+.about-contact-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    width: min(100%, 1040px);
+    margin: -20px auto 0;
+}
+
+.about-contact-grid p {
+    margin: 0;
+    max-width: none;
+    transform: none;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.about-contact-grid a {
+    color: var(--charcoal);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.about-contact-grid a:hover,
+.about-contact-grid a:focus-visible {
+    color: var(--bright-pink);
 }
