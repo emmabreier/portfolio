@@ -255,7 +255,7 @@ h2 {
 
 .about-contact-links {
     position: absolute;
-    top: 34px;
+    top: 44px;
     left: 6vw;
     z-index: 1001;
     display: flex;
@@ -1571,8 +1571,12 @@ body:not(.about-page) .top-nav {
 }
 
 .about-page-content {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    align-items: start;
+    gap: 3vw;
     min-height: 100vh;
-    padding: 150px 6vw;
+    padding: 150px 6vw 80px;
     background: var(--paper);
 }
 
@@ -1597,6 +1601,69 @@ body.about-page .about-page-content h1 {
     font-size: 20px;
     line-height: 1.25;
     transform: translateX(1.8vw);
+}
+
+.about-afterword {
+    margin-top: -50px;
+    padding: 2px 24px 80px;
+    text-align: center;
+}
+
+.about-rotation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 72px;
+}
+
+.about-rotation img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.about-contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px 48px;
+    width: min(100%, 1040px);
+    margin: 0 auto;
+}
+
+.about-contact-grid p {
+    margin: 0;
+    max-width: none;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.about-contact-grid a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--charcoal);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.about-contact-grid svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+}
+
+.about-contact-grid a:hover,
+.about-contact-grid a:focus-visible {
+    color: var(--bright-pink);
 }
 
 
@@ -1968,11 +2035,6 @@ body.about-page .about-page-content h1 {
         height: clamp(300px, 20.6vw, 480px);
     }
 
-    body.about-page .about-page-content > header,
-    body.about-page .floating-boxes {
-        transform: translateX(-1.5vw);
-    }
-
     body.about-page .floating-box--poster {
         top: -2.6vw;
     }
@@ -1980,6 +2042,11 @@ body.about-page .about-page-content h1 {
     body.about-page .floating-box--car {
         top: calc(230px + 0.8vw);
         left: 66.5%;
+    }
+
+    body.about-page .about-page-content > header,
+    body.about-page .floating-boxes {
+        transform: translateX(-1.5vw);
     }
 }
 
@@ -2126,20 +2193,20 @@ body.about-page .about-page-content h1 {
 
     .about-contact-links {
         position: fixed;
-        top: 94px;
+        top: 104px;
         right: 24px;
         left: auto;
         gap: 6px;
     }
 
     .about-contact-links a {
-        width: 26px;
-        height: 26px;
+        width: 20px;
+        height: 20px;
     }
 
     .about-contact-links svg {
-        width: 18px;
-        height: 18px;
+        width: 14px;
+        height: 14px;
     }
 
     body:not(.about-page) .about-contact-links {
@@ -2343,7 +2410,14 @@ body.about-page .about-page-content h1 {
     }
 
     .about-page-content {
+        display: block;
+        min-height: 0;
         padding: 90px 24px 40px;
+    }
+
+    .site-title-mark {
+        width: min(100%, 520px);
+        transform: none;
     }
 
     body.about-page .about-page-content h1 {
@@ -2361,6 +2435,26 @@ body.about-page .about-page-content h1 {
         max-width: 100%;
         font-size: 16px;
         margin-top: 20px;
+    }
+
+    .about-contact-grid {
+        flex-wrap: nowrap;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .about-contact-grid p {
+        font-size: 13px;
+    }
+
+    .about-contact-grid a {
+        gap: 4px;
+        white-space: nowrap;
+    }
+
+    .about-contact-grid svg {
+        width: 14px;
+        height: 14px;
     }
 
     .floating-boxes {
@@ -2389,45 +2483,6 @@ body.about-page .about-page-content h1 {
         transform: translateY(24px);
     }
 
-    .about-rotation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 180px;
-    margin: -20px auto 90px;
-    transform: translateY(-10px);
-}
-
-.about-contact-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
-    width: min(100%, 1040px);
-    margin: -20px auto 0;
-}
-
-.about-contact-grid p {
-    margin: 0;
-    max-width: none;
-    transform: none;
-    font-size: 17px;
-    line-height: 1.5;
-}
-
-.about-contact-grid a {
-    color: var(--charcoal);
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-
-.about-contact-grid a:hover,
-.about-contact-grid a:focus-visible {
-    color: var(--bright-pink);
-}
 }
 
 /* Small phones */
@@ -2440,7 +2495,7 @@ body.about-page .about-page-content h1 {
     }
 
     .about-contact-links {
-        top: 75px;
+        top: 85px;
     }
 
     .top-nav a {
