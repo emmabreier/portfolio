@@ -131,8 +131,13 @@ if (galleryGrid) {
             (/Catan/i.test(alt) ? "catan-game-design" : "print-design");
         image.dataset.sectionTitle = sectionTitles[image.dataset.section] || category;
         image.alt = alt;
-        image.loading = "lazy";
+        image.loading = seenImages.size < 9 ? "eager" : "lazy";
         image.decoding = "async";
+        image.classList.add("is-loading");
+        image.addEventListener("load", () => {
+            image.classList.remove("is-loading");
+            image.classList.add("is-loaded");
+        }, { once: true });
         image.addEventListener("error", () => {
             if (image.dataset.fallbackUsed) {
                 return;

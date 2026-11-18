@@ -795,20 +795,16 @@ h2 {
 }
 
 .bmw-beware-grid .photo-card {
-    width: 100%;
-    max-width: 100%;
-}
-
-.bmw-beware-top {
     position: relative;
+    width: 100%;
+    height: auto;
     aspect-ratio: 3 / 2;
-    overflow: hidden;
 }
 
-.bmw-beware-top img {
+.bmw-beware-grid .photo-card img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     transform: none;
 }
 
@@ -2570,6 +2566,15 @@ body.is-page-leaving > *:not(.top-nav) {
     border-radius: 18px;
     background: var(--panel);
     cursor: zoom-in;
+    transition: opacity 0.28s ease;
+}
+
+.gallery-item img.is-loading {
+    opacity: 0;
+}
+
+.gallery-item img.is-loaded {
+    opacity: 1;
 }
 
 @media (max-width: 1000px) {
@@ -2688,94 +2693,35 @@ body.is-page-leaving > *:not(.top-nav) {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.about-afterword {
-    min-height: 70vh;
-    padding: 0 6vw 120px;
-    background: var(--paper);
-}
-
-.about-afterword {
-    min-height: auto;
-    padding: 48px 6vw 80px;
-}
-
-.about-rotation {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 180px;
-    margin: -20px auto 90px;
-    transform: translateY(-10px);
-}
-
-.about-contact-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    gap: 48px;
-    width: min(100%, 1040px);
-    margin: -20px auto 0;
-}
-
-.about-contact-grid p {
-    margin: 0;
-    max-width: none;
     transform: none;
-    font-size: 17px;
-    line-height: 1.5;
 }
 
-.about-contact-grid a {
-    color: var(--charcoal);
-    text-decoration: underline;
-    text-underline-offset: 4px;
+.bmw-collegiate-wide {
+    width: min(100%, 1040px);
+    margin: 28px auto 0;
 }
 
-.about-contact-grid a:hover,
-.about-contact-grid a:focus-visible {
-    color: var(--bright-pink);
+.bmw-collegiate-wide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transform: none;
 }
 
-@media (max-width: 768px) {
-    .about-afterword {
-        min-height: auto;
-        padding: 28px 5vw 64px;
-    }
-
-    .about-rotation {
-        width: 120px;
-        height: 120px;
-        margin: 0 auto 32px;
-        transform: none;
-    }
-
-    .about-rotation img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-
-    .about-contact-grid {
-        gap: 18px;
-        width: 100%;
-        margin: 0 auto;
-    }
+.bmw-beware-grid {
+    align-items: stretch;
 }
 
-@media (max-width: 480px) {
-    .about-rotation {
-        width: 104px;
-        height: 104px;
-        margin-bottom: 24px;
-    }
+.bmw-beware-grid .photo-card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+}
 
-    .about-contact-grid {
-        gap: 12px;
-        font-size: 14px;
-    }
+.bmw-beware-grid .photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: none;
 }

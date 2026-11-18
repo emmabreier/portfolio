@@ -98,12 +98,9 @@ const projects = {
                 <div class="motorsports-comparison-grid bmw-collegiate-grid">
                     <figure class="photo-card"><img loading="lazy" decoding="async" src="Images/mmdriverside.png" alt="BMW Mean Machine Concept One driver side"></figure>
                     <figure class="photo-card"><img loading="lazy" decoding="async" src="Images/mmpassenger.png" alt="BMW Mean Machine Concept One passenger side"></figure>
-                    <figure class="photo-card bmw-collegiate-closeup bmw-collegiate-closeup-left">
-                        <img loading="lazy" decoding="async" src="Images/mmcloseup.png" alt="Left close-up of the Collegiate BMW Mean Machine design">
-                    </figure>
-                    <figure class="photo-card bmw-collegiate-closeup bmw-collegiate-closeup-right">
-                        <img loading="lazy" decoding="async" src="Images/mmcloseup.png" alt="Right close-up of the Collegiate BMW Mean Machine design">
-                    </figure>
+                </div>
+                <div class="process-wide-photo bmw-collegiate-wide">
+                    <img loading="lazy" decoding="async" src="Images/mmcloseup.png" alt="Close-up of the Collegiate BMW Mean Machine design">
                 </div>
             </section>
 

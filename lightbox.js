@@ -11,22 +11,43 @@ document.body.appendChild(lightbox);
 
 const lightboxImage = lightbox.querySelector(".image-lightbox-image");
 const closeButton = lightbox.querySelector(".image-lightbox-close");
+let lightboxLoadId = 0;
 
 function closeLightbox() {
+    lightboxLoadId += 1;
     lightbox.classList.remove("is-open");
     lightbox.classList.remove("is-svg");
+    lightboxImage.classList.remove("is-loading", "is-loaded");
     lightbox.setAttribute("aria-hidden", "true");
     document.body.classList.remove("lightbox-open");
 }
 
 function openLightbox(image) {
     const imageSrc = image.dataset.full || image.currentSrc || image.src;
-    lightboxImage.src = imageSrc;
+    const loadId = ++lightboxLoadId;
+
+    lightboxImage.classList.remove("is-loaded");
+    lightboxImage.classList.add("is-loading");
     lightboxImage.alt = image.alt || "Enlarged portfolio image";
     lightbox.classList.toggle("is-svg", new URL(imageSrc, window.location.href).pathname.toLowerCase().endsWith(".svg"));
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.classList.add("lightbox-open");
+
+    const preload = new Image();
+    preload.onload = async () => {
+        if (loadId !== lightboxLoadId) return;
+        lightboxImage.src = imageSrc;
+        if (lightboxImage.decode) {
+            try {
+                await lightboxImage.decode();
+            } catch (_) {}
+        }
+        if (loadId !== lightboxLoadId) return;
+        lightboxImage.classList.remove("is-loading");
+        lightboxImage.classList.add("is-loaded");
+    };
+    preload.src = imageSrc;
 }
 
 document.addEventListener("click", event => {
