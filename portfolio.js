@@ -331,7 +331,6 @@ const projects = {
                 </div>
 
                 <div class="content-type print-design-copy">
-                    <p class="meta">Editorial Poster</p>
                     <h3>1237 Lunations</h3>
                     <p>
                     This poster was apart of a series of posters for the Lamar Dodd, celebrating the 100th anniversary of the Dodd School of Art. Each student was assigned a letter, and when placed together, said "celebrate the centennial." I was assigned the letter "C", and I created a poster inspired by the amount of times the moon has its phase in 100 years. 

@@ -1921,11 +1921,6 @@ body.about-page .about-page-content h1 {
         gap: 2.7vw;
     }
 
-    .content-pair + .content-pair,
-    .internship-block .print-design-layout + .print-design-layout {
-        margin-top: 3.9vw;
-    }
-
     .print-design-copy h3 {
         font-size: 2.8vw;
     }
@@ -1935,28 +1930,17 @@ body.about-page .about-page-content h1 {
         font-size: 1.25vw;
     }
 
-    .photo-grid,
-    .poster-grid {
-        gap: 2.7vw;
-        margin-top: 2.7vw;
-    }
-
     .fine-art-grid {
         width: 100%;
         column-gap: 2.7vw;
     }
 
-    .photo-carousel {
-        gap: 1.7vw;
-        margin-top: 2.7vw;
-    }
-
     .issue11-grid {
         gap: 2.7vw;
-        margin-top: 2.7vw;
     }
 
-    .about-page-content {
+    body.about-page .about-page-content {
+        width: 100%;
         padding: clamp(150px, 10.4vw, 312px) 5.8vw 5.6vw;
     }
 
@@ -1964,17 +1948,17 @@ body.about-page .about-page-content h1 {
         font-size: clamp(100px, 6.95vw, 170px);
     }
 
-    .about-page-content p {
+    body.about-page .about-page-content p {
         max-width: clamp(530px, 35.5vw, 750px);
         font-size: clamp(20px, 1.45vw, 32px);
     }
 
-    .floating-boxes {
+    body.about-page .floating-boxes {
         width: 62vw;
         height: clamp(650px, 45vw, 1000px);
     }
 
-    .floating-box {
+    body.about-page .floating-box {
         width: clamp(235px, 16.3vw, 380px);
         height: clamp(300px, 20.6vw, 480px);
     }
@@ -2365,7 +2349,7 @@ body.about-page .about-page-content h1 {
     }
 
     body.about-page .about-page-content h1 {
-        font-size: clamp(48px, 14vw, 66px);
+        font-size: clamp(48px, 14vw, 60px);
         letter-spacing: 0;
         line-height: 0.9;
     }
@@ -2643,3 +2627,12 @@ body.is-page-leaving > *:not(.top-nav) {
     .project-content [id] {
         scroll-margin-top: 110px;
     }
+
+.issue11-header {
+    padding-top: 48px;
+    margin-bottom: 24px;
+}
+
+.issue12-header {
+    margin-bottom: 44px;
+}

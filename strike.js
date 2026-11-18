@@ -5,7 +5,7 @@ const projects = {
     "about-strike": `
         <div class="print-design-header project-page-header">
             <p class="eyebrow">Editorial, Creative Direction, Layout</p>
-            <h2>About Strike</h2>
+            <h2>Strike Magazine</h2>
         </div>
 
         <div class="content-pair print-design-layout about-strike-pair">
@@ -14,33 +14,18 @@ const projects = {
             </div>
 
             <div class="content-type print-design-copy">
-                <p class="meta">Magazine Identity</p>
-                <h3>Strike Magazine</h3>
+                <h3>About Strike</h3>
                 <p>
                     Strike is a student-run magazine published at the University of Georgia. I worked with the team to create a brand identity that felt editorial, expressive, and culturally aware.
                 </p>
             </div>
         </div>
-
-        <div class="content-pair print-design-layout internship-layout">
-            <div class="content-type print-design-copy">
-                <p class="meta">Editorial Collage</p>
-                <h3>My Role</h3>
-                <p>
-                    I am involved in creative direction and layout for the magazine. As a concept director I have had the opportunity to create a concept that is apart of the larger concept of that specific issue, and acting as creative director over a group of 15.
-                </p>
-            </div>
-
-            <div class="content-photo project-media print-feature">
-                <img loading="lazy" decoding="async" src="Images/shortersidecollage.jpg" alt="Strike magazine collage">
-            </div>
-        </div>
     `,
 
     "issue-11": `
-        <div class="print-design-header project-page-header">
-            <p class="eyebrow">Issue 11 · Editorial Design</p>
-            <h2>Strike Magazine</h2>
+        <div class="print-design-header project-page-header issue11-header">
+            <p class="eyebrow">Layout, Editorial</p>
+            <h2>Strike Issue 11</h2>
         </div>
 
         <div class="content-pair print-design-layout">
@@ -49,7 +34,6 @@ const projects = {
             </div>
 
             <div class="content-type print-design-copy">
-                <p class="meta">Editorial Design</p>
                 <h3>Mirage</h3>
                 <p>  
                 This semester's concept was Mirage. Mirage investigates the tension between illusion and truth, inviting viewers to question what is real, what is imagined, and how perception influences identity and connection.
@@ -78,7 +62,6 @@ const projects = {
             </div>
 
             <div class="content-type print-design-copy">
-                <p class="meta">Material Study</p>
                 <h3>Making of Mirage</h3>
                 <p>
                 This concept focused on exploring the interplay between illusion and reality, using visual elements and editorial design to evoke a sense of dreamlike ambiguity, I experimented with analog type warping and layered textures to create a visually engaging and immersive experience.
@@ -88,7 +71,6 @@ const projects = {
 
         <div class="content-pair print-design-layout internship-layout">
             <div class="content-type print-design-copy">
-                <p class="meta">Process</p>
                 <h3>Layout and Typography</h3>
                 <p>
                 This was my first time on Strike, and I worked on the layout team, collaborating with the other creative teams on the concepts. I helped create the visuals for the styling, photography, and mainly the layout and typography.
@@ -104,8 +86,9 @@ const projects = {
     `,
 
     "issue-12": `
-        <div class="print-design-header project-page-header">
-            <h3>Issue 12</h3>
+        <div class="print-design-header project-page-header issue12-header">
+            <p class="eyebrow">Creative Direction, Layout</p>
+            <h2>Strike Issue 12</h2>
         </div>
 
         <div class="print-design-copy issue12-coming-soon">
